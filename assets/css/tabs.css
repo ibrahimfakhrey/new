@@ -1,6 +1,6 @@
-﻿ 
+ 
 
- #verticalTab{
+#verticalTab{
 
  width:100%;
 
@@ -306,30 +306,13 @@ text-align: right;
 
 .tab-sec .ico{
 
-	position:absolute;
-
-	left:0;
-
-	top:0;
-
-	width:80px;
-
-	height:80px;
-
-	background-color:#00ADAA;
-
-     text-align: right;
-
- 
+	display: none;
 
 }
 
 .tab-sec .ico img{
 
-	width:100%;
-
-	display:block;
-text-align: right;
+	display: none;
 }
 
 
