@@ -8,7 +8,7 @@
 	 box-shadow:0px 6px 8px 2px rgba(0,0,0,0.14);
     -webkit-box-shadow:0px 6px 8px 2px rgba(0,0,0,0.14);
     -moz-box-shadow:0px 6px 8px 2px rgba(0,0,0,0.14);
-	/*border-top:4px solid #04ACAA;*/
+	/*border-top:4px solid #FF8C42;*/
 }
 /*.mega-menu:after{
 	width:100%;
@@ -64,6 +64,6 @@
 }
 .mega-menu a:hover{
 	border:0 !important;
-	color: #04ACAA !important;
+	color: #FF8C42 !important;
 	
 }
