@@ -56,6 +56,13 @@
 			$('body').toggleClass('overflow');
 			$('.side-navigation').toggleClass('active');
 		});
+		
+		// NEW NAVBAR HAMBURGER
+		$('.navbar-hamburger').on('click', function(e) {
+			$(this).toggleClass('open');
+			$('body').toggleClass('overflow');
+			$('.side-navigation').toggleClass('active');
+		});
 	
 	
 	
