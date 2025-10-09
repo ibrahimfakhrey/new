@@ -40,19 +40,19 @@
 <link href="assets/css/settings9cbc.css" rel="stylesheet">
 <link href="assets/css/inline_1.css" rel="stylesheet"/>
 <!-- All in One SEO 4.4.9.1 - aioseo.com -->
-<title>Get In Touch - Mozoon </title>
+<title>Get in Touch - Mozoon </title>
 <meta content="max-image-preview:large" name="robots">
 <link href="assets/other/file.bin" rel="canonical">
 <meta content="All in One SEO (AIOSEO) 4.4.9.1" name="generator">
 <meta content="en_US" property="og:locale">
 <meta content="AL  Najma Fareeda International Group -" property="og:site_name">
 <meta content="website" property="og:type">
-<meta content="Get In Touch - Mozoon " property="og:title">
+<meta content="Get in Touch - Mozoon " property="og:title">
 <meta content="index.html/" property="og:url">
 <meta content="summary_large_image" name="twitter:card">
-<meta content="Get In Touch - Mozoon " name="twitter:title">
+<meta content="Get in Touch - Mozoon " name="twitter:title">
 <script class="aioseo-schema" type="application/ld+json">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#listItem","position":1,"name":"Home"}]},{"@type":"Organization","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#organization","name":"AL  Najma Fareeda International Group","url":"https:\/\/www.alfareedagroupintl.com\/ar\/"},{"@type":"WebPage","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#webpage","url":"https:\/\/www.alfareedagroupintl.com\/ar\/","name":"Get In Touch - Mozoon ","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#website"},"breadcrumb":{"@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#breadcrumblist"},"datePublished":"2025-11-16T11:47:28+00:00","dateModified":"2023-09-26T03:34:30+00:00"},{"@type":"WebSite","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#website","url":"https:\/\/www.alfareedagroupintl.com\/ar\/","name":"AL  Najma Fareeda International Group","inLanguage":"en-US","publisher":{"@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.alfareedagroupintl.com\/ar\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#listItem","position":1,"name":"Home"}]},{"@type":"Organization","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#organization","name":"AL  Najma Fareeda International Group","url":"https:\/\/www.alfareedagroupintl.com\/ar\/"},{"@type":"WebPage","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#webpage","url":"https:\/\/www.alfareedagroupintl.com\/ar\/","name":"Get in Touch - Mozoon ","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#website"},"breadcrumb":{"@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#breadcrumblist"},"datePublished":"2025-11-16T11:47:28+00:00","dateModified":"2023-09-26T03:34:30+00:00"},{"@type":"WebSite","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#website","url":"https:\/\/www.alfareedagroupintl.com\/ar\/","name":"AL  Najma Fareeda International Group","inLanguage":"en-US","publisher":{"@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.alfareedagroupintl.com\/ar\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}]}
 		</script>
 <!-- All in One SEO -->
 <script src="assets/js/inline_1.js"></script>
@@ -87,37 +87,37 @@
 <div class="side-navigation">
 <div class="menu">
 <ul>
-<li><a href="index-en.html">Home</a></li>
+<li><a href="index.html">Home</a></li>
 <li>
 <a href="#">About Us</a>
 <ul>
-<li><a href="company-profile-en.html">Company Profile  </a></li>
-<li><a href="leaders-message-en.html"> Leader's Message </a></li>
-<li><a href="history-en.html">Our History</a></li>
-<li><a href="mission-vision-values-en.html">Mission, Vision & Values</a></li>
-<li><a href="strategy-en.html">Our Strategy</a></li>
-<li><a href="operational-excellence-en.html">Operational Excellence</a></li>
-<li><a href="infrastructure-en.html">Infrastructure</a></li>
-<li><a href="csr-en.html">Corporate Social Responsibility</a></li>
+<li><a href="company-profile.html">Company Profile  </a></li>
+<li><a href="leaders-message.html"> Leader's Message </a></li>
+<li><a href="history.html">Our History</a></li>
+<li><a href="mission-vision-values.html">Mission, Vision & Values</a></li>
+<li><a href="strategy.html">Our Strategy</a></li>
+<li><a href="operational-excellence.html">Operational Excellence</a></li>
+<li><a href="infrastructure.html">Infrastructure</a></li>
+<li><a href="csr.html">Corporate Social Responsibility</a></li>
 </ul>
 </li>
 <li>
 <a href="#">Services</a>
 <ul>
-<li><a href="hard-services-en.html">Hard Services</a></li>
-<li><a href="soft-services-en.html">Soft Services</a></li>
-<li><a href="specialist-services-en.html">Specialist Services</a></li>
+<li><a href="hard-services.html">Hard Services</a></li>
+<li><a href="soft-services.html">Soft Services</a></li>
+<li><a href="specialist-services.html">Specializations</a></li>
 </ul>
 </li>
-<li><a href="sectors-en.html"> Sectors </a></li>
-<li><a href="testimonials-en.html">Certifications</a></li>
-<li><a href="careers-en.html">Careers</a></li>
-<li><a href="news-events-en.html"> News & Events  </a></li>
-<li><a href="get-in-touch-en.html">Get In Touch</a></li>
-<li><a class="request-a-quote" href="request-a-quote-en.html"> Request a Quote </a></li>
+<li><a href="sectors.html"> Sectors </a></li>
+<li><a href="testimonials.html">Testimonials</a></li>
+<li><a href="careers.html">Careers</a></li>
+<li><a href="news-events.html"> News & Events  </a></li>
+<li><a href="get-in-touch.html">Get in Touch</a></li>
+<li><a class="request-a-quote" href="request-a-quote.html"> Request Pricing </a></li>
 </ul>
 <div class="langu">
-<a href="index-en.html"><span></span>ENG</a>
+<a href="index-en.html><span></span>ENG</a>
 <a href="index.html"><span></span>AR</a>
 </div>
 </div>
@@ -132,7 +132,7 @@
 </ul></div>
 <div class="textwidget custom-html-widget"><address>
 
-Office No. 11-109, Building Makeen.
+Office No. 11-109, Makeen Building.
 
 Airport Road, Dubai
 
@@ -145,7 +145,7 @@ Airport Road, Dubai
 <li><a href="https://www.linkedin.com/in/mozzon-alkhair-394141389/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 <li><a href="https://www.instagram.com/mozoonalkhairsa" target="_blank"><i class="fab fa-instagram"></i></a></li>
 </ul>
-<small> Copyright © 2025 All Rights Reserved, Mozoon Al Khair Company </small>
+<small>Copyright © 2025 All Rights Reserved, Mozoon Al Khair Group</small>
 </div>
 <!-- end side-content -->
 </div>
@@ -153,7 +153,7 @@ Airport Road, Dubai
 <nav class="navbar navi">
 <div class="container">
 <div class="upper-side">
-<div class="logo"> <a href="index-en.html"> <img alt="Image" decoding="async" src="assets/img/new-logo.png"/> </a> </div>
+<div class="logo"> <a href="index.html"> <img alt="Image" decoding="async" src="assets/img/new-logo.png"/> </a> </div>
 <!-- end logo -->
 <div class="phone-email">
 <img alt="Image" decoding="async" src="assets/img/icon-phone.webp"/>
@@ -164,7 +164,7 @@ Airport Road, Dubai
 <div class="language">
 <div class="phone-email">
 <img alt="Image" decoding="async" src="assets/img/icon-email.webp"/>
-<h4><span>Email Us</span><br/>
+<h4><span>Contact us via Email</span><br/>
 <a href="mailto:info@mozoon.sa">info@mozoon.sa</a>
 </h4>
 </div>
@@ -177,38 +177,38 @@ Airport Road, Dubai
 <div class="menu">
 <header>
 <ul class="st-menu">
-<li><a href="index-en.html"> <img alt="Image" class="sticky-logo" decoding="async" src="assets/img/new-logo.png"/> </a></li>
-<li><a href="index-en.html">Home</a></li>
+<li><a href="index.html"> <img alt="Image" class="sticky-logo" decoding="async" src="assets/img/new-logo.png"/> </a></li>
+<li><a href="index.html">Home</a></li>
 <li>
-<a href="#"> Who We Are   </a>
+<a href="#"> About Us   </a>
 <ul>
-<li><a href="company-profile-en.html"> Company Profile   </a></li>
-<li><a href="leaders-message-en.html"> Leader's Message </a></li>
-<li><a href="history-en.html">Our History</a></li>
-<li><a href="mission-vision-values-en.html">Mission, Vision & Values</a></li>
-<li><a href="strategy-en.html">Our Strategy</a></li>
-<li><a href="operational-excellence-en.html">Operational Excellence</a></li>
-<li><a href="infrastructure-en.html">Infrastructure</a></li>
-<li><a href="csr-en.html">Corporate Social Responsibility</a></li>
+<li><a href="company-profile.html"> Company Profile   </a></li>
+<li><a href="leaders-message.html"> Leader's Message </a></li>
+<li><a href="history.html">Our History</a></li>
+<li><a href="mission-vision-values.html">Mission, Vision & Values</a></li>
+<li><a href="strategy.html">Our Strategy</a></li>
+<li><a href="operational-excellence.html">Operational Excellence</a></li>
+<li><a href="infrastructure.html">Infrastructure</a></li>
+<li><a href="csr.html">Corporate Social Responsibility</a></li>
 </ul>
 </li>
 <li>
 <a href="#">Services</a>
 <ul>
-<li><a href="hard-services-en.html"> Hard Services  </a></li>
-<li><a href="soft-services-en.html">Soft Services</a></li>
-<li><a href="specialist-services-en.html">Specialist Services</a></li>
+<li><a href="hard-services.html"> Hard Services  </a></li>
+<li><a href="soft-services.html">Soft Services</a></li>
+<li><a href="specialist-services.html">Specialist Services</a></li>
 </ul>
 </li>
-<li><a href="sectors-en.html"> Sectors </a></li>
-<li><a href="testimonials-en.html"> Client Certifications  </a></li>
-<li><a href="careers-en.html">Careers</a></li>
-<li><a href="news-events-en.html"> News & Events  </a></li>
-<li><a href="get-in-touch-en.html">Get In Touch</a></li>
-<li><a class="request-a-quote" href="request-a-quote-en.html"> Request a Quote </a></li>
+<li><a href="sectors.html"> Sectors </a></li>
+<li><a href="testimonials.html"> Client Testimonials  </a></li>
+<li><a href="careers.html">Careers</a></li>
+<li><a href="news-events.html"> News & Events  </a></li>
+<li><a href="get-in-touch.html">Get in Touch</a></li>
+<li><a class="request-a-quote" href="request-a-quote.html"> Request Pricing </a></li>
 </ul>
 <div class="langu">
-<a href="index-en.html"><span></span>ENG</a>
+<a href="index-en.html><span></span>ENG</a>
 <a href="index.html"><span></span>AR</a>
 </div>
 </header>
@@ -225,8 +225,8 @@ Airport Road, Dubai
 <!-- Hero Section -->
 <div class="row mb-5">
 <div class="col-lg-12 text-center">
-<h1 style="color: #2c3e50; font-size: 3.5rem; font-weight: 700; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Get In Touch</h1>
-<p style="font-size: 1.3rem; color: #6c757d; max-width: 800px; margin: 0 auto; line-height: 1.8;">We هنا لخدمتك على مدار الساعة. Get In Touch للحصول على استشارة مجانية أو لمناقشة احتياجاتك من Services المتكاملة.</p>
+<h1 style="color: #2c3e50; font-size: 3.5rem; font-weight: 700; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Get in Touch</h1>
+<p style="font-size: 1.3rem; color: #6c757d; max-width: 800px; margin: 0 auto; line-height: 1.8;">نحن هنا لخدمتك على مدار الساعة. Get in Touch للحصول على استشارة مجانية أو لمناقشة احتياجاتك من Services المتكاملة.</p>
 </div>
 </div>
 
@@ -340,8 +340,8 @@ Kingdom of Saudi Arabia
 <option value="cleaning">خدمات النظافة</option>
 <option value="maintenance">خدمات الصيانة</option>
 <option value="security">خدمات الأمن</option>
-<option value="landscaping">خدمات Landscaping</option>
-<option value="pest-control">Pest Control</option>
+<option value="landscaping">خدمات تنسيق الحدائق</option>
+<option value="pest-control">مكافحة الآفات</option>
 <option value="catering">خدمات الضيافة</option>
 <option value="other">خدمات أخرى</option>
 </select>
@@ -393,7 +393,7 @@ Kingdom of Saudi Arabia
 <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; height: 100%; border-right: 5px solid #007bff;">
 <img src="mozoon-company-images/1.jpg" alt="فرع Riyadh" style="width: 100%; height: 200px; object-fit: cover; border-radius: 15px; margin-bottom: 20px;">
 <h3 style="color: #007bff; font-size: 1.8rem; margin-bottom: 15px; font-weight: 600;">فرع Riyadh</h3>
-<p style="color: #6c757d; margin-bottom: 15px; font-size: 0.9rem;">شارع الملك فهد، حي Al Olaya</p>
+<p style="color: #6c757d; margin-bottom: 15px; font-size: 0.9rem;">شارع الملك فهد، حي Olaya</p>
 <div style="color: #007bff; font-size: 0.9rem; font-weight: 600; margin-bottom: 10px;">📞 +966543337990</div>
 <div style="color: #007bff; font-size: 0.9rem; font-weight: 600;">✉️ riyadh@mozonalkhayr.com</div>
 </div>
@@ -447,8 +447,8 @@ Kingdom of Saudi Arabia
 <div class="row mb-5">
 <div class="col-lg-6 mb-4">
 <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); height: 100%;">
-<h4 style="color: #007bff; font-size: 1.3rem; margin-bottom: 15px; font-weight: 600;">كيف يمكنني طلب Service؟</h4>
-<p style="color: #6c757d; line-height: 1.6; font-size: 0.9rem;">يمكنك طلب الخدمة عبر الاتصال بنا مباشرة أو ملء النموذج أعلاه، وسيتواصل معك Our Team خلال 24 ساعة لمناقشة التفاصيل.</p>
+<h4 style="color: #007bff; font-size: 1.3rem; margin-bottom: 15px; font-weight: 600;">كيف يمكنني طلب خدمة؟</h4>
+<p style="color: #6c757d; line-height: 1.6; font-size: 0.9rem;">يمكنك طلب الخدمة عبر الاتصال بنا مباشرة أو ملء النموذج أعلاه، وسيتواصل معك فريقنا خلال 24 ساعة لمناقشة التفاصيل.</p>
 </div>
 </div>
 
@@ -494,8 +494,8 @@ Kingdom of Saudi Arabia
 <div class="row">
 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.05s">
 <div class="textwidget custom-html-widget"> <figure><img alt="Image" src="assets/img/footer-icon01.webp"/></figure>
-<h3> Address</h3>
-<p>Kingdom of Saudi Arabia - Riyadh - Al Olaya - King Fahd Road</p></div>
+<h3>Address</h3>
+<p>Kingdom of Saudi Arabia - Riyadh - Olaya - King Fahd Road</p></div>
 </div>
 <!-- end col-4 -->
 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.10s">
@@ -524,35 +524,35 @@ Kingdom of Saudi Arabia
 <!-- col-lg-4-->
 <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
 <div class="textwidget custom-html-widget"><h5>Overview</h5>
-<p class="justify">Welcome to the world of sustainable future. At Mozoon Al Khair Company, we don't just build and maintain facilities, but we fulfill our promise through them. We specialize in providing customized and unique solutions for commercial, residential, industrial facilities, hospitals, and educational institutions. We provide world-class facility management and recruitment services and ensure they add value to our clients. We also invest in our employees, facilities, technologies, and market awareness. </p>
-<p> <a class="text-white" href="company-profile-en.html"> More Information </a></p></div>
+<p class="justify">Welcome to the world of sustainable future. At Mozoon Al Khair Group, we don't just build and maintain facilities, but we fulfill our promise through them. We specialize in providing customized and unique solutions for commercial, residential, industrial, hospital and educational facilities. We provide facility management and recruitment services at a global level and ensure that they are added value to our clients. We also invest in our employees, facilities, technologies and market awareness. </p>
+<p> <a class="text-white" href="company-profile.html">More Information</a></p></div>
 <!-- end select-box -->
 </div>
 <!-- end col-4 -->
 <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.10s">
-<ul class="footer-menu"><h5>About Us </h5></ul><ul class="footer-menu"><div class="menu-about-us-container"><ul class="menu" id="menu-about-us"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130" id="menu-item-130"><a href="company-profile-en.html">Company Profile</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128" id="menu-item-128"><a href="leaders-message-en.html">CEO Message</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129" id="menu-item-129"><a href="mission-vision-values-en.html">Mission, Vision & Values</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127" id="menu-item-127"><a href="operational-excellence-en.html">Operational Excellence</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125" id="menu-item-125"><a href="infrastructure-en.html">Infrastructure</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126" id="menu-item-126"><a href="csr-en.html">Corporate Social Responsibility</a></li>
+<ul class="footer-menu"><h5>About Us </h5></ul><ul class="footer-menu"><div class="menu-about-us-container"><ul class="menu" id="menu-about-us"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130" id="menu-item-130"><a href="company-profile.html">Company Profile</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128" id="menu-item-128"><a href="leaders-message.html">CEO Message</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129" id="menu-item-129"><a href="mission-vision-values.html">Mission, Vision & Values</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127" id="menu-item-127"><a href="operational-excellence.html">Operational Excellence</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125" id="menu-item-125"><a href="infrastructure.html">Infrastructure</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126" id="menu-item-126"><a href="csr.html">Corporate Social Responsibility</a></li>
 </ul></div></ul>
 </div>
 <!-- end col-2 -->
 <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.12s">
-<ul class="footer-menu"><h5> Quick Links </h5></ul><ul class="footer-menu"><div class="menu-quick-links-container"><ul class="menu" id="menu-quick-links"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135" id="menu-item-135"><a href="sectors-en.html">Sectors</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134" id="menu-item-134"><a href="testimonials-en.html">Client Certifications</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133" id="menu-item-133"><a href="careers-en.html">Careers</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-787" id="menu-item-787"><a href="news-events-en.html">News & Events</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131" id="menu-item-131"><a href="get-in-touch-en.html">Get In Touch</a></li>
+<ul class="footer-menu"><h5>Quick Links</h5></ul><ul class="footer-menu"><div class="menu-quick-links-container"><ul class="menu" id="menu-quick-links"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135" id="menu-item-135"><a href="sectors.html">Sectors</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134" id="menu-item-134"><a href="testimonials.html">Client Testimonials</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133" id="menu-item-133"><a href="careers.html">Careers</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-787" id="menu-item-787"><a href="news-events.html">News & Events</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131" id="menu-item-131"><a href="get-in-touch.html">Get in Touch</a></li>
 </ul></div></ul>
 </div>
 <!-- end col-2 -->
 <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.12s">
-<div class="textwidget custom-html-widget"><h5> Contact Information </h5>
+<div class="textwidget custom-html-widget"><h5>Contact Information</h5>
 <div class="add">
 <i aria-hidden="true" class="fa fa-map-marker circle"></i>
-                  Kingdom of Saudi Arabia - Riyadh - Al Olaya - King Fahd Road
+                  Kingdom of Saudi Arabia - Riyadh - Olaya - King Fahd Road
                   </div>
 <div class="add">
 <i aria-hidden="true" class="fa fa-phone circle"></i> <span class="ext"><a href="https://wa.me/966543337990">0543337990</a> / <a href="tel:966547700922">0547700922</a></span>
@@ -568,7 +568,7 @@ Kingdom of Saudi Arabia
 <!-- end container -->
 <!-- end col-4 -->
 <div class="col-12">
-<div class="container"><span class="copyright"> Copyright © 2025 All Rights Reserved, Mozoon Al Khair Company </span>
+<div class="container"><span class="copyright">Copyright © 2025 All Rights Reserved, Mozoon Al Khair Group</span>
 <span class="creation"> <img alt="" class="image wp-image-790 attachment-full size-full" decoding="async" height="582" loading="lazy" sizes="auto, (max-width: 2048px) 100vw, 2048px" src="assets/img/new-logo.png" style="max-width: 100%; height: auto;" width="2048"/></span>
 </div>
 </div>

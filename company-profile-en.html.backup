@@ -87,37 +87,37 @@
 <div class="side-navigation">
 <div class="menu">
 <ul>
-<li><a href="index-en.html">Home</a></li>
+<li><a href="index.html">Home</a></li>
 <li>
 <a href="#">About Us</a>
 <ul>
-<li><a href="company-profile-en.html">Company Profile  </a></li>
-<li><a href="leaders-message-en.html"> Leader's Message </a></li>
-<li><a href="history-en.html">Our History</a></li>
-<li><a href="mission-vision-values-en.html">Mission, Vision & Values</a></li>
-<li><a href="strategy-en.html">Our Strategy</a></li>
-<li><a href="operational-excellence-en.html">Operational Excellence</a></li>
-<li><a href="infrastructure-en.html">Infrastructure</a></li>
-<li><a href="csr-en.html">Corporate Social Responsibility</a></li>
+<li><a href="company-profile.html">Company Profile  </a></li>
+<li><a href="leaders-message.html"> Leader's Message </a></li>
+<li><a href="history.html">Our History</a></li>
+<li><a href="mission-vision-values.html">Mission, Vision & Values</a></li>
+<li><a href="strategy.html">Our Strategy</a></li>
+<li><a href="operational-excellence.html">Operational Excellence</a></li>
+<li><a href="infrastructure.html">Infrastructure</a></li>
+<li><a href="csr.html">Corporate Social Responsibility</a></li>
 </ul>
 </li>
 <li>
 <a href="#">Services</a>
 <ul>
-<li><a href="hard-services-en.html">Hard Services</a></li>
-<li><a href="soft-services-en.html">Soft Services</a></li>
-<li><a href="specialist-services-en.html">Specialist Services</a></li>
+<li><a href="hard-services.html">Hard Services</a></li>
+<li><a href="soft-services.html">Soft Services</a></li>
+<li><a href="specialist-services.html">Specializations</a></li>
 </ul>
 </li>
-<li><a href="sectors-en.html"> Sectors </a></li>
-<li><a href="testimonials-en.html">Certifications</a></li>
-<li><a href="careers-en.html">Careers</a></li>
-<li><a href="news-events-en.html"> News & Events  </a></li>
-<li><a href="get-in-touch-en.html">Get In Touch</a></li>
-<li><a class="request-a-quote" href="request-a-quote-en.html"> Request a Quote </a></li>
+<li><a href="sectors.html"> Sectors </a></li>
+<li><a href="testimonials.html">Testimonials</a></li>
+<li><a href="careers.html">Careers</a></li>
+<li><a href="news-events.html"> News & Events  </a></li>
+<li><a href="get-in-touch.html">Get in Touch</a></li>
+<li><a class="request-a-quote" href="request-a-quote.html"> Request Pricing </a></li>
 </ul>
 <div class="langu">
-<a href="index-en.html"><span></span>ENG</a>
+<a href="index-en.html><span></span>ENG</a>
 <a href="index.html"><span></span>AR</a>
 </div>
 </div>
@@ -132,7 +132,7 @@
 </ul></div>
 <div class="textwidget custom-html-widget"><address>
 
-Office No. 11-109, Building Makeen.
+Office No. 11-109, Makeen Building.
 
 Airport Road, Dubai
 
@@ -145,7 +145,7 @@ Airport Road, Dubai
 <li><a href="https://www.linkedin.com/in/mozzon-alkhair-394141389/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 <li><a href="https://www.instagram.com/mozoonalkhairsa" target="_blank"><i class="fab fa-instagram"></i></a></li>
 </ul>
-<small> Copyright © 2025 All Rights Reserved, Mozoon Al Khair Company </small>
+<small>Copyright © 2025 All Rights Reserved, Mozoon Al Khair Group</small>
 </div>
 <!-- end side-content -->
 </div>
@@ -153,7 +153,7 @@ Airport Road, Dubai
 <nav class="navbar navi">
 <div class="container">
 <div class="upper-side">
-<div class="logo"> <a href="index-en.html"> <img alt="Image" decoding="async" src="assets/img/new-logo.png"/> </a> </div>
+<div class="logo"> <a href="index.html"> <img alt="Image" decoding="async" src="assets/img/new-logo.png"/> </a> </div>
 <!-- end logo -->
 <div class="phone-email">
 <img alt="Image" decoding="async" src="assets/img/icon-phone.webp"/>
@@ -164,7 +164,7 @@ Airport Road, Dubai
 <div class="language">
 <div class="phone-email">
 <img alt="Image" decoding="async" src="assets/img/icon-email.webp"/>
-<h4><span>Email Us</span><br/>
+<h4><span>Contact us via Email</span><br/>
 <a href="mailto:info@mozoon.sa">info@mozoon.sa</a>
 </h4>
 </div>
@@ -177,38 +177,38 @@ Airport Road, Dubai
 <div class="menu">
 <header>
 <ul class="st-menu">
-<li><a href="index-en.html"> <img alt="Image" class="sticky-logo" decoding="async" src="assets/img/new-logo.png"/> </a></li>
-<li><a href="index-en.html">Home</a></li>
+<li><a href="index.html"> <img alt="Image" class="sticky-logo" decoding="async" src="assets/img/new-logo.png"/> </a></li>
+<li><a href="index.html">Home</a></li>
 <li>
-<a href="#"> Who We Are   </a>
+<a href="#"> About Us   </a>
 <ul>
-<li><a href="company-profile-en.html"> Company Profile   </a></li>
-<li><a href="leaders-message-en.html"> Leader's Message </a></li>
-<li><a href="history-en.html">Our History</a></li>
-<li><a href="mission-vision-values-en.html">Mission, Vision & Values</a></li>
-<li><a href="strategy-en.html">Our Strategy</a></li>
-<li><a href="operational-excellence-en.html">Operational Excellence</a></li>
-<li><a href="infrastructure-en.html">Infrastructure</a></li>
-<li><a href="csr-en.html">Corporate Social Responsibility</a></li>
+<li><a href="company-profile.html"> Company Profile   </a></li>
+<li><a href="leaders-message.html"> Leader's Message </a></li>
+<li><a href="history.html">Our History</a></li>
+<li><a href="mission-vision-values.html">Mission, Vision & Values</a></li>
+<li><a href="strategy.html">Our Strategy</a></li>
+<li><a href="operational-excellence.html">Operational Excellence</a></li>
+<li><a href="infrastructure.html">Infrastructure</a></li>
+<li><a href="csr.html">Corporate Social Responsibility</a></li>
 </ul>
 </li>
 <li>
 <a href="#">Services</a>
 <ul>
-<li><a href="hard-services-en.html"> Hard Services  </a></li>
-<li><a href="soft-services-en.html">Soft Services</a></li>
-<li><a href="specialist-services-en.html">Specialist Services</a></li>
+<li><a href="hard-services.html"> Hard Services  </a></li>
+<li><a href="soft-services.html">Soft Services</a></li>
+<li><a href="specialist-services.html">Specialist Services</a></li>
 </ul>
 </li>
-<li><a href="sectors-en.html"> Sectors </a></li>
-<li><a href="testimonials-en.html"> Client Certifications  </a></li>
-<li><a href="careers-en.html">Careers</a></li>
-<li><a href="news-events-en.html"> News & Events  </a></li>
-<li><a href="get-in-touch-en.html">Get In Touch</a></li>
-<li><a class="request-a-quote" href="request-a-quote-en.html"> Request a Quote </a></li>
+<li><a href="sectors.html"> Sectors </a></li>
+<li><a href="testimonials.html"> Client Testimonials  </a></li>
+<li><a href="careers.html">Careers</a></li>
+<li><a href="news-events.html"> News & Events  </a></li>
+<li><a href="get-in-touch.html">Get in Touch</a></li>
+<li><a class="request-a-quote" href="request-a-quote.html"> Request Pricing </a></li>
 </ul>
 <div class="langu">
-<a href="index-en.html"><span></span>ENG</a>
+<a href="index-en.html><span></span>ENG</a>
 <a href="index.html"><span></span>AR</a>
 </div>
 </header>
@@ -225,9 +225,9 @@ Airport Road, Dubai
 <!-- Hero Section -->
 <div class="row mb-5">
 <div class="col-lg-12 text-center">
-<h1 class="mb-4" style="color: #04ACAA; font-size: 3rem; font-weight: bold;">بروفايل Mozoon Al Khair Company</h1>
+<h1 class="mb-4" style="color: #04ACAA; font-size: 3rem; font-weight: bold;">Mozoon Al Khair Company Profile</h1>
 <p class="lead" style="font-size: 1.3rem; color: #666; line-height: 1.8;">
-مرحباً بكم في عالم المستقبل المستدام مع Mozoon Al Khair Company
+Welcome to the world of sustainable future with Mozoon Al Khair Group
 </p>
 </div>
 </div>
@@ -235,16 +235,16 @@ Airport Road, Dubai
 <!-- Company Overview -->
 <div class="row mb-5 align-items-center">
 <div class="col-lg-6">
-<h2 class="mb-4" style="color: #04ACAA; font-weight: bold;">Overview عن Company</h2>
+<h2 class="mb-4" style="color: #04ACAA; font-weight: bold;">Company Overview</h2>
 <p style="text-align: justify; line-height: 1.8; font-size: 1.1rem; color: #555;">
-في Mozoon Al Khair Company، We لا نبني ونحافظ فقط على المرافق ولكننا نفي بوعدنا من خلالها. We متخصصون في تقديم Customized Solutions وفريدة للمرافق التجارية والسكنية والصناعية والمستشفيات والمنشآت التعليمية.
+At Mozoon Al Khair Group, we don't just build and maintain facilities, but we fulfill our promise through them. We specialize in providing customized and unique solutions for commercial, residential, industrial, hospital and educational facilities.
 </p>
 <p style="text-align: justify; line-height: 1.8; font-size: 1.1rem; color: #555;">
-We نقدم خدمات إدارة المرافق والتوظيف على مستوى عالمي ونحرص على أن تكون قيمة مضافة لعملائنا، كذلك We نستثمر في موظفينا وفي المرافق وفي التقنيات وفي الوعي بالسوق.
+We provide facility management and recruitment services at a global level and ensure that they are added value to our clients. We also invest in our employees, facilities, technologies and market awareness.
 </p>
 </div>
 <div class="col-lg-6">
-<img src="mozoon-company-images/1.jpg" alt="Mozoon Al Khair Company" class="img-fluid rounded shadow" style="width: 100%; height: 400px; object-fit: cover;">
+<img src="mozoon-company-images/1.jpg" alt="Mozoon Al Khair Group" class="img-fluid rounded shadow" style="width: 100%; height: 400px; object-fit: cover;">
 </div>
 </div>
 
@@ -253,21 +253,21 @@ We نقدم خدمات إدارة المرافق والتوظيف على مست�
 <div class="col-lg-6 order-lg-2">
 <h2 class="mb-4" style="color: #04ACAA; font-weight: bold;">Our Story</h2>
 <p style="text-align: justify; line-height: 1.8; font-size: 1.1rem; color: #555;">
-تأسست Mozoon Al Khair Company بهدف تقديم خدمات متميزة في مجال إدارة المرافق وServices المتكاملة. منذ انطلاقتنا، كنا نؤمن بأن النجاح الحقيقي يكمن في تقديم Solutions مبتكرة تلبي احتياجات عملائنا وتتجاوز توقعاتهم.
+Mozoon Al Khair Group was established with the aim of providing distinguished services in the field of facility management and integrated services. Since our launch, we have believed that true success lies in providing innovative solutions that meet our clients' needs and exceed their expectations.
 </p>
 <p style="text-align: justify; line-height: 1.8; font-size: 1.1rem; color: #555;">
-We نفخر بكوننا شركة سعودية تساهم في تحقيق رؤية المملكة 2030 من خلال تقديم خدمات عالية الجودة تدعم التنمية المستدامة والنمو الاقتصادي.
+We are proud to be a Saudi company that contributes to achieving the Kingdom's Vision 2030 by providing high-quality services that support sustainable development and economic growth.
 </p>
 </div>
 <div class="col-lg-6 order-lg-1">
-<img src="mozoon-company-images/3.jpg" alt="تاريخ Company" class="img-fluid rounded shadow" style="width: 100%; height: 400px; object-fit: cover;">
+<img src="mozoon-company-images/3.jpg" alt="Company History" class="img-fluid rounded shadow" style="width: 100%; height: 400px; object-fit: cover;">
 </div>
 </div>
 
 <!-- Our Values -->
 <div class="row mb-5">
 <div class="col-lg-12">
-<h2 class="text-center mb-5" style="color: #04ACAA; font-weight: bold;">Our Values الأساسية</h2>
+<h2 class="text-center mb-5" style="color: #04ACAA; font-weight: bold;">Our Core Values</h2>
 </div>
 <div class="col-lg-4 mb-4">
 <div class="text-center p-4" style="background: #f8f9fa; border-radius: 10px; height: 100%;">
@@ -307,16 +307,16 @@ We use the latest technologies and innovative solutions to continuously develop 
 <!-- Our Team -->
 <div class="row mb-5 align-items-center">
 <div class="col-lg-6">
-<h2 class="mb-4" style="color: #04ACAA; font-weight: bold;">Team العمل</h2>
+<h2 class="mb-4" style="color: #04ACAA; font-weight: bold;">Our Team</h2>
 <p style="text-align: justify; line-height: 1.8; font-size: 1.1rem; color: #555;">
-يضم Team عمل مزون الخير نخبة منSpecialists والخبراء في مختلف المجالات، من مهندسين وفنيين ومديري مشاريع، جميعهم يعملون بروح الفريق الواحد لتحقيق أهداف Company وتقديم أفضل Services لعملائنا.
+Mozoon Al Khair's team includes a select group of specialists and experts in various fields, from engineers, technicians and project managers, all working as one team to achieve the company's goals and provide the best services to our clients.
 </p>
 <p style="text-align: justify; line-height: 1.8; font-size: 1.1rem; color: #555;">
-We نؤمن بأن الاستثمار في Human Resources هو أساس Success أي مؤسسة، لذلك نحرص على Development قدرات Our Team من خلال برامج التدريب المستمر والتطوير المهني.
+We believe that investing in human resources is the foundation of any institution's success, so we are keen to develop our team's capabilities through continuous training and professional development programs.
 </p>
 </div>
 <div class="col-lg-6">
-<img src="mozoon-company-images/5.jpg" alt="Team العمل" class="img-fluid rounded shadow" style="width: 100%; height: 400px; object-fit: cover;">
+<img src="mozoon-company-images/5.jpg" alt="Our Team" class="img-fluid rounded shadow" style="width: 100%; height: 400px; object-fit: cover;">
 </div>
 </div>
 
@@ -326,7 +326,7 @@ We نؤمن بأن الاستثمار في Human Resources هو أساس Success
 <div class="text-center p-5" style="background: linear-gradient(135deg, #04ACAA, #0891a8); border-radius: 15px; color: white;">
 <h2 class="mb-4" style="font-weight: bold;">Our Commitment to Our Clients</h2>
 <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 0;">
-نلتزم بتقديم خدمات عالية الجودة تلبي احتياجات عملائنا وتساهم في Success أعمالهم. We نؤمن بأن رضا العميل هو مقياس نجاحنا الحقيقي، ونعمل جاهدين لتحقيق هذا الهدف من خلال الالتزام بالمواعيد، والجودة العالية، والخدمة المتميزة.
+We are committed to providing high-quality services that meet our clients' needs and contribute to their business success. We believe that customer satisfaction is the measure of our true success, and we work hard to achieve this goal through commitment to deadlines, high quality, and distinguished service.
 </p>
 </div>
 </div>
@@ -340,19 +340,19 @@ We نؤمن بأن الاستثمار في Human Resources هو أساس Success
 <div class="col-lg-3 col-md-6 mb-4">
 <div class="text-center p-4" style="background: white; border: 2px solid #04ACAA; border-radius: 10px;">
 <h3 style="color: #04ACAA; font-size: 3rem; font-weight: bold; margin-bottom: 10px;">500+</h3>
-<p style="color: #666; font-weight: bold; margin: 0;">Project مكتمل</p>
+<p style="color: #666; font-weight: bold; margin: 0;">Completed Projects</p>
 </div>
 </div>
 <div class="col-lg-3 col-md-6 mb-4">
 <div class="text-center p-4" style="background: white; border: 2px solid #04ACAA; border-radius: 10px;">
 <h3 style="color: #04ACAA; font-size: 3rem; font-weight: bold; margin-bottom: 10px;">200+</h3>
-<p style="color: #666; font-weight: bold; margin: 0;">Client راضٍ</p>
+<p style="color: #666; font-weight: bold; margin: 0;">Satisfied Clients</p>
 </div>
 </div>
 <div class="col-lg-3 col-md-6 mb-4">
 <div class="text-center p-4" style="background: white; border: 2px solid #04ACAA; border-radius: 10px;">
 <h3 style="color: #04ACAA; font-size: 3rem; font-weight: bold; margin-bottom: 10px;">+10</h3>
-<p style="color: #666; font-weight: bold; margin: 0;">Year Experience</p>
+<p style="color: #666; font-weight: bold; margin: 0;">Years of Experience</p>
 </div>
 </div>
 <div class="col-lg-3 col-md-6 mb-4">
@@ -369,13 +369,13 @@ We نؤمن بأن الاستثمار في Human Resources هو أساس Success
 <h2 class="text-center mb-5" style="color: #04ACAA; font-weight: bold;">Photo Gallery</h2>
 </div>
 <div class="col-lg-4 col-md-6 mb-4">
-<img src="mozoon-company-images/7.jpg" alt="مشاريع Company" class="img-fluid rounded shadow" style="width: 100%; height: 250px; object-fit: cover;">
+<img src="mozoon-company-images/7.jpg" alt="Company Projects" class="img-fluid rounded shadow" style="width: 100%; height: 250px; object-fit: cover;">
 </div>
 <div class="col-lg-4 col-md-6 mb-4">
-<img src="mozoon-company-images/9.jpg" alt="خدمات Company" class="img-fluid rounded shadow" style="width: 100%; height: 250px; object-fit: cover;">
+<img src="mozoon-company-images/9.jpg" alt="Company Services" class="img-fluid rounded shadow" style="width: 100%; height: 250px; object-fit: cover;">
 </div>
 <div class="col-lg-4 col-md-6 mb-4">
-<img src="mozoon-company-images/11.jpg" alt="Team العمل" class="img-fluid rounded shadow" style="width: 100%; height: 250px; object-fit: cover;">
+<img src="mozoon-company-images/11.jpg" alt="Our Team" class="img-fluid rounded shadow" style="width: 100%; height: 250px; object-fit: cover;">
 </div>
 </div>
 
@@ -385,10 +385,10 @@ We نؤمن بأن الاستثمار في Human Resources هو أساس Success
 <div class="text-center p-5" style="background: #f8f9fa; border-radius: 15px;">
 <h3 class="mb-4" style="color: #04ACAA; font-weight: bold;">Want to know more about us?</h3>
 <p class="mb-4" style="font-size: 1.1rem; color: #666;">
-We هنا للإجابة على جميع استفساراتكم وتقديم الاستشارات المجانية
+We are here to answer all your inquiries and provide free consultations
 </p>
-<a href="get-in-touch-en.html" class="btn btn-lg" style="background: #04ACAA; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold;">
-Get In Touch الآن
+<a href="get-in-touch.html" class="btn btn-lg" style="background: #04ACAA; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold;">
+Get in Touch Now
 </a>
 </div>
 </div>
@@ -403,8 +403,8 @@ Get In Touch الآن
 <div class="row">
 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.05s">
 <div class="textwidget custom-html-widget"> <figure><img alt="Image" src="assets/img/footer-icon01.webp"/></figure>
-<h3> Address</h3>
-<p>Kingdom of Saudi Arabia - Riyadh - Al Olaya - King Fahd Road</p></div>
+<h3>Address</h3>
+<p>Kingdom of Saudi Arabia - Riyadh - Olaya - King Fahd Road</p></div>
 </div>
 <!-- end col-4 -->
 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.10s">
@@ -433,35 +433,35 @@ Get In Touch الآن
 <!-- col-lg-4-->
 <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
 <div class="textwidget custom-html-widget"><h5>Overview</h5>
-<p class="justify">Welcome to the world of sustainable future. At Mozoon Al Khair Company, we don't just build and maintain facilities, but we fulfill our promise through them. We specialize in providing customized and unique solutions for commercial, residential, industrial facilities, hospitals, and educational institutions. We provide world-class facility management and recruitment services and ensure they add value to our clients. We also invest in our employees, facilities, technologies, and market awareness. </p>
-<p> <a class="text-white" href="company-profile-en.html"> More Information </a></p></div>
+<p class="justify">Welcome to the world of sustainable future. At Mozoon Al Khair Group, we don't just build and maintain facilities, but we fulfill our promise through them. We specialize in providing customized and unique solutions for commercial, residential, industrial, hospital and educational facilities. We provide facility management and recruitment services at a global level and ensure that they are added value to our clients. We also invest in our employees, facilities, technologies and market awareness. </p>
+<p> <a class="text-white" href="company-profile.html">More Information</a></p></div>
 <!-- end select-box -->
 </div>
 <!-- end col-4 -->
 <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.10s">
-<ul class="footer-menu"><h5>About Us </h5></ul><ul class="footer-menu"><div class="menu-about-us-container"><ul class="menu" id="menu-about-us"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130" id="menu-item-130"><a href="company-profile-en.html">Company Profile</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128" id="menu-item-128"><a href="leaders-message-en.html">CEO Message</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129" id="menu-item-129"><a href="mission-vision-values-en.html">Mission, Vision & Values</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127" id="menu-item-127"><a href="operational-excellence-en.html">Operational Excellence</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125" id="menu-item-125"><a href="infrastructure-en.html">Infrastructure</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126" id="menu-item-126"><a href="csr-en.html">Corporate Social Responsibility</a></li>
+<ul class="footer-menu"><h5>About Us </h5></ul><ul class="footer-menu"><div class="menu-about-us-container"><ul class="menu" id="menu-about-us"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130" id="menu-item-130"><a href="company-profile.html">Company Profile</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128" id="menu-item-128"><a href="leaders-message.html">CEO Message</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129" id="menu-item-129"><a href="mission-vision-values.html">Mission, Vision & Values</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127" id="menu-item-127"><a href="operational-excellence.html">Operational Excellence</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125" id="menu-item-125"><a href="infrastructure.html">Infrastructure</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126" id="menu-item-126"><a href="csr.html">Corporate Social Responsibility</a></li>
 </ul></div></ul>
 </div>
 <!-- end col-2 -->
 <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.12s">
-<ul class="footer-menu"><h5> Quick Links </h5></ul><ul class="footer-menu"><div class="menu-quick-links-container"><ul class="menu" id="menu-quick-links"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135" id="menu-item-135"><a href="sectors-en.html">Sectors</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134" id="menu-item-134"><a href="testimonials-en.html">Client Certifications</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133" id="menu-item-133"><a href="careers-en.html">Careers</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-787" id="menu-item-787"><a href="news-events-en.html">News & Events</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131" id="menu-item-131"><a href="get-in-touch-en.html">Get In Touch</a></li>
+<ul class="footer-menu"><h5>Quick Links</h5></ul><ul class="footer-menu"><div class="menu-quick-links-container"><ul class="menu" id="menu-quick-links"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135" id="menu-item-135"><a href="sectors.html">Sectors</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134" id="menu-item-134"><a href="testimonials.html">Client Testimonials</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133" id="menu-item-133"><a href="careers.html">Careers</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-787" id="menu-item-787"><a href="news-events.html">News & Events</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131" id="menu-item-131"><a href="get-in-touch.html">Get in Touch</a></li>
 </ul></div></ul>
 </div>
 <!-- end col-2 -->
 <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.12s">
-<div class="textwidget custom-html-widget"><h5> Contact Information </h5>
+<div class="textwidget custom-html-widget"><h5>Contact Information</h5>
 <div class="add">
 <i aria-hidden="true" class="fa fa-map-marker circle"></i>
-                  Kingdom of Saudi Arabia - Riyadh - Al Olaya - King Fahd Road
+                  Kingdom of Saudi Arabia - Riyadh - Olaya - King Fahd Road
                   </div>
 <div class="add">
 <i aria-hidden="true" class="fa fa-phone circle"></i> <span class="ext"><a href="https://wa.me/966543337990">0543337990</a> / <a href="tel:966547700922">0547700922</a></span>
@@ -477,7 +477,7 @@ Get In Touch الآن
 <!-- end container -->
 <!-- end col-4 -->
 <div class="col-12">
-<div class="container"><span class="copyright"> Copyright © 2025 All Rights Reserved, Mozoon Al Khair Company </span>
+<div class="container"><span class="copyright">Copyright © 2025 All Rights Reserved, Mozoon Al Khair Group</span>
 <span class="creation"> <img alt="" class="image wp-image-790 attachment-full size-full" decoding="async" height="582" loading="lazy" sizes="auto, (max-width: 2048px) 100vw, 2048px" src="assets/img/new-logo.png" style="max-width: 100%; height: auto;" width="2048"/></span>
 </div>
 </div>
