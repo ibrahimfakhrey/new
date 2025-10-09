@@ -1206,7 +1206,7 @@ left: 0;
 
    color:#FFF;
 
-   background-color:#00ADAA;
+   background-color:#FF8C42;
 
    background-image:url(../images/arrow-white.png);
 
@@ -1322,7 +1322,7 @@ ul.list-box li:hover{
 
   font-size:20px;
 
-  color: #00ADAA;
+  color: #FF8C42;
 
   font-weight: normal;
 
@@ -2464,7 +2464,7 @@ background:rgba(35, 33, 117, 0.8);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 15px 20px;
+  padding: 10px 20px;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
@@ -2500,7 +2500,7 @@ background:rgba(35, 33, 117, 0.8);
 
 .navbar .container .upper-side .logo img {
 
-  height: 120px;
+  height: 80px;
 
  
 
@@ -7231,7 +7231,7 @@ text-align: right;
 
   padding:30px 20px 30px 100px;
 
-  color: #FFF;
+  color: #1D2036;
 
 }
 
@@ -7257,7 +7257,7 @@ margin-left: 30px;
 
   margin-bottom: 15px;
 
-  color:#fff;
+  color:#1D2036;
 
   font-weight:600;
 
@@ -8920,7 +8920,7 @@ padding:0 40px;}
 
 /* Footer-bar phone number color override */
 .footer-bar a {
-    color: #fff !important;
+    color: #1D2036 !important;
 }
 
 .footer-bar a:hover {
@@ -8929,7 +8929,7 @@ padding:0 40px;}
 
 /* Contact section phone numbers and emails color override */
 .footer-bar .textwidget a {
-    color: #fff !important;
+    color: #1D2036 !important;
 }
 
 .footer-bar .textwidget a:hover {
