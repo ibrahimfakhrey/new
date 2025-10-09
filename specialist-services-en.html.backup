@@ -164,10 +164,6 @@ Airport Road, Dubai
 <div class="language">
 <div class="phone-email">
 <img alt="Image" decoding="async" src="assets/img/icon-email.webp"/>
-<h4><span>Contact us via Email</span><br/>
-<a href="mailto:info@mozoon.sa">info@mozoon.sa</a>
-</h4>
-</div>
 </div>
 <!-- end language -->
 <div class="hamburger"> <span></span> <span></span> <span></span><span></span> </div>
