@@ -2713,9 +2713,9 @@ background:rgba(35, 33, 117, 0.8);
 
   flex-wrap: wrap;
 
-  margin-left: auto;
+  margin-left: 0;
 
-  margin-right: 0;
+  margin-right: auto;
 
   margin-top: -1px;
 
