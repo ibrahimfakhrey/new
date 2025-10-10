@@ -3841,6 +3841,15 @@ font-family: 'Noto Kufi Arabic', sans-serif;
   object-fit: contain;
 }
 
+/* Client logos scroller uniform sizing */
+.logos ul.scroller li img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
 .logos figure h6 {
 
   width: 100%;
