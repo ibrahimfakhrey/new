@@ -221,7 +221,7 @@ Airport Road, Dubai
 <!-- Hero Section -->
 <div class="row mb-5">
 <div class="col-lg-12 text-center">
-<h1 class="mb-4" style="color: #04ACAA; font-size: 3rem; font-weight: bold;">Mozoon Al Khair Group History</h1>
+<h1 class="mb-4" style="color: #FF8C42; font-size: 3rem; font-weight: bold;">Mozoon Al Khair Group History</h1>
 <p class="lead" style="font-size: 1.3rem; color: #666; line-height: 1.8;">
 A journey of success and achievements over the years
 </p>
@@ -231,7 +231,7 @@ A journey of success and achievements over the years
 <!-- Timeline Introduction -->
 <div class="row mb-5 align-items-center">
 <div class="col-lg-6">
-<h2 class="mb-4" style="color: #04ACAA; font-weight: bold;">The Beginning of the Journey</h2>
+<h2 class="mb-4" style="color: #FF8C42; font-weight: bold;">The Beginning of the Journey</h2>
 <p style="text-align: justify; line-height: 1.8; font-size: 1.1rem; color: #555;">
 The story of Mozoon Al Khair Group began with an ambitious vision to provide distinguished services in facility management and integrated services. From the first moment, our goal was clear: to be the trusted partner for companies and institutions in achieving their operational goals.
 </p>
@@ -247,7 +247,7 @@ Over the years, the company grew and developed to become one of the leading comp
 <!-- Timeline Section -->
 <div class="row mb-5">
 <div class="col-lg-12">
-<h2 class="text-center mb-5" style="color: #04ACAA; font-weight: bold;">Important Milestones in Our History</h2>
+<h2 class="text-center mb-5" style="color: #FF8C42; font-weight: bold;">Important Milestones in Our History</h2>
 </div>
 </div>
 
@@ -256,17 +256,17 @@ Over the years, the company grew and developed to become one of the leading comp
 <div class="col-lg-12">
 <div class="timeline-container" style="position: relative;">
 <!-- Timeline Line -->
-<div style="position: absolute; right: 50%; top: 0; bottom: 0; width: 4px; background: #04ACAA; transform: translateX(50%);"></div>
+<div style="position: absolute; right: 50%; top: 0; bottom: 0; width: 4px; background: #FF8C42; transform: translateX(50%);"></div>
 
 <!-- Timeline Item 1 -->
 <div class="row mb-5 align-items-center">
 <div class="col-lg-6">
 <div class="p-4" style="background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-left: 30px;">
 <div class="d-flex align-items-center mb-3">
-<div style="width: 60px; height: 60px; background: #04ACAA; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem; margin-left: 15px;">
+<div style="width: 60px; height: 60px; background: #FF8C42; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem; margin-left: 15px;">
 2008
 </div>
-<h4 style="color: #04ACAA; font-weight: bold; margin: 0;">Foundation and Launch</h4>
+<h4 style="color: #FF8C42; font-weight: bold; margin: 0;">Foundation and Launch</h4>
 </div>
 <p style="text-align: justify; line-height: 1.6; color: #666; margin: 0;">
 Mozoon Al Khair Group was established with the aim of providing specialized facility management services, focusing on quality and excellence in service.
@@ -283,10 +283,10 @@ Mozoon Al Khair Group was established with the aim of providing specialized faci
 <div class="col-lg-6 order-lg-2">
 <div class="p-4" style="background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-right: 30px;">
 <div class="d-flex align-items-center mb-3">
-<div style="width: 60px; height: 60px; background: #04ACAA; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem; margin-left: 15px;">
+<div style="width: 60px; height: 60px; background: #FF8C42; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem; margin-left: 15px;">
 2012
 </div>
-<h4 style="color: #04ACAA; font-weight: bold; margin: 0;">First Expansion</h4>
+<h4 style="color: #FF8C42; font-weight: bold; margin: 0;">First Expansion</h4>
 </div>
 <p style="text-align: justify; line-height: 1.6; color: #666; margin: 0;">
 The company expanded to include new services and opened additional branches, enabling it to serve a larger number of clients in different regions.
@@ -303,10 +303,10 @@ The company expanded to include new services and opened additional branches, ena
 <div class="col-lg-6">
 <div class="p-4" style="background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-left: 30px;">
 <div class="d-flex align-items-center mb-3">
-<div style="width: 60px; height: 60px; background: #04ACAA; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem; margin-left: 15px;">
+<div style="width: 60px; height: 60px; background: #FF8C42; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem; margin-left: 15px;">
 2016
 </div>
-<h4 style="color: #04ACAA; font-weight: bold; margin: 0;">Obtaining Certifications</h4>
+<h4 style="color: #FF8C42; font-weight: bold; margin: 0;">Obtaining Certifications</h4>
 </div>
 <p style="text-align: justify; line-height: 1.6; color: #666; margin: 0;">
 The company obtained international quality certifications ISO and occupational safety certificates, which enhanced its position in the market.
@@ -323,10 +323,10 @@ The company obtained international quality certifications ISO and occupational s
 <div class="col-lg-6 order-lg-2">
 <div class="p-4" style="background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-right: 30px;">
 <div class="d-flex align-items-center mb-3">
-<div style="width: 60px; height: 60px; background: #04ACAA; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem; margin-left: 15px;">
+<div style="width: 60px; height: 60px; background: #FF8C42; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem; margin-left: 15px;">
 2020
 </div>
-<h4 style="color: #04ACAA; font-weight: bold; margin: 0;">Digital Transformation</h4>
+<h4 style="color: #FF8C42; font-weight: bold; margin: 0;">Digital Transformation</h4>
 </div>
 <p style="text-align: justify; line-height: 1.6; color: #666; margin: 0;">
 The company invested in modern technologies and smart facility management systems, which improved the efficiency of services provided.
@@ -343,10 +343,10 @@ The company invested in modern technologies and smart facility management system
 <div class="col-lg-6">
 <div class="p-4" style="background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-left: 30px;">
 <div class="d-flex align-items-center mb-3">
-<div style="width: 60px; height: 60px; background: #04ACAA; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem; margin-left: 15px;">
+<div style="width: 60px; height: 60px; background: #FF8C42; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem; margin-left: 15px;">
 2024
 </div>
-<h4 style="color: #04ACAA; font-weight: bold; margin: 0;">Leadership and Excellence</h4>
+<h4 style="color: #FF8C42; font-weight: bold; margin: 0;">Leadership and Excellence</h4>
 </div>
 <p style="text-align: justify; line-height: 1.6; color: #666; margin: 0;">
 Today, Mozoon Al Khair Group stands as one of the leading companies in the Kingdom, with a team of more than 1000 specialized employees.
@@ -363,10 +363,10 @@ Today, Mozoon Al Khair Group stands as one of the leading companies in the Kingd
 <!-- Achievements Section -->
 <div class="row mb-5">
 <div class="col-lg-12">
-<h2 class="text-center mb-5" style="color: #04ACAA; font-weight: bold;">Our Achievements Over the Years</h2>
+<h2 class="text-center mb-5" style="color: #FF8C42; font-weight: bold;">Our Achievements Over the Years</h2>
 </div>
 <div class="col-lg-3 col-md-6 mb-4">
-<div class="text-center p-4" style="background: linear-gradient(135deg, #04ACAA, #0891a8); border-radius: 15px; color: white; height: 100%;">
+<div class="text-center p-4" style="background: linear-gradient(135deg, #FF8C42, #0891a8); border-radius: 15px; color: white; height: 100%;">
 <div class="mb-3" style="font-size: 3rem;">
 <i class="fas fa-building"></i>
 </div>
@@ -375,7 +375,7 @@ Today, Mozoon Al Khair Group stands as one of the leading companies in the Kingd
 </div>
 </div>
 <div class="col-lg-3 col-md-6 mb-4">
-<div class="text-center p-4" style="background: linear-gradient(135deg, #04ACAA, #0891a8); border-radius: 15px; color: white; height: 100%;">
+<div class="text-center p-4" style="background: linear-gradient(135deg, #FF8C42, #0891a8); border-radius: 15px; color: white; height: 100%;">
 <div class="mb-3" style="font-size: 3rem;">
 <i class="fas fa-handshake"></i>
 </div>
@@ -384,7 +384,7 @@ Today, Mozoon Al Khair Group stands as one of the leading companies in the Kingd
 </div>
 </div>
 <div class="col-lg-3 col-md-6 mb-4">
-<div class="text-center p-4" style="background: linear-gradient(135deg, #04ACAA, #0891a8); border-radius: 15px; color: white; height: 100%;">
+<div class="text-center p-4" style="background: linear-gradient(135deg, #FF8C42, #0891a8); border-radius: 15px; color: white; height: 100%;">
 <div class="mb-3" style="font-size: 3rem;">
 <i class="fas fa-award"></i>
 </div>
@@ -393,7 +393,7 @@ Today, Mozoon Al Khair Group stands as one of the leading companies in the Kingd
 </div>
 </div>
 <div class="col-lg-3 col-md-6 mb-4">
-<div class="text-center p-4" style="background: linear-gradient(135deg, #04ACAA, #0891a8); border-radius: 15px; color: white; height: 100%;">
+<div class="text-center p-4" style="background: linear-gradient(135deg, #FF8C42, #0891a8); border-radius: 15px; color: white; height: 100%;">
 <div class="mb-3" style="font-size: 3rem;">
 <i class="fas fa-users"></i>
 </div>
@@ -406,7 +406,7 @@ Today, Mozoon Al Khair Group stands as one of the leading companies in the Kingd
 <!-- Our Legacy -->
 <div class="row mb-5 align-items-center">
 <div class="col-lg-6 order-lg-2">
-<h2 class="mb-4" style="color: #04ACAA; font-weight: bold;">Our Legacy and Heritage</h2>
+<h2 class="mb-4" style="color: #FF8C42; font-weight: bold;">Our Legacy and Heritage</h2>
 <p style="text-align: justify; line-height: 1.8; font-size: 1.1rem; color: #555;">
 Over more than 15 years, Mozoon Al Khair Group has built a strong reputation in the Saudi market as a reliable and innovative company. We are proud of the legacy we have built and the trust our clients have placed in us.
 </p>
@@ -414,12 +414,12 @@ Over more than 15 years, Mozoon Al Khair Group has built a strong reputation in 
 Every project we executed and every client we served contributed to shaping our identity and strengthening our position as leaders in facility management. We carry this legacy with pride and look forward to a brighter future.
 </p>
 <div class="mt-4">
-<h5 style="color: #04ACAA; font-weight: bold;">Our Core Values Since the Beginning:</h5>
+<h5 style="color: #FF8C42; font-weight: bold;">Our Core Values Since the Beginning:</h5>
 <ul style="list-style: none; padding: 0;">
-<li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #04ACAA; margin-left: 10px;"></i>Commitment to High Quality</li>
-<li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #04ACAA; margin-left: 10px;"></i>Transparency in Dealing</li>
-<li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #04ACAA; margin-left: 10px;"></i>Continuous Innovation</li>
-<li style="margin-bottom: 0;"><i class="fas fa-check-circle" style="color: #04ACAA; margin-left: 10px;"></i>Social Responsibility</li>
+<li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #FF8C42; margin-left: 10px;"></i>Commitment to High Quality</li>
+<li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #FF8C42; margin-left: 10px;"></i>Transparency in Dealing</li>
+<li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #FF8C42; margin-left: 10px;"></i>Continuous Innovation</li>
+<li style="margin-bottom: 0;"><i class="fas fa-check-circle" style="color: #FF8C42; margin-left: 10px;"></i>Social Responsibility</li>
 </ul>
 </div>
 </div>
@@ -431,7 +431,7 @@ Every project we executed and every client we served contributed to shaping our 
 <!-- Future Vision -->
 <div class="row mb-5">
 <div class="col-lg-12">
-<div class="text-center p-5" style="background: linear-gradient(135deg, #04ACAA, #0891a8); border-radius: 15px; color: white;">
+<div class="text-center p-5" style="background: linear-gradient(135deg, #FF8C42, #0891a8); border-radius: 15px; color: white;">
 <h2 class="mb-4" style="font-weight: bold;">Towards the Future</h2>
 <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 30px;">
 بينما نحتفل بAchievementاتنا الماضية، نتطلع بثقة Towards the Future. نحن ملتزمون بمواصلة رحلة Excellence وInnovation، ونسعى لأن نكون جزءاً من تحقيق رؤية المملكة 2030 من خلال تقديم خدمات عالمية المستوى تساهم في التنمية المستدامة.
@@ -458,14 +458,14 @@ Every project we executed and every client we served contributed to shaping our 
 <div class="row">
 <div class="col-lg-12">
 <div class="text-center p-5" style="background: #f8f9fa; border-radius: 15px;">
-<h3 class="mb-4" style="color: #04ACAA; font-weight: bold;">Be part of our success story</h3>
+<h3 class="mb-4" style="color: #FF8C42; font-weight: bold;">Be part of our success story</h3>
 <p class="mb-4" style="font-size: 1.1rem; color: #666;">
 Join hundreds of clients who have trusted us over the years
 </p>
-<a href="get-in-touch.html" class="btn btn-lg" style="background: #04ACAA; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-left: 15px;">
+<a href="get-in-touch.html" class="btn btn-lg" style="background: #FF8C42; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-left: 15px;">
 Start your journey with us
 </a>
-<a href="company-profile.html" class="btn btn-lg" style="background: transparent; color: #04ACAA; border: 2px solid #04ACAA; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold;">
+<a href="company-profile.html" class="btn btn-lg" style="background: transparent; color: #FF8C42; border: 2px solid #FF8C42; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold;">
 Learn more about us
 </a>
 </div>

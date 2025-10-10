@@ -456,7 +456,7 @@ button[type=submit] {
 
 .address-box{
 
-  background-color:#04aba9;
+  background-color:#FF8C42;
 
   background-image: url(../images/texture.png);
 
@@ -1342,7 +1342,7 @@ ul.list-box li:hover{
 
   margin-right: 8px;
 
-  color: #00AFAB;
+  color: #FF8C42;
 
   font-weight: normal;
 
@@ -3029,7 +3029,7 @@ background:rgba(35, 33, 117, 0.8);
 
 .text-green{
 
-  color:#069191 !important;
+  color:#FF8C42 !important;
 
 }
 
@@ -3995,7 +3995,7 @@ font-family: 'Noto Kufi Arabic', sans-serif;
 
   top: 0;
 
-  background-color:#DBFFFF;
+  background-color:#FF8C42;
 
   border-radius: 50%;
 
