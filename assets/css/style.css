@@ -1,52 +1,5 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
-
-/* Contact Info Styles */
-.contact-info {
-    display: flex !important;
-    flex-direction: column;
-    gap: 8px;
-    padding: 15px 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-    flex: 0 0 auto;
-    max-width: 350px;
-    padding-left: 10px;
-    order: 1 !important;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    color: #333;
-}
-
-.contact-item i {
-    width: 16px;
-    height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #007bff;
-    font-size: 14px;
-}
-
-.contact-item span,
-.contact-item a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.contact-item a:hover {
-    color: #007bff;
-}
 
 /* FONTS */
 
@@ -456,7 +409,7 @@ button[type=submit] {
 
 .address-box{
 
-  background-color:#FF8C42;
+  background-color:#04aba9;
 
   background-image: url(../images/texture.png);
 
@@ -545,7 +498,7 @@ background-repeat: no-repeat;vertical-align: middle;margin-left: 6px;}
 
   display:none;
 
-  width:200px;
+  width:150px;
 
   margin:0;
 
@@ -1206,7 +1159,7 @@ left: 0;
 
    color:#FFF;
 
-   background-color:#FF8C42;
+   background-color:#00ADAA;
 
    background-image:url(../images/arrow-white.png);
 
@@ -1322,7 +1275,7 @@ ul.list-box li:hover{
 
   font-size:20px;
 
-  color: #FF8C42;
+  color: #00ADAA;
 
   font-weight: normal;
 
@@ -1342,7 +1295,7 @@ ul.list-box li:hover{
 
   margin-right: 8px;
 
-  color: #FF8C42;
+  color: #00AFAB;
 
   font-weight: normal;
 
@@ -2461,46 +2414,50 @@ background:rgba(35, 33, 117, 0.8);
 }
 
 .navbar .container .upper-side {
+
   width: 100%;
+
   display: flex;
+
   flex-wrap: wrap;
-  padding: 10px 20px;
+
+  padding: 10px 0;
+
   align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
+
+  /*transform: translateY(-80px);
+
+  -webkit-transition: all 0.5s ease;
+
+  -moz-transition: all 0.5s ease;
+
+  transition: all 0.5s ease;
+
+  transition-duration: 700ms;
+
+  -webkit-transition-duration: 700ms;
+
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+
+  -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+
+  transition-delay: 1.2s;*/
+
+   
+
 }
 
-.navbar .container .upper-side .contact-info {
-  order: 1 !important;
-  flex: 0 0 auto;
-  margin-left: 0;
-  margin-right: 0;
-  display: flex !important;
-}
-
-.navbar .container .upper-side .spacer {
-  order: 2 !important;
-  flex: 1;
-}
+.
 
 .navbar .container .upper-side .logo {
-  order: 3 !important;
+
   margin-left: 0;
-  margin-right: 0;
-  flex: 0 0 auto;
-  padding-right: 10px;
-}
 
-.navbar .container .upper-side .hamburger {
-  order: 4;
-  flex: 0 0 auto;
 }
-
-/* Removed duplicate logo rule - using the one above with order: 3 */
 
 .navbar .container .upper-side .logo img {
 
-  height: 80px;
+  height: 90px;
 
  
 
@@ -2713,9 +2670,9 @@ background:rgba(35, 33, 117, 0.8);
 
   flex-wrap: wrap;
 
-  margin-left: 0;
+  margin-left: auto;
 
-  margin-right: auto;
+  margin-right: 0;
 
   margin-top: -1px;
 
@@ -3029,7 +2986,7 @@ background:rgba(35, 33, 117, 0.8);
 
 .text-green{
 
-  color:#FF8C42 !important;
+  color:#069191 !important;
 
 }
 
@@ -3836,18 +3793,9 @@ font-family: 'Noto Kufi Arabic', sans-serif;
 }
 
 .logos figure img {
-  width: 120px;
-  height: 80px;
-  object-fit: contain;
-}
 
-/* Client logos scroller uniform sizing */
-.logos ul.scroller li img {
-  width: 120px !important;
-  height: 80px !important;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
+  width: 100%;
+
 }
 
 .logos figure h6 {
@@ -3995,7 +3943,7 @@ font-family: 'Noto Kufi Arabic', sans-serif;
 
   top: 0;
 
-  background-color:#FF8C42;
+  background-color:#DBFFFF;
 
   border-radius: 50%;
 
@@ -7240,7 +7188,7 @@ text-align: right;
 
   padding:30px 20px 30px 100px;
 
-  color: #1D2036;
+  color: #FFF;
 
 }
 
@@ -7266,7 +7214,7 @@ margin-left: 30px;
 
   margin-bottom: 15px;
 
-  color:#1D2036;
+  color:#fff;
 
   font-weight:600;
 
@@ -7298,29 +7246,39 @@ margin-left: 30px;
 
 
 .add{
+
   position:relative;
+
   padding: 0 50px 0 0px;
+
   margin:0 0 10px 0;
+
   width:100%;
+
   float:left;
-  color: #fff;
+
 }
 
 .add i{
+
     position: absolute;
     right: 0;
     top: 5px;
-    color: #FF8C42;
+    color: #FFF;
     font-size: 12px;
+
 }
 
 .ext{
+
   display:inline-block;
+
   position:relative;
+
   margin-top:10px;
   text-align: right;
   direction: ltr;
-  color: #fff;
+
 } 
 
 .circle{
@@ -8530,22 +8488,9 @@ font-size:20px;
 
 
   .navbar .container .upper-side .phone-email {
+
     display: none;
-  }
 
-  .navbar .container .upper-side .contact-info {
-    display: flex !important;
-    order: 1 !important;
-  }
-
-  .navbar .container .upper-side {
-    justify-content: center;
-  }
-
-  .navbar .container .upper-side .logo {
-    margin-left: 0;
-    margin-right: 0;
-    order: 3 !important;
   }
 
 
@@ -8720,7 +8665,7 @@ font-size:20px;
 
   .navbar .container .upper-side .logo img {
 
-  height: 80px;
+  height: 60px;
 
 }
 
@@ -8929,7 +8874,7 @@ padding:0 40px;}
 
 /* Footer-bar phone number color override */
 .footer-bar a {
-    color: #1D2036 !important;
+    color: #fff !important;
 }
 
 .footer-bar a:hover {
@@ -8938,39 +8883,9 @@ padding:0 40px;}
 
 /* Contact section phone numbers and emails color override */
 .footer-bar .textwidget a {
-    color: #1D2036 !important;
+    color: #fff !important;
 }
 
 .footer-bar .textwidget a:hover {
     color: #FF8C42 !important;
-}
-
-/* FORCE NAVBAR LAYOUT - OVERRIDE EVERYTHING */
-.navbar .container .upper-side {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-}
-
-.navbar .container .upper-side .contact-info {
-    order: 1 !important;
-    display: flex !important;
-    flex: 0 0 auto !important;
-    margin: 0 !important;
-}
-
-.navbar .container .upper-side .spacer {
-    order: 2 !important;
-    flex: 1 !important;
-}
-
-.navbar .container .upper-side .logo {
-    order: 3 !important;
-    flex: 0 0 auto !important;
-    margin: 0 !important;
-}
-
-.navbar .container .upper-side .hamburger {
-    order: 4 !important;
-    flex: 0 0 auto !important;
 }

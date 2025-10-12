@@ -131,6 +131,41 @@
     transform: rotate(-45deg) translate(6px, -6px) !important;
   }
 
+  /* Hide navbar content but show hamburger */
+  .navbar {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    padding: 10px 20px !important;
+    background: transparent !important;
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    z-index: 9999 !important;
+    width: auto !important;
+  }
+
+  /* Hide all navbar content */
+  .navbar .container {
+    display: none !important;
+  }
+
+  /* Show only hamburger menu */
+  .navbar-hamburger {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+    cursor: pointer !important;
+    padding: 15px !important;
+    position: fixed !important;
+    top: 10px !important;
+    right: 20px !important;
+    z-index: 10000 !important;
+    background: rgba(255, 140, 66, 0.1) !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+  }
+
   /* Hide desktop menu on mobile */
   .navbar .menu {
     display: none !important;
