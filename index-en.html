@@ -45,23 +45,42 @@
 /* MOBILE RESPONSIVE FIXES */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   
-  /* Mobile Navbar Fixes */
-  .navbar .container > div {
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 10px !important;
-    padding: 10px !important;
+  /* Fix navbar height to not take up hero section */
+  .navbar {
+    height: auto !important;
+    min-height: 70px !important;
+    max-height: 70px !important;
+    padding: 0 !important;
+    position: relative !important;
   }
 
+  .navbar .container {
+    height: 70px !important;
+    padding: 0 15px !important;
+  }
+
+  .navbar .container > div {
+    height: 70px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+
+  /* Logo styling */
   .navbar-logo {
+    flex: 0 0 auto !important;
     order: 1 !important;
   }
 
   .navbar-logo img {
-    height: 80px !important;
-    max-height: 80px !important;
+    height: 50px !important;
+    max-height: 50px !important;
+    width: auto !important;
   }
 
+  /* Hide contact info on mobile */
   .navbar-contact-info {
     display: none !important;
   }
@@ -70,26 +89,25 @@
     display: none !important;
   }
 
-  .navbar-hamburger, .hamburger {
-    order: 2 !important;
+  /* Hamburger menu positioning */
+  .navbar-hamburger {
+    flex: 0 0 auto !important;
+    order: 3 !important;
     display: flex !important;
-    position: fixed !important;
-    top: 20px !important;
-    right: 20px !important;
-    z-index: 9999 !important;
-    background: rgba(255, 255, 255, 0.9) !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+    cursor: pointer !important;
     padding: 10px !important;
-    border-radius: 5px !important;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+    position: relative !important;
+    z-index: 9999 !important;
   }
 
-  .navbar-hamburger span, .hamburger span {
+  .navbar-hamburger span {
     width: 25px !important;
     height: 3px !important;
     background-color: #333 !important;
     display: block !important;
     border-radius: 2px !important;
-    margin: 3px 0 !important;
     transition: 0.3s !important;
   }
 
@@ -98,21 +116,96 @@
     display: none !important;
   }
 
-  /* Ensure side navigation is properly positioned on mobile */
+  /* Side navigation styling with proper text visibility */
   .side-navigation {
     position: fixed !important;
     top: 0 !important;
-    left: -80vw !important;
-    width: 80vw !important;
+    left: -85vw !important;
+    width: 85vw !important;
     height: 100vh !important;
-    background: #fff !important;
+    background: #ffffff !important;
     z-index: 9998 !important;
     transition: left 0.3s ease !important;
     overflow-y: auto !important;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1) !important;
   }
 
   .side-navigation.active {
     left: 0 !important;
+  }
+
+  /* Side navigation menu styling */
+  .side-navigation .menu {
+    padding: 20px 0 !important;
+  }
+
+  .side-navigation .menu ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .side-navigation .menu ul li {
+    border-bottom: 1px solid #f0f0f0 !important;
+  }
+
+  .side-navigation .menu ul li a {
+    display: block !important;
+    padding: 15px 20px !important;
+    color: #333333 !important;
+    text-decoration: none !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .side-navigation .menu ul li a:hover {
+    background-color: #f8f9fa !important;
+    color: #FF8C42 !important;
+    padding-right: 25px !important;
+  }
+
+  /* Submenu styling */
+  .side-navigation .menu ul li ul {
+    background-color: #f8f9fa !important;
+    padding-right: 20px !important;
+  }
+
+  .side-navigation .menu ul li ul li a {
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    color: #666666 !important;
+  }
+
+  .side-navigation .menu ul li ul li a:hover {
+    color: #FF8C42 !important;
+    background-color: #ffffff !important;
+  }
+
+  /* Language switcher in side nav */
+  .side-navigation .language-switcher {
+    padding: 20px !important;
+    border-top: 1px solid #f0f0f0 !important;
+    margin-top: 20px !important;
+  }
+
+  /* Side content styling */
+  .side-navigation .side-content {
+    padding: 20px !important;
+    border-top: 1px solid #f0f0f0 !important;
+    background-color: #f8f9fa !important;
+  }
+
+  .side-navigation .side-content figure img {
+    max-width: 120px !important;
+    height: auto !important;
+    margin-bottom: 15px !important;
+  }
+
+  .side-navigation .side-content p {
+    color: #666666 !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
   }
 
   /* Mobile overlay */
@@ -131,51 +224,18 @@
     display: block !important;
   }
 
+  /* Ensure hero section starts after navbar */
+  .page-header {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
   .page-header .container h1 {
-    font-size: 10vw;
+    font-size: 8vw !important;
   }
 
   .page-header .container .breadcrumb {
-    width: calc(100% - 30px);
-  }
-
-  .navbar .container .upper-side .contact-info {
-    display: flex !important;
-    order: 1 !important;
-  }
-
-  .navbar .container .upper-side {
-    justify-content: center;
-  }
-
-  .navbar .container .upper-side .logo {
-    margin-left: 0;
-    margin-right: 0;
-    order: 3 !important;
-  }
-
-  /* Force navbar layout on mobile */
-  .navbar .container .upper-side {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    padding: 10px 20px !important;
-  }
-
-  .navbar .container .upper-side .contact-info {
-    order: 1 !important;
-    flex: 0 0 auto !important;
-  }
-
-  .navbar .container .upper-side .logo {
-    order: 2 !important;
-    flex: 0 0 auto !important;
-  }
-
-  .navbar .container .upper-side .hamburger {
-    order: 3 !important;
-    flex: 0 0 auto !important;
+    width: calc(100% - 30px) !important;
   }
 }
 </style>
