@@ -14,11 +14,11 @@
 <meta content="Mozoon Alkhair" property="og:site_name"/>
 <meta content="Mozoon Alkhair" property="og:title"/>
 <meta content="website" property="og:type"/>
-<meta content="https://alfareedagroupintl.com" property="og:url"/>
+<meta content="www.mozoonalkhair.sa" property="og:url"/>
 <!-- TWITTER META -->
 <meta content="summary" name="twitter:card"/>
-<meta content="@alfareedagroup" name="twitter:site"/>
-<meta content="@alfareedagroup" name="twitter:creator"/>
+<meta content="www.mozoonalkhair.sa name="twitter:site"/>
+<meta content="www.mozoonalkhair.sa name="twitter:creator"/>
 <meta content="alfareedagroup" name="twitter:title"/>
 <meta content="alfareedagroup" name="twitter:description"/>
 <!-- FAVICON FILES -->
@@ -39,6 +39,146 @@
 <!-- slider -->
 <link href="assets/css/settings9cbc.css" rel="stylesheet">
 <link href="assets/css/inline_1.css" rel="stylesheet"/>
+
+<!-- Mobile Navigation CSS -->
+<style>
+/* MOBILE RESPONSIVE FIXES */
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+  
+  /* Mobile Navbar Fixes */
+  .navbar .container > div {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+    padding: 10px !important;
+  }
+
+  .navbar-logo {
+    order: 1 !important;
+  }
+
+  .navbar-logo img {
+    height: 80px !important;
+    max-height: 80px !important;
+  }
+
+  .navbar-contact-info {
+    display: none !important;
+  }
+
+  .navbar .container .upper-side .phone-email {
+    display: none !important;
+  }
+
+  .navbar-hamburger, .hamburger {
+    order: 2 !important;
+    display: flex !important;
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+    z-index: 9999 !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+  }
+
+  .navbar-hamburger span, .hamburger span {
+    width: 25px !important;
+    height: 3px !important;
+    background-color: #333 !important;
+    display: block !important;
+    border-radius: 2px !important;
+    margin: 3px 0 !important;
+    transition: 0.3s !important;
+  }
+
+  /* Hide desktop menu on mobile */
+  .navbar .menu {
+    display: none !important;
+  }
+
+  /* Ensure side navigation is properly positioned on mobile */
+  .side-navigation {
+    position: fixed !important;
+    top: 0 !important;
+    left: -80vw !important;
+    width: 80vw !important;
+    height: 100vh !important;
+    background: #fff !important;
+    z-index: 9998 !important;
+    transition: left 0.3s ease !important;
+    overflow-y: auto !important;
+  }
+
+  .side-navigation.active {
+    left: 0 !important;
+  }
+
+  /* Mobile overlay */
+  .mobile-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    z-index: 9997 !important;
+    display: none !important;
+  }
+
+  .mobile-overlay.active {
+    display: block !important;
+  }
+
+  .page-header .container h1 {
+    font-size: 10vw;
+  }
+
+  .page-header .container .breadcrumb {
+    width: calc(100% - 30px);
+  }
+
+  .navbar .container .upper-side .contact-info {
+    display: flex !important;
+    order: 1 !important;
+  }
+
+  .navbar .container .upper-side {
+    justify-content: center;
+  }
+
+  .navbar .container .upper-side .logo {
+    margin-left: 0;
+    margin-right: 0;
+    order: 3 !important;
+  }
+
+  /* Force navbar layout on mobile */
+  .navbar .container .upper-side {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px 20px !important;
+  }
+
+  .navbar .container .upper-side .contact-info {
+    order: 1 !important;
+    flex: 0 0 auto !important;
+  }
+
+  .navbar .container .upper-side .logo {
+    order: 2 !important;
+    flex: 0 0 auto !important;
+  }
+
+  .navbar .container .upper-side .hamburger {
+    order: 3 !important;
+    flex: 0 0 auto !important;
+  }
+}
+</style>
 <!-- All in One SEO 4.4.9.1 - aioseo.com -->
 <title>Home - Mozoon </title>
 <meta content="max-image-preview:large" name="robots">
