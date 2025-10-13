@@ -2421,7 +2421,7 @@ background:rgba(35, 33, 117, 0.8);
 
   flex-wrap: wrap;
 
-  padding: 10px 0;
+  padding: 2px 0;
 
   align-items: center;
 
@@ -2457,7 +2457,7 @@ background:rgba(35, 33, 117, 0.8);
 
 .navbar .container .upper-side .logo img {
 
-  height: 90px;
+  height: 60px;
 
  
 
@@ -2822,7 +2822,7 @@ background:rgba(35, 33, 117, 0.8);
 
   display: inline-block;
 
-  padding: 15px 0 5px;
+  padding: 8px 0 5px;
 
   border-top: 1px solid transparent;
 

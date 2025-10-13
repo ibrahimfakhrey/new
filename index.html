@@ -89,6 +89,48 @@
     display: none !important;
   }
 
+  /* Hide footer contact section on mobile */
+  .footer-bar {
+    display: none !important;
+  }
+
+  /* Create mobile contact info at the very top */
+  .mobile-contact-info {
+    display: block !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: #1D2036 !important;
+    color: white !important;
+    padding: 12px 15px !important;
+    z-index: 9999 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .mobile-contact-container {
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 15px !important;
+  }
+
+  .mobile-contact-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
+
+  .mobile-contact-item i {
+    color: #FF8C42 !important;
+    font-size: 16px !important;
+  }
+
   /* Hamburger menu positioning */
   .navbar-hamburger {
     flex: 0 0 auto !important;
@@ -139,9 +181,9 @@
     padding: 10px 20px !important;
     background: transparent !important;
     position: fixed !important;
-    top: 0 !important;
+    top: 50px !important;
     right: 0 !important;
-    z-index: 9999 !important;
+    z-index: 9998 !important;
     width: auto !important;
   }
 
@@ -158,7 +200,7 @@
     cursor: pointer !important;
     padding: 15px !important;
     position: fixed !important;
-    top: 10px !important;
+    top: 55px !important;
     right: 20px !important;
     z-index: 10000 !important;
     background: rgba(255, 140, 66, 0.1) !important;
@@ -379,9 +421,9 @@
     display: block !important;
   }
 
-  /* Ensure hero section starts after navbar */
+  /* Ensure hero section starts after contact info */
   .page-header {
-    margin-top: 0 !important;
+    margin-top: 50px !important;
     padding-top: 0 !important;
   }
 
@@ -539,6 +581,28 @@
     </div>
   </div>
 </nav>
+
+<!-- Mobile Contact Info (visible only on mobile) -->
+<div class="mobile-contact-info" style="display: none;">
+  <div class="mobile-contact-container">
+    <a href="tel:+966543337990" class="mobile-contact-item">
+      <i class="fas fa-phone"></i>
+      <span>0543337990</span>
+    </a>
+    <a href="tel:+966547700922" class="mobile-contact-item">
+      <i class="fas fa-phone"></i>
+      <span>0547700922</span>
+    </a>
+    <a href="mailto:info@mozoon.sa" class="mobile-contact-item">
+      <i class="fas fa-envelope"></i>
+      <span>info@mozoon.sa</span>
+    </a>
+    <div class="mobile-contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>الرياض العليا طريق الملك فهد</span>
+    </div>
+  </div>
+</div>
 
 <nav class="navbar navi">
 <div class="container">
