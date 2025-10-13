@@ -7188,7 +7188,7 @@ text-align: right;
 
   padding:30px 20px 30px 100px;
 
-  color: #FFF;
+  color: #1D2036;
 
 }
 
@@ -7214,7 +7214,7 @@ margin-left: 30px;
 
   margin-bottom: 15px;
 
-  color:#fff;
+  color:#1D2036;
 
   font-weight:600;
 
@@ -7227,6 +7227,16 @@ margin-left: 30px;
   margin: 0;
 /*   direction: ltr; */
 
+}
+
+.footer-bar .inner p a {
+  color: #1D2036 !important;
+  text-decoration: none;
+}
+
+.footer-bar .inner p a:hover {
+  color: #FF8C42 !important;
+  text-decoration: underline;
 }
 
 .footer-bar .inner strong {
@@ -8827,11 +8837,12 @@ padding:0 40px;}
 
 /* Certificates Grid Styling */
 .certificates-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .certificate-item {
@@ -8860,15 +8871,20 @@ padding:0 40px;}
     border: 2px solid #e0e0e0;
 }
 
+@media (max-width: 992px) {
+    .certificates-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .certificates-grid {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
     }
     
     .certificate-item {
-        width: 90%;
         max-width: 350px;
+        margin: 0 auto;
     }
 }
 
@@ -8888,4 +8904,49 @@ padding:0 40px;}
 
 .footer-bar .textwidget a:hover {
     color: #FF8C42 !important;
+}
+
+/* Testimonial Slider Styles */
+.testimonial-slider {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+
+.testimonial-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-in-out;
+    pointer-events: none;
+}
+
+.testimonial-item.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.testimonial-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+    background-color: #fff;
 }
