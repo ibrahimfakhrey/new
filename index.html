@@ -434,6 +434,85 @@
   .page-header .container .breadcrumb {
     width: calc(100% - 30px) !important;
   }
+
+  /* Hide social media icons in hero section on mobile */
+  .rev_slider .tp-caption[style*="flex-direction: column"],
+  .rev_slider a[href*="facebook"],
+  .rev_slider a[href*="twitter"],
+  .rev_slider a[href*="linkedin"],
+  .rev_slider a[href*="instagram"],
+  .rev_slider a[style*="background: #FF8C00"] {
+    display: none !important;
+  }
+
+  /* Clean mobile hero text layout */
+  .rev_slider .tp-caption {
+    font-size: 6vw !important;
+    min-font-size: 2.5rem !important;
+    max-font-size: 3.5rem !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+    color: #FF8C00 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    text-align: center !important;
+    padding: 10px 15px !important;
+    margin: 10px auto !important;
+    max-width: 90% !important;
+    word-wrap: break-word !important;
+  }
+
+  /* Main company title - clean and prominent */
+  .rev_slider .tp-caption[data-voffset="-80"] {
+    font-size: 8vw !important;
+    min-font-size: 3rem !important;
+    max-font-size: 4rem !important;
+    font-weight: 900 !important;
+    margin-bottom: 30px !important;
+    line-height: 1.2 !important;
+    letter-spacing: 1px !important;
+  }
+
+  /* Subtitle/description - readable size */
+  .rev_slider .tp-caption[data-voffset="20"] {
+    font-size: 4.5vw !important;
+    min-font-size: 1.8rem !important;
+    max-font-size: 2.5rem !important;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+    margin-top: 20px !important;
+  }
+
+  /* Clean spans layout */
+  .rev_slider .tp-caption span {
+    font-size: 5vw !important;
+    min-font-size: 2rem !important;
+    max-font-size: 2.8rem !important;
+    font-weight: 700 !important;
+    display: inline-block !important;
+    margin: 5px 10px !important;
+    padding: 5px 10px !important;
+    background: rgba(0,0,0,0.3) !important;
+    border-radius: 8px !important;
+  }
+
+  /* Clean nested divs */
+  .rev_slider .tp-caption div {
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    color: inherit !important;
+    margin: 10px 0 !important;
+    padding: 5px !important;
+  }
+
+  /* Prevent text overflow and ensure proper spacing */
+  .rev_slider .tp-caption[style*="flex-direction: row"] {
+    flex-wrap: wrap !important;
+    gap: 15px !important;
+    justify-content: center !important;
+  }
 }
 
 /* Desktop styles - hide mobile navbar on larger screens */
