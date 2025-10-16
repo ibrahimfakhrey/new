@@ -107,44 +107,54 @@
   }
   
   body {
-    padding-top: 60px !important;
+    padding-top: 80px !important;
   }
-  
+
   /* Adjust banner for fixed navbar */
   .banner-wrap {
     margin-top: 0 !important;
   }
-  
+
   /* Responsive text sizing */
   .tp-caption {
     font-size: 2.5rem !important;
   }
-  
+
   .tp-caption[data-voffset="20"] {
     font-size: 1.2rem !important;
   }
-  
-  /* Fix navbar height to not take up hero section */
+
+  /* Mobile navbar layout */
   .navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
     height: auto !important;
-    min-height: 70px !important;
-    max-height: 70px !important;
-    padding: 0 !important;
-    position: relative !important;
+    min-height: 60px !important;
+    padding: 0 15px !important;
+    background: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
+    z-index: 9999 !important;
   }
 
   .navbar .container {
-    height: 70px !important;
-    padding: 0 15px !important;
-  }
-
-  .navbar .container > div {
-    height: 70px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
+    height: 60px !important;
     padding: 0 !important;
-    gap: 0 !important;
+    margin: 0 auto !important;
+    gap: 12px !important;
+  }
+
+  .navbar .container > div {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    gap: 12px !important;
+    height: auto !important;
   }
 
   /* Logo styling */
@@ -154,34 +164,34 @@
   }
 
   .navbar-logo img {
-    height: 50px !important;
-    max-height: 50px !important;
+    height: 45px !important;
+    max-height: 45px !important;
     width: auto !important;
   }
 
-  /* Hide contact info on mobile */
-  .navbar-contact-info {
+  /* Hide desktop specific content */
+  .navbar-contact-info,
+  .navbar .container .upper-side .phone-email,
+  .navbar .menu {
     display: none !important;
   }
 
-  .navbar .container .upper-side .phone-email {
-    display: none !important;
-  }
-
-  /* Hamburger menu positioning */
+  /* Hamburger menu styling */
   .navbar-hamburger {
     flex: 0 0 auto !important;
     order: 3 !important;
     display: flex !important;
     flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
     gap: 4px !important;
     cursor: pointer !important;
-    padding: 15px !important;
-    position: relative !important;
-    z-index: 9999 !important;
-    background: rgba(255, 140, 66, 0.1) !important;
+    width: 42px !important;
+    height: 42px !important;
+    padding: 8px !important;
+    background: rgba(255, 140, 66, 0.12) !important;
     border-radius: 8px !important;
-    transition: all 0.3s ease !important;
+    transition: background 0.3s ease, transform 0.3s ease !important;
   }
 
   .navbar-hamburger:hover {
@@ -190,16 +200,16 @@
   }
 
   .navbar-hamburger span {
-    width: 25px !important;
+    width: 24px !important;
     height: 3px !important;
     background-color: #FF8C42 !important;
     display: block !important;
     border-radius: 2px !important;
-    transition: 0.3s !important;
+    transition: transform 0.3s ease, opacity 0.3s ease !important;
   }
 
   .navbar-hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px) !important;
+    transform: rotate(45deg) translate(5px, 5px) !important;
   }
 
   .navbar-hamburger.active span:nth-child(2) {
@@ -207,47 +217,7 @@
   }
 
   .navbar-hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px) !important;
-  }
-
-  /* Hide navbar content but show hamburger */
-  .navbar {
-    display: flex !important;
-    justify-content: flex-end !important;
-    align-items: center !important;
-    padding: 10px 20px !important;
-    background: transparent !important;
-    position: fixed !important;
-    top: 0 !important;
-    right: 0 !important;
-    z-index: 9999 !important;
-    width: auto !important;
-  }
-
-  /* Hide all navbar content */
-  .navbar .container {
-    display: none !important;
-  }
-
-  /* Show only hamburger menu */
-  .navbar-hamburger {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 4px !important;
-    cursor: pointer !important;
-    padding: 15px !important;
-    position: fixed !important;
-    top: 10px !important;
-    right: 20px !important;
-    z-index: 10000 !important;
-    background: rgba(255, 140, 66, 0.1) !important;
-    border-radius: 8px !important;
-    transition: all 0.3s ease !important;
-  }
-
-  /* Hide desktop menu on mobile */
-  .navbar .menu {
-    display: none !important;
+    transform: rotate(-45deg) translate(5px, -5px) !important;
   }
 
   /* Mobile Navigation Bar Styles */
@@ -1661,14 +1631,13 @@ document.addEventListener('DOMContentLoaded', function() {
 function toggleMobileMenu() {
     const mobileNavbar = document.querySelector('.mobile-navbar');
     const hamburger = document.querySelector('.fixed-mobile-navbar .mobile-hamburger');
-    
+
     if (mobileNavbar) {
-        if (mobileNavbar.style.display === 'none' || mobileNavbar.style.display === '') {
-            mobileNavbar.style.display = 'block';
-            hamburger.classList.add('active');
-        } else {
-            mobileNavbar.style.display = 'none';
-            hamburger.classList.remove('active');
+        const shouldShow = mobileNavbar.style.display === 'none' || mobileNavbar.style.display === '';
+        mobileNavbar.style.display = shouldShow ? 'block' : 'none';
+
+        if (hamburger) {
+            hamburger.classList.toggle('active', shouldShow);
         }
     }
 }
@@ -1682,7 +1651,10 @@ document.addEventListener('click', function(event) {
         !fixedNavbar.contains(event.target) && 
         !mobileNavbar.contains(event.target)) {
         mobileNavbar.style.display = 'none';
-        document.querySelector('.fixed-mobile-navbar .mobile-hamburger').classList.remove('active');
+        const hamburger = document.querySelector('.fixed-mobile-navbar .mobile-hamburger');
+        if (hamburger) {
+            hamburger.classList.remove('active');
+        }
     }
 });
 
