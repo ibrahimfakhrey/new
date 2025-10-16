@@ -9049,6 +9049,149 @@ padding:0 40px;}
     }
 }
 
+/* Certificates Carousel Styles */
+.certificates-carousel-section {
+    overflow: hidden;
+    position: relative;
+    /* Variables for item width and spacing */
+    --cert-item-width: calc(150vw / 9);
+    --cert-gap: 16px; /* space between images */
+}
+
+.certificates-carousel-wrapper {
+    overflow: hidden;
+    width: 100vw; /* Full viewport width */
+    position: relative;
+    margin: 0 auto;
+    height: 240px; /* Increased height for larger images */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.certificates-carousel {
+    display: flex;
+    animation: scroll-certificates 30s linear infinite;
+    gap: 0; /* We use margin-right for consistent spacing */
+    will-change: transform;
+    width: calc(12 * (var(--cert-item-width) + var(--cert-gap)));
+    height: 100%;
+}
+
+.certificates-carousel:hover {
+    animation-play-state: paused;
+}
+
+.certificate-item {
+    flex-shrink: 0;
+    width: var(--cert-item-width);
+    margin-right: var(--cert-gap);
+    height: 400px;
+    position: relative;
+    border-radius: 0; /* Remove border radius for seamless look */
+    overflow: hidden;
+    box-shadow: none; /* Remove shadows for seamless appearance */
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.certificate-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.certificate-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.certificate-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+.certificate-item:hover .certificate-img {
+    transform: scale(1.1);
+}
+
+@keyframes scroll-certificates {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-6 * (var(--cert-item-width) + var(--cert-gap)))); /* Move exactly one set (6 items + spacing) */
+    }
+}
+
+/* Responsive adjustments for certificates */
+@media (max-width: 768px) {
+    .certificates-carousel-wrapper {
+        height: 180px;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .certificate-item {
+        width: var(--cert-item-width);
+        margin-right: var(--cert-gap);
+        height: 180px;
+    }
+    
+    .certificates-carousel {
+        animation-duration: 25s;
+        gap: 0;
+        width: calc(12 * (var(--cert-item-width) + var(--cert-gap))); /* Adjust for mobile - with spacing */
+    }
+    
+    .certificates-carousel-section {
+        padding: 60px 0 !important;
+    }
+    
+    @keyframes scroll-certificates {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-6 * (var(--cert-item-width) + var(--cert-gap)))); /* Move exactly one set for mobile - with spacing */
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .certificates-carousel-wrapper {
+        height: 140px;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .certificate-item {
+        width: var(--cert-item-width);
+        margin-right: var(--cert-gap);
+        height: 140px;
+    }
+    
+    .certificates-carousel {
+        gap: 0;
+        width: calc(12 * (var(--cert-item-width) + var(--cert-gap))); /* Adjust for small mobile - with spacing */
+    }
+    
+    @keyframes scroll-certificates {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-6 * (var(--cert-item-width) + var(--cert-gap)))); /* Move exactly one set for small mobile - with spacing */
+        }
+    }
+}
+
 @media (max-width: 480px) {
     .client-logo {
         width: 160px;
@@ -9193,5 +9336,83 @@ padding:0 40px;}
     .horizontal-slider-container {
         height: 250px;
         border-radius: 15px;
+    }
+}
+/* Certificates Row (non-carousel, side-by-side) */
+.certificates-row {
+    --cert-item-width: calc(100vw / 8);
+    --cert-gap: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--cert-gap);
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(12 * (var(--cert-item-width) + var(--cert-gap)));
+    margin: 0 auto;
+    animation: certificates-row-scroll 30s linear infinite;
+    will-change: transform;
+}
+
+.certificates-row .certificate-item {
+    flex: 0 0 auto;
+    width: var(--cert-item-width);
+    height: 240px;
+    margin: 0; /* gap controls spacing */
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    animation: cert-fade-in 0.6s ease both;
+}
+
+.certificates-row .certificate-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* ensure certificates are fully visible */
+}
+
+.certificates-row .certificate-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.certificates-row:hover {
+    animation-play-state: paused;
+}
+
+.certificates-row .certificate-item:nth-child(1) { animation-delay: 0.05s; }
+.certificates-row .certificate-item:nth-child(2) { animation-delay: 0.10s; }
+.certificates-row .certificate-item:nth-child(3) { animation-delay: 0.15s; }
+.certificates-row .certificate-item:nth-child(4) { animation-delay: 0.20s; }
+.certificates-row .certificate-item:nth-child(5) { animation-delay: 0.25s; }
+.certificates-row .certificate-item:nth-child(6) { animation-delay: 0.30s; }
+
+@keyframes cert-fade-in {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes certificates-row-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-6 * (var(--cert-item-width) + var(--cert-gap)))); }
+}
+
+@media (max-width: 768px) {
+    .certificates-row {
+        --cert-item-width: calc(100vw / 3);
+        animation-duration: 25s;
+    }
+    .certificates-row .certificate-item {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificates-row {
+        --cert-item-width: calc(100vw / 2);
+        animation-duration: 20s;
+    }
+    .certificates-row .certificate-item {
+        height: 140px;
     }
 }

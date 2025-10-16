@@ -42,8 +42,87 @@
 
 <!-- Mobile Navigation CSS -->
 <style>
+/* Fixed Mobile Navigation Bar */
+.fixed-mobile-navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9999 !important;
+  background: #212177 !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15) !important;
+  padding: 8px 15px !important;
+  display: none !important;
+}
+
+.fixed-mobile-navbar .mobile-nav-content {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 15px !important;
+}
+
+.fixed-mobile-navbar .mobile-contact-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  white-space: nowrap !important;
+  font-size: 11px !important;
+  color: white !important;
+  flex: 1 !important;
+}
+
+.fixed-mobile-navbar .mobile-contact-left {
+  justify-content: flex-start !important;
+}
+
+.fixed-mobile-navbar .mobile-contact-center {
+  justify-content: center !important;
+}
+
+.fixed-mobile-navbar .mobile-contact-right {
+  justify-content: flex-end !important;
+}
+
+.fixed-mobile-navbar .mobile-contact-item i {
+  font-size: 10px !important;
+  color: white !important;
+  width: 12px !important;
+  text-align: center !important;
+}
+
+.fixed-mobile-navbar .mobile-contact-item a {
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+
 /* MOBILE RESPONSIVE FIXES */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+  .fixed-mobile-navbar {
+    display: block !important;
+  }
+  
+  body {
+    padding-top: 60px !important;
+  }
+  
+  /* Adjust banner for fixed navbar */
+  .banner-wrap {
+    margin-top: 0 !important;
+  }
+  
+  /* Responsive text sizing */
+  .tp-caption {
+    font-size: 2.5rem !important;
+  }
+  
+  .tp-caption[data-voffset="20"] {
+    font-size: 1.2rem !important;
+  }
   
   /* Fix navbar height to not take up hero section */
   .navbar {
@@ -400,6 +479,196 @@
     display: none !important;
   }
 }
+@media (max-width: 480px) {
+  .fixed-mobile-navbar {
+    padding: 6px 10px !important;
+  }
+  
+  .fixed-mobile-navbar .mobile-contact-info {
+    font-size: 10px !important;
+    gap: 2px !important;
+  }
+  
+  body {
+    padding-top: 55px !important;
+  }
+  
+  /* Further reduce text size on very small screens */
+  .tp-caption {
+    font-size: 2rem !important;
+  }
+  
+  .tp-caption[data-voffset="20"] {
+    font-size: 1rem !important;
+  }
+}
+
+/* Comprehensive Mobile Optimization */
+@media (max-width: 991px) {
+  /* Container and layout improvements */
+  .container {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+  
+  /* Typography improvements */
+  h1 { font-size: 24px; line-height: 1.3; }
+  h2 { font-size: 20px; line-height: 1.3; }
+  h3 { font-size: 18px; line-height: 1.3; }
+  h4 { font-size: 16px; line-height: 1.3; }
+  h5 { font-size: 14px; line-height: 1.3; }
+  h6 { font-size: 12px; line-height: 1.3; }
+  
+  p, li, span {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Button improvements */
+  .btn, button, input[type="submit"] {
+    padding: 12px 20px;
+    font-size: 14px;
+    min-height: 44px; /* Touch-friendly size */
+  }
+  
+  /* Image responsiveness */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Table responsiveness */
+  table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+  
+  /* Form improvements */
+  input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px; /* Prevents zoom on iOS */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Grid system improvements */
+  .row {
+    margin: 0 -10px;
+  }
+  
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, 
+  .col-md-5, .col-md-6, .col-md-7, .col-md-8, 
+  .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablet specific adjustments */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+  
+  .col-md-4 {
+    width: 33.333%;
+    float: left;
+  }
+  
+  .col-md-3 {
+    width: 25%;
+    float: left;
+  }
+}
+
+/* Large mobile specific adjustments */
+@media (max-width: 640px) {
+  /* Spacing improvements */
+  .section, .content-section {
+    padding: 30px 0;
+  }
+  
+  /* Navigation improvements */
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .navbar-nav li {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  /* Content improvements */
+  .text-center-mobile {
+    text-align: center;
+  }
+  
+  /* Card/box improvements */
+  .card, .box, .service-box {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+}
+
+/* Small mobile specific adjustments */
+@media (max-width: 480px) {
+  /* Further reduce spacing */
+  .section, .content-section {
+    padding: 20px 0;
+  }
+  
+  /* Smaller typography */
+  h1 { font-size: 20px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  
+  /* Tighter container */
+  .container {
+    padding: 0 10px;
+  }
+  
+  /* Stack elements vertically */
+  .flex-mobile-column {
+    flex-direction: column;
+  }
+  
+  /* Improve touch targets */
+  a, button, .btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Extra small mobile adjustments */
+@media (max-width: 360px) {
+  /* Minimal spacing */
+  .section, .content-section {
+    padding: 15px 0;
+  }
+  
+  /* Very compact typography */
+  h1 { font-size: 18px; }
+  h2 { font-size: 16px; }
+  h3 { font-size: 14px; }
+  
+  p, li, span {
+    font-size: 13px;
+  }
+  
+  /* Minimal container padding */
+  .container {
+    padding: 0 8px;
+  }
+}
+
 </style>
 <!-- All in One SEO 4.4.9.1 - aioseo.com -->
 <title>Home - Mozoon </title>
@@ -556,7 +825,7 @@
 <div class="navbar-contact-info" style="flex: 0 0 auto !important; display: flex !important; flex-direction: column !important; gap: 8px !important; padding: 15px 20px !important; background: rgba(255, 255, 255, 0.1) !important; border-radius: 8px !important; backdrop-filter: blur(10px) !important; margin: 0 !important; max-width: 350px !important;">
 <div style="display: flex !important; align-items: center !important; gap: 8px !important; font-size: 14px !important; color: #333 !important;">
 <i class="fas fa-phone" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #FF8C00 !important; font-size: 14px !important;"></i>
-<a href="tel:+966543337990" style="color: #333 !important; text-decoration: none !important; font-weight: 500 !important;">966543337990</a>
+<a href="tel:+9660549979933" style="color: #333 !important; text-decoration: none !important; font-weight: 500 !important;">0549979933</a>
 </div>
 <div style="display: flex !important; align-items: center !important; gap: 8px !important; font-size: 14px !important; color: #333 !important;">
 <i class="fas fa-envelope" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #FF8C00 !important; font-size: 14px !important;"></i>
@@ -618,6 +887,26 @@
 <!-- end container -->
 </nav>
 <!--/navigation -->
+
+<!-- Fixed Mobile Navigation Bar -->
+<div class="fixed-mobile-navbar">
+  <div class="mobile-nav-content">
+    <div class="mobile-contact-item mobile-contact-left">
+      <i class="fas fa-phone"></i>
+      <a href="tel:+9660549979933">0549979933</a>
+    </div>
+    <div class="mobile-contact-item mobile-contact-center">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>الرياض، السعودية</span>
+    </div>
+    <div class="mobile-contact-item mobile-contact-right">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:info@mozoon.sa">info@mozoon.sa</a>
+    </div>
+  </div>
+</div>
+
+<!--/navigation -->
 <!--banner-wrap -->
 <div class="banner-wrap">
 <!--slider -->
@@ -625,18 +914,25 @@
 <!-- START REVOLUTION SLIDER 4.6.93 fullscreen mode -->
 <div class="rev_slider fullscreenbanner" id="rev_slider_5_1" style="display:none;">
 <ul>
-<!-- SLIDE 1 -->
+<!-- SLIDE 1 - NEW WALL IMAGE -->
+<li data-masterspeed="500" data-saveperformance="off" data-slotamount="7" data-transition="random">
+<!-- MAIN IMAGE -->
+<img alt="Mozoon Al Khair Company" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazyload="wall.jpg" src="assets/img/dummy.png"/>
+<!-- LAYERS -->
+<!-- MAIN COMPANY TITLE -->
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-80" data-x="center" data-y="center" style="z-index: 10; font-size: 5rem; font-weight: 1000; color: #FFFFFF !important; text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; line-height: 1.1; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
+شركه مزون الخير
+</div>
+<!-- SUBTITLE -->
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="600" data-voffset="20" data-x="center" data-y="center" style="z-index: 9; font-size: 2.5rem; font-weight: 900; color: #FFFFFF !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 1px 1px 2px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; opacity: 1; max-width: 900px; line-height: 1.3; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
+(إدارة مرافق- الإنشاءات العامه- إدارة وتطوير الاعمال)
+</div>
+</li>
+<!-- SLIDE 2 -->
 <li data-masterspeed="500" data-saveperformance="off" data-slotamount="7" data-transition="random">
 <!-- MAIN IMAGE -->
 <img alt="Mozoon Al Khair Company" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazyload="edits/2.png" src="assets/img/dummy.png"/>
 <!-- LAYERS -->
-<!-- SOCIAL MEDIA ICONS -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:-100;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="-400" data-speed="600" data-splitin="none" data-splitout="none" data-start="1200" data-voffset="0" data-x="left" data-y="center" style="z-index: 12; display: flex; flex-direction: column; gap: 15px;">
-<a href="https://www.facebook.com/share/1FW3xYrNfq/?mibextid=wwXIfr" target="_blank" style="display: flex !important; align-items: center; justify-content: center; width: 50px; height: 50px; background: #FF8C00 !important; border-radius: 50%; color: white !important; font-size: 1.5rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255,140,0,0.4);"><i class="fab fa-facebook-f" style="color: white !important;"></i></a>
-<a href="https://x.com/mozoonalkhair" target="_blank" style="display: flex !important; align-items: center; justify-content: center; width: 50px; height: 50px; background: #FF8C00 !important; border-radius: 50%; color: white !important; font-size: 1.5rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255,140,0,0.4);"><i class="fab fa-twitter" style="color: white !important;"></i></a>
-<a href="https://www.linkedin.com/in/mozzon-alkhair-394141389/" target="_blank" style="display: flex !important; align-items: center; justify-content: center; width: 50px; height: 50px; background: #FF8C00 !important; border-radius: 50%; color: white !important; font-size: 1.5rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255,140,0,0.4);"><i class="fab fa-linkedin-in" style="color: white !important;"></i></a>
-<a href="https://www.instagram.com/mozoonalkhairsa" target="_blank" style="display: flex !important; align-items: center; justify-content: center; width: 50px; height: 50px; background: #FF8C00 !important; border-radius: 50%; color: white !important; font-size: 1.5rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255,140,0,0.4);"><i class="fab fa-instagram" style="color: white !important;"></i></a>
-</div>
 <!-- MAIN COMPANY TITLE -->
 <div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-80" data-x="center" data-y="center" style="z-index: 10; font-size: 5rem; font-weight: 1000; color: #FFFFFF !important; text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; line-height: 1.1; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
 شركة مزون الخير
@@ -651,13 +947,6 @@
 <!-- MAIN IMAGE -->
 <img alt="Mozoon Al Khair Services" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazyload="edits/3.png" src="assets/img/dummy.png"/>
 <!-- LAYERS -->
-<!-- SOCIAL MEDIA ICONS -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:-100;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="-400" data-speed="600" data-splitin="none" data-splitout="none" data-start="1200" data-voffset="0" data-x="left" data-y="center" style="z-index: 12; display: flex; flex-direction: column; gap: 15px;">
-<a href="https://www.facebook.com/share/1FW3xYrNfq/?mibextid=wwXIfr" target="_blank" style="display: flex !important; align-items: center; justify-content: center; width: 50px; height: 50px; background: #FF8C00 !important; border-radius: 50%; color: white !important; font-size: 1.5rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255,140,0,0.4);"><i class="fab fa-facebook-f" style="color: white !important;"></i></a>
-<a href="https://x.com/mozoonalkhair" target="_blank" style="display: flex !important; align-items: center; justify-content: center; width: 50px; height: 50px; background: #FF8C00 !important; border-radius: 50%; color: white !important; font-size: 1.5rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255,140,0,0.4);"><i class="fab fa-twitter" style="color: white !important;"></i></a>
-<a href="https://www.linkedin.com/in/mozzon-alkhair-394141389/" target="_blank" style="display: flex !important; align-items: center; justify-content: center; width: 50px; height: 50px; background: #FF8C00 !important; border-radius: 50%; color: white !important; font-size: 1.5rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255,140,0,0.4);"><i class="fab fa-linkedin-in" style="color: white !important;"></i></a>
-<a href="https://www.instagram.com/mozoonalkhairsa" target="_blank" style="display: flex !important; align-items: center; justify-content: center; width: 50px; height: 50px; background: #FF8C00 !important; border-radius: 50%; color: white !important; font-size: 1.5rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255,140,0,0.4);"><i class="fab fa-instagram" style="color: white !important;"></i></a>
-</div>
 <!-- MAIN COMPANY TITLE -->
 <div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-80" data-x="center" data-y="center" style="z-index: 10; font-size: 5rem; font-weight: 1000; color: #FFFFFF !important; text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; line-height: 1.1; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
 شركة مزون الخير
@@ -688,7 +977,7 @@
 <div class="container">
 <div class="row">
 <div class="col-lg-6 wow fadeInUp">
-<img alt="Image" class="fullwidth" decoding="async" src="edits/about.png"/>
+<img alt="Image" class="fullwidth" decoding="async" src="ksa.jpeg"/>
 </div>
 <div class="col-lg-6 wow fadeInUp watermark" style="display: flex; align-items: center;">
 <div class="inset">
@@ -1053,7 +1342,7 @@
 <p class="justify">نحن في شركة مزون الخير لإدارة المرافق نؤمن بأن النجاح الحقيقي يكمن في تقديم خدمات متميزة تلبي احتياجات عملائنا وتتجاوز توقعاتهم. منذ تأسيسنا، نسعى لأن نكون الشريك الموثوق في إدارة المرافق والخدمات المتكاملة.</p>
 <p class="justify">إن رؤيتنا تتمحور حول الابتكار والتطوير المستمر، حيث نستثمر في أحدث التقنيات والحلول المبتكرة لضمان تقديم أفضل الخدمات. نحن نفخر بفريق عملنا المتخصص الذي يضم موظفينا المدربين على أعلى المستويات.</p>
 <p class="justify">التزامنا بالجودة والتميز ليس مجرد شعار، بل هو منهج عمل نطبقه في كل مشروع نتولاه. نحن نؤمن بأن العمل الجماعي والشراكة الحقيقية مع عملائنا هما أساس نجاحنا المستمر.</p>
-<p class="justify">مع خبرة تزيد عن 25 عاماً في السوق، نواصل تطوير خدماتنا لتشمل جميع جوانب إدارة المرافق من التنظيف والصيانة إلى الأمن والحراسة، مع ضمان أعلى معايير الجودة والسلامة.</p>
+<p class="justify">مع خبرة تزيد عن 10 اعوام في السوق، نواصل تطوير خدماتنا لتشمل جميع جوانب إدارة المرافق من التنظيف والصيانة إلى الأمن والحراسة، مع ضمان أعلى معايير الجودة والسلامة.</p>
 <p class="justify">إلى جميع عملائنا وشركائنا الذين يثقون في خبراتنا وقدراتنا المهنية، نؤكد لكم أننا سنسعى جاهدين للتفوق وتجاوز التوقعات في خدمتنا لكم وللمجتمع بأسره.</p></div>
 </div>
 <!-- edn col-6 -->
@@ -1064,241 +1353,82 @@
 </section>
 <!-- /content-area-->
 <!-- end intro -->
-<!-- Certificates -->
-<section class="logos">
+
+<!-- Happy Clients Certificates Carousel -->
+<section class="certificates-carousel-section" style="padding: 80px 0; background: #f8f9fa;">
 <div class="container">
-<div class="col-lg-12 col-md-12 wow fadeInUp">
-<h3 class="heading line-left"> الشهادات والتراخيص </h3>
-</div>
-<!--row -->
 <div class="row">
-<div class="certificates-carousel-container">
-  <div class="certificates-carousel-track">
-    <!-- First set -->
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 1" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.19_3e770a2c.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 2" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.22_cd920cba.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 3" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.33_7261c8af.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 4" src="edits/11.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 5" src="edits/12.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 6" src="edits/13.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 7" src="edits/14.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 8" src="edits/15.jpg"/>
-    </div>
-    <!-- Second set -->
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 1" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.19_3e770a2c.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 2" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.22_cd920cba.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 3" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.33_7261c8af.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 4" src="edits/11.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 5" src="edits/12.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 6" src="edits/13.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 7" src="edits/14.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 8" src="edits/15.jpg"/>
-    </div>
-      <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 1" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.19_3e770a2c.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 2" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.22_cd920cba.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 3" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.33_7261c8af.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 4" src="edits/11.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 5" src="edits/12.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 6" src="edits/13.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 7" src="edits/14.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 8" src="edits/15.jpg"/>
-    </div>
-      <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 1" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.19_3e770a2c.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 2" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.22_cd920cba.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 3" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.33_7261c8af.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 4" src="edits/11.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 5" src="edits/12.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 6" src="edits/13.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 7" src="edits/14.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 8" src="edits/15.jpg" style="height:120px;width:auto;"/>
-    </div>
-      <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 1" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.19_3e770a2c.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 2" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.22_cd920cba.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 3" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.33_7261c8af.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 4" src="edits/11.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 5" src="edits/12.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 6" src="edits/13.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 7" src="edits/14.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 8" src="edits/15.jpg"/>
-    </div>
-      <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 1" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.19_3e770a2c.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 2" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.22_cd920cba.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 3" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.33_7261c8af.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 4" src="edits/11.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 5" src="edits/12.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 6" src="edits/13.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 7" src="edits/14.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 8" src="edits/15.jpg" style="height:120px;width:auto;"/>
-    </div>
-      <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 1" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.19_3e770a2c.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 2" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.22_cd920cba.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 3" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.33_7261c8af.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 4" src="edits/11.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 5" src="edits/12.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 6" src="edits/13.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 7" src="edits/14.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 8" src="edits/15.jpg" style="height:120px;width:auto;"/>
-    </div>
-    <!-- Third set -->
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 1" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.19_3e770a2c.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 2" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.22_cd920cba.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="ISO Certificate 3" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.33_7261c8af.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 4" src="edits/11.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 5" src="edits/12.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 6" src="edits/13.jpg"/>
-    </div>
-    <div class="certificate-carousel-item" style="flex-shrink:0;">
-      <img alt="Certificate 7" src="edits/14.jpg"/>
-    </div>
-    <div class="certificate-carousel-item">
-      <img alt="Certificate 8" src="edits/15.jpg"/>
-    </div>
+<div class="col-12 text-center">
+<h2 class="heading" style="margin-bottom: 50px; color: #2c3e50;">الشهادات و التراخيص</h2>
+<div class="certificates-row">
+  <div class="certificate-item">
+    <a href="certificates/1.jpg" data-fancybox="certificates" data-caption="Certificate 1">
+      <img src="certificates/1.jpg" alt="Certificate 1" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item">
+    <a href="certificates/2.jpg" data-fancybox="certificates" data-caption="Certificate 2">
+      <img src="certificates/2.jpg" alt="Certificate 2" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item">
+    <a href="certificates/3.jpg" data-fancybox="certificates" data-caption="Certificate 3">
+      <img src="certificates/3.jpg" alt="Certificate 3" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item">
+    <a href="certificates/4.png" data-fancybox="certificates" data-caption="Certificate 4">
+      <img src="certificates/4.png" alt="Certificate 4" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item">
+    <a href="certificates/5.png" data-fancybox="certificates" data-caption="Certificate 5">
+      <img src="certificates/5.png" alt="Certificate 5" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item">
+    <a href="certificates/6.png" data-fancybox="certificates" data-caption="Certificate 6">
+      <img src="certificates/6.png" alt="Certificate 6" class="certificate-img">
+    </a>
+  </div>
+  <!-- Duplicates for seamless looping -->
+  <div class="certificate-item" aria-hidden="true">
+    <a href="certificates/1.jpg" data-fancybox="certificates" data-caption="Certificate 1 (clone)">
+      <img src="certificates/1.jpg" alt="Certificate 1" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item" aria-hidden="true">
+    <a href="certificates/2.jpg" data-fancybox="certificates" data-caption="Certificate 2 (clone)">
+      <img src="certificates/2.jpg" alt="Certificate 2" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item" aria-hidden="true">
+    <a href="certificates/3.jpg" data-fancybox="certificates" data-caption="Certificate 3 (clone)">
+      <img src="certificates/3.jpg" alt="Certificate 3" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item" aria-hidden="true">
+    <a href="certificates/4.png" data-fancybox="certificates" data-caption="Certificate 4 (clone)">
+      <img src="certificates/4.png" alt="Certificate 4" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item" aria-hidden="true">
+    <a href="certificates/5.png" data-fancybox="certificates" data-caption="Certificate 5 (clone)">
+      <img src="certificates/5.png" alt="Certificate 5" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item" aria-hidden="true">
+    <a href="certificates/6.png" data-fancybox="certificates" data-caption="Certificate 6 (clone)">
+      <img src="certificates/6.png" alt="Certificate 6" class="certificate-img">
+    </a>
   </div>
 </div>
 </div>
-<!--/row -->
 </div>
-<!-- end container -->
+</div>
 </section>
-<!-- /Certificates -->
-<script>
-// Certificates carousel animation
-document.addEventListener('DOMContentLoaded', function() {
-    const certificatesTrack = document.querySelector('.certificates-carousel-track');
-    if (certificatesTrack) {
-        let scrollAmount = 0;
-        const scrollSpeed = 3; // Increased speed to make it faster
-        const maxScroll = certificatesTrack.scrollWidth * 0.8; // Scroll through 80% of all images to show more
-        
-        function animateCertificatesCarousel() {
-            scrollAmount += scrollSpeed;
-            if (scrollAmount >= maxScroll) {
-                scrollAmount = 0;
-            }
-            certificatesTrack.style.transform = `translateX(-${scrollAmount}px)`;
-            requestAnimationFrame(animateCertificatesCarousel);
-        }
-        
-        animateCertificatesCarousel();
-    }
-});
-</script>
+<!-- End Happy Clients Certificates Carousel -->
+
 <section class="footer-bar">
 <div class="container">
 <div class="inner wow fadeIn">
@@ -1319,7 +1449,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="textwidget custom-html-widget"> <figure><img alt="Image" src="assets/img/footer-icon03.webp"/></figure>
 <h3>اتصل بنا</h3>
 <p><a href="https://wa.me/966543337990">0543337990</a> / <a href="tel:966547700922">0547700922</a><br/>
-<a href="mailto:mr.raied@mozoon.sa">mr.raied@mozoon.sa</a> / <a href="mailto:info@mozoon.sa">info@mozoon.sa</a></p></div>
+/ <a href="mailto:info@mozoon.sa">info@mozoon.sa</a></p></div>
 </div>
 <!-- end col-4 -->
 </div>
@@ -1526,6 +1656,82 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize auto-slide
     startAutoSlide();
 });
+
+// Mobile Navigation Toggle Function
+function toggleMobileMenu() {
+    const mobileNavbar = document.querySelector('.mobile-navbar');
+    const hamburger = document.querySelector('.fixed-mobile-navbar .mobile-hamburger');
+    
+    if (mobileNavbar) {
+        if (mobileNavbar.style.display === 'none' || mobileNavbar.style.display === '') {
+            mobileNavbar.style.display = 'block';
+            hamburger.classList.add('active');
+        } else {
+            mobileNavbar.style.display = 'none';
+            hamburger.classList.remove('active');
+        }
+    }
+}
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(event) {
+    const mobileNavbar = document.querySelector('.mobile-navbar');
+    const fixedNavbar = document.querySelector('.fixed-mobile-navbar');
+    
+    if (mobileNavbar && fixedNavbar && 
+        !fixedNavbar.contains(event.target) && 
+        !mobileNavbar.contains(event.target)) {
+        mobileNavbar.style.display = 'none';
+        document.querySelector('.fixed-mobile-navbar .mobile-hamburger').classList.remove('active');
+    }
+});
+
+</script>
+<script>
+// Certificates popup: click opens modal (via Fancybox); hover opens after a short pause
+document.addEventListener('DOMContentLoaded', function() {
+  const certItems = document.querySelectorAll('.certificates-row .certificate-item');
+
+  certItems.forEach(function(item) {
+    let hoverTimer;
+    const img = item.querySelector('img');
+    const src = img ? img.getAttribute('src') : '';
+    const caption = img ? (img.getAttribute('alt') || '') : '';
+    const anchor = item.querySelector('a');
+
+    function openModal() {
+      if (anchor) {
+        // Trigger anchor click to let Fancybox handle it
+        anchor.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }));
+        return;
+      }
+      // Fallback: Try Fancybox APIs or show a simple modal overlay
+      if (window.Fancybox && typeof window.Fancybox.show === 'function') {
+        window.Fancybox.show([{ src: src, type: 'image', caption: caption }], { Thumbs: false, Toolbar: true });
+      } else if (window.jQuery && jQuery.fancybox) {
+        jQuery.fancybox.open([{ src: src, type: 'image', opts: { caption: caption } }]);
+      } else {
+        const overlay = document.createElement('div');
+        overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.85);display:flex;align-items:center;justify-content:center;z-index:9999;';
+        const fullImg = document.createElement('img');
+        fullImg.src = src;
+        fullImg.alt = caption;
+        fullImg.style.cssText = 'max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.4);';
+        overlay.appendChild(fullImg);
+        overlay.addEventListener('click', function() { document.body.removeChild(overlay); });
+        document.body.appendChild(overlay);
+      }
+    }
+
+    // Hover-to-open after 500ms dwell
+    item.addEventListener('mouseenter', function() {
+      hoverTimer = setTimeout(openModal, 500);
+    });
+    item.addEventListener('mouseleave', function() {
+      if (hoverTimer) clearTimeout(hoverTimer);
+    });
+  });
+});
 </script>
 <!-- sticky js -->
 <script src="assets/js/classie.js"></script>
@@ -1542,6 +1748,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- particles -->
 <script src="assets/js/particles.min.js"></script>
 <script src="assets/js/init-particles.js"></script>
+<!-- testimonial slider -->
+<script src="assets/js/testimonial-slider.js"></script>
 <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/ar\/*"},{"not":{"href_matches":["\/ar\/wp-*.php","\/ar\/wp-admin\/*","\/ar\/wp-content\/uploads\/*","\/ar\/wp-content\/*","\/ar\/wp-content\/plugins\/*","\/ar\/wp-content\/themes\/al-najma-fareeda\/*","\/ar\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
