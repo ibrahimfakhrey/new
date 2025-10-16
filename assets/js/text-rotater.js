@@ -45,4 +45,8 @@ class RotateText {
 }
 
 const title = document.querySelector('.text-rotater')
-new RotateText(title).rotate()
+if (title) {
+    new RotateText(title).rotate()
+} else {
+    console.log('Text rotater element not found, skipping text rotation')
+}
