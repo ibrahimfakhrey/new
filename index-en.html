@@ -11,14 +11,14 @@
 <meta content="Hard Services, Soft Services, Cleaning Services, Security, Pest Control, Landscaping &amp; Irrigation, Water Tank Cleaning, Rope Access" name="keywords"/>
 <!-- SOCIAL MEDIA META -->
 <meta content="Hard Services, Soft Services, Cleaning Services, Security, Pest Control, Landscaping &amp; Irrigation, Water Tank Cleaning, Rope Access" property="og:description"/>
-<meta content="AL  Najma Fareeda" property="og:site_name"/>
-<meta content="AL  Najma Fareeda" property="og:title"/>
+<meta content="Mozoon Alkhair" property="og:site_name"/>
+<meta content="Mozoon Alkhair" property="og:title"/>
 <meta content="website" property="og:type"/>
-<meta content="https://alfareedagroupintl.com" property="og:url"/>
+<meta content="www.mozoonalkhair.sa" property="og:url"/>
 <!-- TWITTER META -->
 <meta content="summary" name="twitter:card"/>
-<meta content="@alfareedagroup" name="twitter:site"/>
-<meta content="@alfareedagroup" name="twitter:creator"/>
+<meta content="www.mozoonalkhair.sa name="twitter:site"/>
+<meta content="www.mozoonalkhair.sa name="twitter:creator"/>
 <meta content="alfareedagroup" name="twitter:title"/>
 <meta content="alfareedagroup" name="twitter:description"/>
 <!-- FAVICON FILES -->
@@ -42,8 +42,87 @@
 
 <!-- Mobile Navigation CSS -->
 <style>
+/* Fixed Mobile Navigation Bar */
+.fixed-mobile-navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9999 !important;
+  background: #212177 !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15) !important;
+  padding: 8px 15px !important;
+  display: none !important;
+}
+
+.fixed-mobile-navbar .mobile-nav-content {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 15px !important;
+}
+
+.fixed-mobile-navbar .mobile-contact-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  white-space: nowrap !important;
+  font-size: 11px !important;
+  color: white !important;
+  flex: 1 !important;
+}
+
+.fixed-mobile-navbar .mobile-contact-left {
+  justify-content: flex-start !important;
+}
+
+.fixed-mobile-navbar .mobile-contact-center {
+  justify-content: center !important;
+}
+
+.fixed-mobile-navbar .mobile-contact-right {
+  justify-content: flex-end !important;
+}
+
+.fixed-mobile-navbar .mobile-contact-item i {
+  font-size: 10px !important;
+  color: white !important;
+  width: 12px !important;
+  text-align: center !important;
+}
+
+.fixed-mobile-navbar .mobile-contact-item a {
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+
 /* MOBILE RESPONSIVE FIXES */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+  .fixed-mobile-navbar {
+    display: block !important;
+  }
+  
+  body {
+    padding-top: 60px !important;
+  }
+  
+  /* Adjust banner for fixed navbar */
+  .banner-wrap {
+    margin-top: 0 !important;
+  }
+  
+  /* Responsive text sizing */
+  .tp-caption {
+    font-size: 2.5rem !important;
+  }
+  
+  .tp-caption[data-voffset="20"] {
+    font-size: 1.2rem !important;
+  }
   
   /* Fix navbar height to not take up hero section */
   .navbar {
@@ -291,9 +370,9 @@
   }
 
   .side-navigation .menu ul li a:hover::after {
-    content: '→' !important;
+    content: '←' !important;
     position: absolute !important;
-    right: 10px !important;
+    left: 10px !important;
     color: #FF8C42 !important;
   }
 
@@ -400,6 +479,196 @@
     display: none !important;
   }
 }
+@media (max-width: 480px) {
+  .fixed-mobile-navbar {
+    padding: 6px 10px !important;
+  }
+  
+  .fixed-mobile-navbar .mobile-contact-info {
+    font-size: 10px !important;
+    gap: 2px !important;
+  }
+  
+  body {
+    padding-top: 55px !important;
+  }
+  
+  /* Further reduce text size on very small screens */
+  .tp-caption {
+    font-size: 2rem !important;
+  }
+  
+  .tp-caption[data-voffset="20"] {
+    font-size: 1rem !important;
+  }
+}
+
+/* Comprehensive Mobile Optimization */
+@media (max-width: 991px) {
+  /* Container and layout improvements */
+  .container {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+  
+  /* Typography improvements */
+  h1 { font-size: 24px; line-height: 1.3; }
+  h2 { font-size: 20px; line-height: 1.3; }
+  h3 { font-size: 18px; line-height: 1.3; }
+  h4 { font-size: 16px; line-height: 1.3; }
+  h5 { font-size: 14px; line-height: 1.3; }
+  h6 { font-size: 12px; line-height: 1.3; }
+  
+  p, li, span {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Button improvements */
+  .btn, button, input[type="submit"] {
+    padding: 12px 20px;
+    font-size: 14px;
+    min-height: 44px; /* Touch-friendly size */
+  }
+  
+  /* Image responsiveness */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Table responsiveness */
+  table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+  
+  /* Form improvements */
+  input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px; /* Prevents zoom on iOS */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Grid system improvements */
+  .row {
+    margin: 0 -10px;
+  }
+  
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, 
+  .col-md-5, .col-md-6, .col-md-7, .col-md-8, 
+  .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablet specific adjustments */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+  
+  .col-md-4 {
+    width: 33.333%;
+    float: left;
+  }
+  
+  .col-md-3 {
+    width: 25%;
+    float: left;
+  }
+}
+
+/* Large mobile specific adjustments */
+@media (max-width: 640px) {
+  /* Spacing improvements */
+  .section, .content-section {
+    padding: 30px 0;
+  }
+  
+  /* Navigation improvements */
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .navbar-nav li {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  /* Content improvements */
+  .text-center-mobile {
+    text-align: center;
+  }
+  
+  /* Card/box improvements */
+  .card, .box, .service-box {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+}
+
+/* Small mobile specific adjustments */
+@media (max-width: 480px) {
+  /* Further reduce spacing */
+  .section, .content-section {
+    padding: 20px 0;
+  }
+  
+  /* Smaller typography */
+  h1 { font-size: 20px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  
+  /* Tighter container */
+  .container {
+    padding: 0 10px;
+  }
+  
+  /* Stack elements vertically */
+  .flex-mobile-column {
+    flex-direction: column;
+  }
+  
+  /* Improve touch targets */
+  a, button, .btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Extra small mobile adjustments */
+@media (max-width: 360px) {
+  /* Minimal spacing */
+  .section, .content-section {
+    padding: 15px 0;
+  }
+  
+  /* Very compact typography */
+  h1 { font-size: 18px; }
+  h2 { font-size: 16px; }
+  h3 { font-size: 14px; }
+  
+  p, li, span {
+    font-size: 13px;
+  }
+  
+  /* Minimal container padding */
+  .container {
+    padding: 0 8px;
+  }
+}
+
 </style>
 <!-- All in One SEO 4.4.9.1 - aioseo.com -->
 <title>Home - Mozoon </title>
@@ -407,14 +676,14 @@
 <link href="assets/other/file.bin" rel="canonical">
 <meta content="All in One SEO (AIOSEO) 4.4.9.1" name="generator">
 <meta content="en_US" property="og:locale">
-<meta content="AL  Najma Fareeda International Group -" property="og:site_name">
+<meta content="Mozoon Alkhair International Group -" property="og:site_name">
 <meta content="website" property="og:type">
 <meta content="Home - Mozoon " property="og:title">
 <meta content="" property="og:url">
 <meta content="summary_large_image" name="twitter:card">
 <meta content="Home - Mozoon " name="twitter:title">
 <script class="aioseo-schema" type="application/ld+json">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#listItem","position":1,"name":"Home"}]},{"@type":"Organization","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#organization","name":"AL  Najma Fareeda International Group","url":"https:\/\/www.alfareedagroupintl.com\/ar\/"},{"@type":"WebPage","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#webpage","url":"https:\/\/www.alfareedagroupintl.com\/ar\/","name":"Home - Mozoon ","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#website"},"breadcrumb":{"@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#breadcrumblist"},"datePublished":"2025-11-16T11:47:28+00:00","dateModified":"2023-09-26T03:34:30+00:00"},{"@type":"WebSite","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#website","url":"https:\/\/www.alfareedagroupintl.com\/ar\/","name":"AL  Najma Fareeda International Group","inLanguage":"en-US","publisher":{"@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.alfareedagroupintl.com\/ar\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#listItem","position":1,"name":"Home"}]},{"@type":"Organization","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#organization","name":"Mozoon Alkhair International Group","url":"https:\/\/www.alfareedagroupintl.com\/ar\/"},{"@type":"WebPage","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#webpage","url":"https:\/\/www.alfareedagroupintl.com\/ar\/","name":"Home - Mozoon ","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#website"},"breadcrumb":{"@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#breadcrumblist"},"datePublished":"2025-11-16T11:47:28+00:00","dateModified":"2023-09-26T03:34:30+00:00"},{"@type":"WebSite","@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#website","url":"https:\/\/www.alfareedagroupintl.com\/ar\/","name":"Mozoon Alkhair International Group","inLanguage":"en-US","publisher":{"@id":"https:\/\/www.alfareedagroupintl.com\/ar\/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.alfareedagroupintl.com\/ar\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}]}
 		</script>
 <!-- All in One SEO -->
 <script src="assets/js/inline_1.js"></script>
@@ -452,45 +721,43 @@
 <body>
 <!--preloader -->
 <div id="preloader">
-<div id="status"> </div>
+<div id="status"> </div>
 </div>
 <!--/preloader -->
 <!--navigation -->
 <div class="side-navigation">
 <div class="menu">
 <ul>
-<li><a href="index-en.html">Home</a></li>
+<li><a href="index.html">الصفحة الرئيسية</a></li>
 <li>
-<a href="#">About Us</a>
+<a href="#">حولنا</a>
 <ul>
-<li><a href="company-profile-en.html">Company Profile</a></li>
-<li><a href="leaders-message-en.html">Leader's Message</a></li>
-<li><a href="history-en.html">Our History</a></li>
-<li><a href="mission-vision-values-en.html">Mission, Vision &amp; Values</a></li>
-<li><a href="strategy-en.html">Our Strategy</a></li>
-<li><a href="operational-excellence-en.html">Operational Excellence</a></li>
-<li><a href="infrastructure-en.html">Infrastructure</a></li>
-<li><a href="csr-en.html">Corporate Social Responsibility</a></li>
+<li><a href="company-profile.html">بروفايل الشركة  </a></li>
+<li><a href="history.html">تاريخنا</a></li>
+<li><a href="mission-vision-values.html">الرسالة والرؤية والقيم</a></li>
+<li><a href="strategy.html">إستراتيجيتنا</a></li>
+<li><a href="operational-excellence.html">الكفاءة العملية</a></li>
+<li><a href="infrastructure.html">البنية التحتية</a></li>
+<li><a href="csr.html">المسؤولية الاجتماعية للشركة</a></li>
 </ul>
 </li>
 <li>
-<a href="#">Services</a>
+<a href="#">الخدمات</a>
 <ul>
-<li><a href="hard-services-en.html">Hard Services</a></li>
-<li><a href="soft-services-en.html">Soft Services</a></li>
-<li><a href="specialist-services-en.html">Specialist Services</a></li>
+<li><a href="facilities-management.html">إدارة المرافق</a></li>
+<li><a href="general-construction.html">الانشاءات العامة</a></li>
+<li><a href="business-management.html">إدارة وتطوير الاعمال</a></li>
 </ul>
 </li>
-<li><a href="sectors-en.html">Sectors</a></li>
-<li><a href="testimonials-en.html">Testimonials</a></li>
-<li><a href="careers-en.html">Careers</a></li>
-<li><a href="news-events-en.html">News &amp; Events</a></li>
-<li><a href="get-in-touch-en.html">Contact Us</a></li>
-<li><a class="request-a-quote" href="request-a-quote-en.html">Request a Quote</a></li>
+<li><a href="sectors.html"> قطاعات </a></li>
+<li><a href="testimonials.html">الشهادات</a></li>
+<li><a href="careers.html">وظائف</a></li>
+<li><a href="get-in-touch.html">تواصل معنا</a></li>
+<li><a class="request-a-quote" href="request-a-quote.html"> أطلب الأسعار </a></li>
 </ul>
-<div class="langu">
-<a href="index.html"><span></span>AR</a>
-<a href="index-en.html"><span></span>EN</a>
+<div class="language-switcher" style="display: flex !important; align-items: center !important; gap: 10px !important; margin-left: 20px !important;">
+<a href="index.html" style="padding: 8px 15px !important; background: #FF8C42 !important; color: white !important; text-decoration: none !important; border-radius: 5px !important; font-weight: bold !important; transition: background 0.3s !important;" onmouseover="this.style.background='#232175'" onmouseout="this.style.background='#FF8C42'">Arabic</a>
+<a href="index-en.html" style="padding: 8px 15px !important; background: rgba(255,255,255,0.2) !important; color: #333 !important; text-decoration: none !important; border-radius: 5px !important; font-weight: bold !important; transition: background 0.3s !important;" onmouseover="this.style.background='#FF8C42'; this.style.color='white'" onmouseout="this.style.background='rgba(255,255,255,0.2)'; this.style.color='#333'">English</a>
 </div>
 </div>
 <!-- end menu -->
@@ -503,7 +770,9 @@
 <li><img alt="Image" src="assets/img/side-gallery-3.webp"/></li>
 </ul></div>
 <div class="textwidget custom-html-widget"><address>
-Al Olaya District, King Fahd Road, Riyadh
+
+الرياض العليا طريق الملك فهد
+
 </address>
 <h6>+966543337990</h6>
 <p> <a href="mailto:info@mozoon.sa">info@mozoon.sa</a></p></div>
@@ -513,7 +782,7 @@ Al Olaya District, King Fahd Road, Riyadh
 <li><a href="https://www.linkedin.com/in/mozzon-alkhair-394141389/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 <li><a href="https://www.instagram.com/mozoonalkhairsa" target="_blank"><i class="fab fa-instagram"></i></a></li>
 </ul>
-<small>Copyright © 2025 All Rights Reserved, Mozoon Al Khair Company</small>
+<small> Copyright © 2025 All Rights Reserved, Mozoon Al Khair Company </small>
 </div>
 <!-- end side-content -->
 </div>
@@ -523,17 +792,18 @@ Al Olaya District, King Fahd Road, Riyadh
 <nav class="mobile-navbar">
   <div class="mobile-nav-container">
     <div class="mobile-nav-logo">
-      <a href="index-en.html">
+      <a href="index.html">
         <img alt="Mozoon Logo" src="assets/img/new-logo.png" />
       </a>
     </div>
     <div class="mobile-nav-menu">
-      <a href="index-en.html" class="mobile-nav-item active">Home</a>
-      <a href="company-profile-en.html" class="mobile-nav-item">About</a>
-      <a href="sectors-en.html" class="mobile-nav-item">Sectors</a>
-      <a href="hard-services-en.html" class="mobile-nav-item">Hard Services</a>
-      <a href="soft-services-en.html" class="mobile-nav-item">Soft Services</a>
-      <a href="get-in-touch-en.html" class="mobile-nav-item">Contact</a>
+      <a href="index.html" class="mobile-nav-item active">Home</a>
+      <a href="company-profile.html" class="mobile-nav-item">About Company</a>
+      <a href="sectors.html" class="mobile-nav-item">Sectors</a>
+      <a href="facilities-management.html" class="mobile-nav-item">Facilities Management</a>
+      <a href="general-construction.html" class="mobile-nav-item">General Construction</a>
+      <a href="business-management.html" class="mobile-nav-item">Business Management & Development</a>
+      <a href="get-in-touch.html" class="mobile-nav-item">Contact Us</a>
     </div>
   </div>
 </nav>
@@ -543,8 +813,8 @@ Al Olaya District, King Fahd Road, Riyadh
 <div style="display: flex !important; align-items: center !important; justify-content: flex-start !important; width: 100% !important; padding: 15px 20px !important; gap: 20px !important;">
 <!-- Logo -->
 <div class="navbar-logo" style="flex: 0 0 auto !important; margin: 0 !important;">
-<a href="index-en.html">
-<img alt="Mozoon Logo" decoding="async" src="assets/img/new-logo.png" style="height: 120px !important;"/>
+<a href="index.html">
+<img alt="Mozoon Logo" decoding="async" src="image-removebg-preview.png" style="height: 120px !important;"/>
 </a>
 </div>
 
@@ -554,16 +824,16 @@ Al Olaya District, King Fahd Road, Riyadh
 <!-- Contact Information -->
 <div class="navbar-contact-info" style="flex: 0 0 auto !important; display: flex !important; flex-direction: column !important; gap: 8px !important; padding: 15px 20px !important; background: rgba(255, 255, 255, 0.1) !important; border-radius: 8px !important; backdrop-filter: blur(10px) !important; margin: 0 !important; max-width: 350px !important;">
 <div style="display: flex !important; align-items: center !important; gap: 8px !important; font-size: 14px !important; color: #333 !important;">
-<i class="fas fa-phone" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #007bff !important; font-size: 14px !important;"></i>
-<a href="tel:+966543337990" style="color: #333 !important; text-decoration: none !important; font-weight: 500 !important;">966543337990</a>
+<i class="fas fa-phone" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #FF8C00 !important; font-size: 14px !important;"></i>
+<a href="tel:+9660549979933" style="color: #333 !important; text-decoration: none !important; font-weight: 500 !important;">0549979933</a>
 </div>
 <div style="display: flex !important; align-items: center !important; gap: 8px !important; font-size: 14px !important; color: #333 !important;">
-<i class="fas fa-envelope" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #007bff !important; font-size: 14px !important;"></i>
+<i class="fas fa-envelope" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #FF8C00 !important; font-size: 14px !important;"></i>
 <a href="mailto:info@mozoon.sa" style="color: #333 !important; text-decoration: none !important; font-weight: 500 !important;">info@mozoon.sa</a>
 </div>
 <div style="display: flex !important; align-items: center !important; gap: 8px !important; font-size: 14px !important; color: #333 !important;">
-<i class="fas fa-map-marker-alt" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #007bff !important; font-size: 14px !important;"></i>
-<span style="color: #333 !important; text-decoration: none !important; font-weight: 500 !important;">Riyadh, Al Olaya, King Fahd Road</span>
+<i class="fas fa-map-marker-alt" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #FF8C00 !important; font-size: 14px !important;"></i>
+<span style="color: #333 !important; text-decoration: none !important; font-weight: 500 !important;">Riyadh Al Olaya King Fahd Road</span>
 </div>
 </div>
 
@@ -578,45 +848,64 @@ Al Olaya District, King Fahd Road, Riyadh
 <div class="menu">
 <header>
 <ul class="st-menu">
-<li><a href="index-en.html"> <img alt="Image" class="sticky-logo" decoding="async" src="assets/img/new-logo.png"/> </a></li>
-<li class="language-switcher">
-<a href="index.html">AR</a> | <span>EN</span>
+<li><a href="index.html"> <img alt="Image" class="sticky-logo" decoding="async" src="new-logo.png"/> </a></li>
+<li><a href="index.html">Home</a></li>
+<li>
+<a href="#"> About Us   </a>
+<ul>
+<li><a href="company-profile.html"> Company Profile   </a></li>
+<li><a href="history.html">Our History</a></li>
+<li><a href="mission-vision-values.html">Mission, Vision & Values</a></li>
+<li><a href="strategy.html">Our Strategy</a></li>
+<li><a href="operational-excellence.html">Operational Excellence</a></li>
+<li><a href="infrastructure.html">Infrastructure</a></li>
+<li><a href="csr.html">Corporate Social Responsibility</a></li>
+</ul>
 </li>
-<li><a class="request-a-quote" href="request-a-quote-en.html">Request a Quote</a></li>
-<li><a href="get-in-touch-en.html">Contact Us</a></li>
-<li><a href="news-events-en.html">News &amp; Events</a></li>
-<li><a href="careers-en.html">Careers</a></li>
-<li><a href="testimonials-en.html">Testimonials</a></li>
-<li><a href="sectors-en.html">Sectors</a></li>
 <li>
 <a href="#">Services</a>
 <ul>
-<li><a href="hard-services-en.html">Hard Services</a></li>
-<li><a href="soft-services-en.html">Soft Services</a></li>
-<li><a href="specialist-services-en.html">Specialist Services</a></li>
+<li><a href="facilities-management.html">Facilities Management</a></li>
+<li><a href="general-construction.html">General Construction</a></li>
+<li><a href="business-management.html">Business Management & Development</a></li>
 </ul>
 </li>
-<li>
-<a href="#">About Us</a>
-<ul>
-<li><a href="company-profile-en.html">Company Profile</a></li>
-<li><a href="leaders-message-en.html">Leader's Message</a></li>
-<li><a href="history-en.html">Our History</a></li>
-<li><a href="mission-vision-values-en.html">Mission, Vision &amp; Values</a></li>
-<li><a href="strategy-en.html">Our Strategy</a></li>
-<li><a href="operational-excellence-en.html">Operational Excellence</a></li>
-<li><a href="infrastructure-en.html">Infrastructure</a></li>
-<li><a href="csr-en.html">Corporate Social Responsibility</a></li>
+<li><a href="sectors.html"> Sectors </a></li>
+<li><a href="testimonials.html"> Client Testimonials  </a></li>
+<li><a href="careers.html">Careers</a></li>
+<li><a href="get-in-touch.html">Contact Us</a></li>
+<li><a class="request-a-quote" href="request-a-quote.html"> Request Quote </a></li>
 </ul>
-</li>
-<li><a href="index-en.html">Home</a></li>
-</ul>
+<div class="language-switcher" style="display: flex !important; align-items: center !important; gap: 10px !important; margin-left: 20px !important;">
+<a href="index.html" style="padding: 8px 15px !important; background: #FF8C42 !important; color: white !important; text-decoration: none !important; border-radius: 5px !important; font-weight: bold !important; transition: background 0.3s !important;" onmouseover="this.style.background='#232175'" onmouseout="this.style.background='#FF8C42'">العربية</a>
+<a href="index-en.html" style="padding: 8px 15px !important; background: rgba(255,255,255,0.2) !important; color: #333 !important; text-decoration: none !important; border-radius: 5px !important; font-weight: bold !important; transition: background 0.3s !important;" onmouseover="this.style.background='#FF8C42'; this.style.color='white'" onmouseout="this.style.background='rgba(255,255,255,0.2)'; this.style.color='#333'">English</a>
+</div>
 </header>
 </div>
 <!-- end menu -->
 </div>
 <!-- end container -->
 </nav>
+<!--/navigation -->
+
+<!-- Fixed Mobile Navigation Bar -->
+<div class="fixed-mobile-navbar">
+  <div class="mobile-nav-content">
+    <div class="mobile-contact-item mobile-contact-left">
+      <i class="fas fa-phone"></i>
+      <a href="tel:+9660549979933">0549979933</a>
+    </div>
+    <div class="mobile-contact-item mobile-contact-center">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Riyadh, Saudi Arabia</span>
+    </div>
+    <div class="mobile-contact-item mobile-contact-right">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:info@mozoon.sa">info@mozoon.sa</a>
+    </div>
+  </div>
+</div>
+
 <!--/navigation -->
 <!--banner-wrap -->
 <div class="banner-wrap">
@@ -625,91 +914,55 @@ Al Olaya District, King Fahd Road, Riyadh
 <!-- START REVOLUTION SLIDER 4.6.93 fullscreen mode -->
 <div class="rev_slider fullscreenbanner" id="rev_slider_5_1" style="display:none;">
 <ul>
-<!-- SLIDE 1 - Human Hand Passing Gear to Robotic Hand -->
+<!-- SLIDE 1 - NEW WALL IMAGE -->
 <li data-masterspeed="500" data-saveperformance="off" data-slotamount="7" data-transition="random">
 <!-- MAIN IMAGE -->
-<img alt="Human hand passing gear to robotic hand" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazyload="human-hand-passing-gear-robotic-hand.jpg" src="assets/img/dummy.png"/>
+<img alt="Mozoon Al Khair Company" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazyload="wall.jpg" src="assets/img/dummy.png"/>
 <!-- LAYERS -->
 <!-- MAIN COMPANY TITLE -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-150" data-x="center" data-y="center" style="z-index: 10; font-size: 5rem; font-weight: 1000; color: #FFFFFF; text-shadow: 3px 3px 6px rgba(0,0,0,0.7); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center; line-height: 1.1; letter-spacing: 3px;">
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-80" data-x="center" data-y="center" style="z-index: 10; font-size: 5rem; font-weight: 1000; color: #FFFFFF !important; text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; line-height: 1.1; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
 Mozoon Al Khair Company
 </div>
 <!-- SUBTITLE -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="600" data-voffset="-50" data-x="center" data-y="center" style="z-index: 9; font-size: 2.5rem; font-weight: 900; color: #FFFFFF; text-shadow: 2px 2px 4px rgba(0,0,0,0.6); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center; opacity: 0.95;">
-Leading in Facilities Management & Integrated Services
-</div>
-<!-- DESCRIPTION -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="900" data-voffset="30" data-x="center" data-y="center" style="z-index: 8; font-size: 1.6rem; font-weight: 800; color: #FFFFFF; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center; max-width: 800px; line-height: 1.6;">
-We build a sustainable future through innovative, tailor-made solutions
-</div>
-<!-- BADGES -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="1200" data-voffset="120" data-x="center" data-y="center" style="z-index: 7; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-<span style="background: rgba(255,255,255,0.2); padding: 12px 20px; border-radius: 25px; color: #FFFFFF; font-weight: 600; font-size: 1rem; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">10 Years of Experience</span>
-<span style="background: rgba(255,255,255,0.2); padding: 12px 20px; border-radius: 25px; color: #FFFFFF; font-weight: 600; font-size: 1rem; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">Best Talent</span>
-<span style="background: rgba(255,255,255,0.2); padding: 12px 20px; border-radius: 25px; color: #FFFFFF; font-weight: 600; font-size: 1rem; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">100% Quality Assurance</span>
-</div>
-<!-- ORIGINAL LAYER -->
-<div class="tp-caption a-bigtitle-white customin tp-resizeme" data-customin="x:0;y:10;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" data-hoffset="120" data-speed="300" data-splitin="none" data-splitout="none" data-start="1500" data-voffset="200" data-x="left" data-y="top" style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap; font-size: 2rem; opacity: 0.8; color: #FFFFFF;">
-Technology & Innovation
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="600" data-voffset="20" data-x="center" data-y="center" style="z-index: 9; font-size: 2.5rem; font-weight: 900; color: #FFFFFF !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 1px 1px 2px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; opacity: 1; max-width: 900px; line-height: 1.3; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
+(Facilities Management - General Construction - Business Management & Development)
 </div>
 </li>
-<!-- SLIDE 2 - Chemical Protection Suit Disinfection -->
+<!-- SLIDE 2 -->
+<li data-masterspeed="500" data-saveperformance="off" data-slotamount="7" data-transition="random">
+<!-- MAIN IMAGE -->
+<img alt="Mozoon Al Khair Company" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazyload="edits/2.png" src="assets/img/dummy.png"/>
+<!-- LAYERS -->
+<!-- MAIN COMPANY TITLE -->
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-80" data-x="center" data-y="center" style="z-index: 10; font-size: 5rem; font-weight: 1000; color: #FFFFFF !important; text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; line-height: 1.1; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
+Mozoon Al Khair Company
+</div>
+<!-- SUBTITLE -->
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="600" data-voffset="20" data-x="center" data-y="center" style="z-index: 9; font-size: 2.5rem; font-weight: 900; color: #FFFFFF !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 1px 1px 2px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; opacity: 1; max-width: 900px; line-height: 1.3; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
+Leading in providing integrated solutions in general construction, business sector, and operations & maintenance
+</div>
+</li>
+<!-- SLIDE 2 -->
 <li data-masterspeed="600" data-saveperformance="off" data-slotamount="7" data-transition="random">
 <!-- MAIN IMAGE -->
-<img alt="Person in chemical protection suit doing disinfection" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazyload="person-white-chemical-protection-suit-doing-disinfection-public-areas-stop-spreading-highly-contagious-corona-virus.jpg" src="assets/img/dummy.png"/>
+<img alt="Mozoon Al Khair Services" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazyload="edits/3.png" src="assets/img/dummy.png"/>
 <!-- LAYERS -->
 <!-- MAIN COMPANY TITLE -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-150" data-x="center" data-y="center" style="z-index: 10; font-size: 5rem; font-weight: 1000; color: #FFFFFF; text-shadow: 3px 3px 6px rgba(0,0,0,0.7); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center; line-height: 1.1; letter-spacing: 3px;">
-Mozoon Al Khair Company
-</div>
-<!-- SUBTITLE -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="600" data-voffset="-50" data-x="center" data-y="center" style="z-index: 9; font-size: 2.5rem; font-weight: 900; color: #FFFFFF; text-shadow: 2px 2px 4px rgba(0,0,0,0.6); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center; opacity: 0.95;">
-Leading in Facilities Management & Integrated Services
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-80" data-x="center" data-y="center" style="z-index: 10; font-size: 5rem; font-weight: 1000; color: #FFFFFF !important; text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; line-height: 1.1; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
+شركة مزون الخير
 </div>
 <!-- DESCRIPTION -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="900" data-voffset="30" data-x="center" data-y="center" style="z-index: 8; font-size: 1.6rem; font-weight: 800; color: #FFFFFF; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center; max-width: 800px; line-height: 1.6;">
-We build a sustainable future through innovative, tailor-made solutions
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="600" data-voffset="20" data-x="center" data-y="center" style="z-index: 8; font-size: 1.8rem; font-weight: 800; color: #FFFFFF !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 1px 1px 2px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; max-width: 900px; line-height: 1.6; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
+<div style="text-align: center; margin-bottom: 20px;">
+نعمل على تحقيق أعلى معايير الجودة، ونوفر خدمات احترافية تضمن رضا عملائنا الكامل، مع الالتزام بالمواعيد والكفاءة التشغيلية في جميع المشاريع
 </div>
-<!-- BADGES -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="1200" data-voffset="120" data-x="center" data-y="center" style="z-index: 7; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-<span style="background: rgba(255,255,255,0.2); padding: 12px 20px; border-radius: 25px; color: #FFFFFF; font-weight: 600; font-size: 1rem; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">+10 Years of Experience</span>
-<span style="background: rgba(255,255,255,0.2); padding: 12px 20px; border-radius: 25px; color: #FFFFFF; font-weight: 600; font-size: 1rem; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">Best Talent</span>
-<span style="background: rgba(255,255,255,0.2); padding: 12px 20px; border-radius: 25px; color: #FFFFFF; font-weight: 600; font-size: 1rem; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">100% Quality Assurance</span>
+<div style="text-align: center; display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap;">
+<span style="font-size: 2.2rem; font-weight: 900; letter-spacing: 2px;">الجودة</span>
+<span style="font-size: 2.2rem; font-weight: 900; letter-spacing: 2px;">الاحترافية</span>
+<span style="font-size: 2.2rem; font-weight: 900; letter-spacing: 2px;">الثقة</span>
 </div>
-<!-- ORIGINAL LAYER -->
-<div class="tp-caption a-bigtitle-white customin tp-resizeme" data-customin="x:0;y:10;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" data-hoffset="120" data-speed="300" data-splitin="none" data-splitout="none" data-start="1500" data-voffset="200" data-x="left" data-y="top" style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap; font-size: 2rem; opacity: 0.8; color: #FFFFFF;">
-Health & Safety
 </div>
 </li>
-<!-- SLIDE 3 - Photovoltaics Factory Manager -->
-<li data-masterspeed="1200" data-randomtransition="on" data-saveperformance="off" data-slotamount="7" data-transition="fade,zoomout">
-<!-- MAIN IMAGE -->
-<img alt="Photovoltaics factory manager looking at paperwork documents" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazyload="photovoltaics-factory-manager-looking-paperwork-documents.jpg" src="assets/img/dummy.png"/>
-<!-- LAYERS -->
-<!-- MAIN COMPANY TITLE -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-150" data-x="center" data-y="center" style="z-index: 10; font-size: 5rem; font-weight: 1000; color: #FFFFFF; text-shadow: 3px 3px 6px rgba(0,0,0,0.7); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center; line-height: 1.1; letter-spacing: 3px;">
-Mozoon Al Khair Company
-</div>
-<!-- SUBTITLE -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="600" data-voffset="-50" data-x="center" data-y="center" style="z-index: 9; font-size: 2.5rem; font-weight: 900; color: #FFFFFF; text-shadow: 2px 2px 4px rgba(0,0,0,0.6); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center; opacity: 0.95;">
-Leading in Facilities Management & Integrated Services
-</div>
-<!-- DESCRIPTION -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="900" data-voffset="30" data-x="center" data-y="center" style="z-index: 8; font-size: 1.6rem; font-weight: 800; color: #FFFFFF; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center; max-width: 800px; line-height: 1.6;">
-We build a sustainable future through innovative, tailor-made solutions
-</div>
-<!-- BADGES -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="1200" data-voffset="120" data-x="center" data-y="center" style="z-index: 7; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-<span style="background: rgba(255,255,255,0.2); padding: 12px 20px; border-radius: 25px; color: #FFFFFF; font-weight: 600; font-size: 1rem; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">10 Years of Experience</span>
-<span style="background: rgba(255,255,255,0.2); padding: 12px 20px; border-radius: 25px; color: #FFFFFF; font-weight: 600; font-size: 1rem; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">Best Talent</span>
-<span style="background: rgba(255,255,255,0.2); padding: 12px 20px; border-radius: 25px; color: #FFFFFF; font-weight: 600; font-size: 1rem; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">100% Quality Assurance</span>
-</div>
-<!-- ORIGINAL LAYER -->
-<div class="tp-caption a-bigtitle-white customin tp-resizeme" data-customin="x:0;y:10;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" data-hoffset="120" data-speed="300" data-splitin="none" data-splitout="none" data-start="1500" data-voffset="200" data-x="left" data-y="top" style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap; font-size: 2rem; opacity: 0.8; color: #FFFFFF;">
-Renewable Energy
-</div>
-</li>
-<!-- SLIDE  -->
 </ul>
 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
 </div>
@@ -724,17 +977,17 @@ Renewable Energy
 <div class="container">
 <div class="row">
 <div class="col-lg-6 wow fadeInUp">
-<img alt="Image" class="fullwidth" decoding="async" src="image.png"/>
+<img alt="Image" class="fullwidth" decoding="async" src="ksa.jpeg"/>
 </div>
-<div class="col-lg-6 wow fadeInUp watermark">
+<div class="col-lg-6 wow fadeInUp watermark" style="display: flex; align-items: center;">
 <div class="inset">
 <h3 class="heading line-left">
-<span>About</span>
-<br/>Mozoon Al Khair
+<span>نبذه</span>
+<br/>عنا
       </h3>
-<p class="justify">Welcome to the world of a sustainable future. At Mozoon Al Khair Company, we do more than build and maintain facilities—we deliver on our promise through them. We specialize in providing bespoke solutions for commercial, residential, industrial, healthcare, and educational facilities. Our world-class facilities management and staffing services add value for every client, and we continue to invest in our people, infrastructure, technology, and market intelligence.</p>
-<p class="justify">We believe in making a difference, embracing change, facing challenges, and learning from every experience.</p>
-<a class="link" href="company-profile-en.html">Learn More <i class="fas fa-caret-right"></i>
+<p class="justify">تأسست شركة مزون الخير لإدارة وتشغيل وصيانة ونظافة المرافق لتقديم حلول متكاملة في إدارة وتشغيل المرافق وفق أعلى المعايير والأنظمة. وتمتلك الشركة إمكانيات بشرية وفنية وتقنية تؤهلها لتقديم خدمات عالية الجودة تتميز بالدقة والإتقان.</p>
+<p class="justify">تركز شركة مزون الخير لإدارة المرافق على تطبيق أفضل الممارسات وتبني أحدث التقنيات لضمان الكفاءة والتميز، كما تسعى دائمًا لبناء شراكات طويلة الأمد قائمة على الثقة والالتزام.</p>
+<a class="link" href="company-profile.html">المزيد من المعلومات <i class="fas fa-caret-right"></i>
 </a>
 </div>
 </div>
@@ -747,7 +1000,7 @@ Renewable Energy
 <div class="container">
 <div class="row">
 <div class="col-12 wow fadeInUp">
-<h3 class="heading line-center text-white"> Interesting Facts </h3>
+<h3 class="heading line-center text-white"> Some Interesting Facts </h3>
 </div>
 <div class="col wow fadeInUp" data-wow-delay="0s">
 <figure>
@@ -763,7 +1016,7 @@ Renewable Energy
 <img alt="Image" decoding="async" src="assets/img/icon2.webp"/>
 <b></b>
 </figure>
-<h6>Client Happiness</h6>
+<h6>Customer Satisfaction</h6>
 <span class="odometer" data-count="400" data-status="yes">0</span>
 <span class="extra">+</span>
 </div>
@@ -772,7 +1025,7 @@ Renewable Energy
 <img alt="Image" decoding="async" src="assets/img/icon3.webp"/>
 <b></b>
 </figure>
-<h6>Service Assurance</h6>
+<h6>Service Guarantee</h6>
 <span class="odometer" data-count="100" data-status="yes">0</span>
 <span class="extra">%</span>
 </div>
@@ -805,8 +1058,8 @@ Renewable Energy
 <div class="row">
 <!--col-lg-4 -->
 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-<h3 class="heading line-left"> Our Solutions</h3>
-<p class="pad-right justify">Mozoon Al Khair has always been different—some would even say unique. Our goal has consistently been to create opportunities for our people to succeed, building an environment where hard work and achievement are celebrated. Founded in the Kingdom of Saudi Arabia in 2017, Mozoon Al Khair Company launched operations with more than seven years of experience in the local market.</p>
+<h3 class="heading line-left"> Our Vision </h3>
+<p class="pad-right justify">To be a company with a distinctive and unique character, launching its operations in line with the targets of Saudi Vision 2030, and reflecting national trends towards sustainable development. We aspire at Mozoon Al Khair Facilities Management Company to keep in mind the effective approach of our wise government in strengthening the national economy and raising growth rates, where we are keen to contribute to achieving these goals by providing integrated services of high quality that enhance facility efficiency and elevate service levels.</p>
 </div>
 <!-- end col-5 -->
 <!--col-lg-8 -->
@@ -816,9 +1069,9 @@ Renewable Energy
 <!--item -->
 <div class="item">
 <div class="shadow-styles-small img-top-rounded">
-<a href="index-en.html">
-<img alt="Image" src="assets/img/pest-control.jpg"/>
-<h2 class="title-tint">Pest Control</h2>
+<a href="index.html">
+<img alt="Image" src="image copy 5.png"/>
+<h2 class="title-tint">Business Management</h2>
 </a>
 </div>
 </div>
@@ -826,9 +1079,9 @@ Renewable Energy
 <!--item -->
 <div class="item">
 <div class="shadow-styles-small img-top-rounded">
-<a href="index-en.html">
-<img alt="Image" src="assets/img/waste-managment-560x600.webp"/>
-<h2 class="title-tint">Waste Management</h2>
+<a href="index.html">
+<img alt="Image" src="image copy 3.png"/>
+<h2 class="title-tint">General Construction</h2>
 </a>
 </div>
 </div>
@@ -836,50 +1089,9 @@ Renewable Energy
 <!--item -->
 <div class="item">
 <div class="shadow-styles-small img-top-rounded">
-<a href="index-en.html">
-<img alt="Image" src="assets/img/water-tank-cleaning-1-560x600.webp"/>
-<h2 class="title-tint">Water Tank Cleaning
-</h2>
-</a>
-</div>
-</div>
-<!--/item -->
-<!--item -->
-<div class="item">
-<div class="shadow-styles-small img-top-rounded">
-<a href="index-en.html">
-<img alt="Image" src="assets/img/rope-access.jpg"/>
-<h2 class="title-tint">Rope Access</h2>
-</a>
-</div>
-</div>
-<!--/item -->
-<!--item -->
-<div class="item">
-<div class="shadow-styles-small img-top-rounded">
-<a href="index-en.html">
-<img alt="Image" src="assets/img/security-service.jpg"/>
-<h2 class="title-tint">Security Services</h2>
-</a>
-</div>
-</div>
-<!--/item -->
-<!--item -->
-<div class="item">
-<div class="shadow-styles-small img-top-rounded">
-<a href="index-en.html">
-<img alt="Image" src="assets/img/Escalator-and-Lift-Maintenance-560x600.webp"/>
-<h2 class="title-tint">Elevator & Escalator Maintenance</h2>
-</a>
-</div>
-</div>
-<!--/item -->
-<!--item -->
-<div class="item">
-<div class="shadow-styles-small img-top-rounded">
-<a href="index-en.html">
-<img alt="Image" src="assets/img/swimming-pool-maintanance-560x600.webp"/>
-<h2 class="title-tint">Swimming Pool Maintenance</h2>
+<a href="index.html">
+<img alt="Image" src="image copy 4.png"/>
+<h2 class="title-tint">Operations & Maintenance</h2>
 </a>
 </div>
 </div>
@@ -893,162 +1105,88 @@ Renewable Energy
 </div>
 </section>
 <!-- end recent-gallery -->
-<section class="property-customization" style="background-image: url('https://media.istockphoto.com/id/157733641/photo/new-york-city.jpg?s=612x612&w=0&k=20&c=xP3Fa1aHMHvqFvjCYTiDzmWcf0aioBLAIgbp3jKw8H4='); background-size: cover; background-position: center; background-repeat: no-repeat;">
-<!-- end video-bg -->
-<div class="container">
-<div class="row">
-<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.10s">
-<!-- <b>08</b> -->
-<!--<h4><span>Al Najma</span> Portfolio</h4> -->
-<h3 class="heading text-white line-left">Our Group of Companies</h3>
-<div class="gap-30"></div>
-</div>
-</div>
-<!-- end row -->
-<!--row -->
-<div class="row wow fadeInUp" data-wow-delay="0.1s">
-<!--verticaltab -->
-<div id="verticalTab">
-<ul class="resp-tabs-list">
-<li> Mozoon Al Khair <br/>
-
-                        Facilities Management Services</li>
-<li> Mozoon Al Khair <br/>
-
-                        Pest Control Services</li>
-<li> Mozoon Al Khair <br/>
-
-                        Rope Access Services</li>
-<li> Mozoon Al Khair <br/>
-<!-- Building Maintenance Services -->
-                        Building Maintenance Services</li>
-</ul>
-<!--resp-tabs-container -->
-<div class="resp-tabs-container">
-<!--tab1 -->
-<div class="tb-bx cover fadeIn animated animset1">
-<div class="tab-sec" style="background-image: url('صور شركة مزون الخير/1.jpg');">
-
-<h2><span> Mozoon Al Khair  </span><br/>
-
-                                 Facilities Management Services</h2>
-<p>This division delivers comprehensive facilities management services that span from cleaning and housekeeping to complex tasks requiring rope access. Our team of experienced workers, technicians, supervisors, and support staff provide tailored, value-added assistance for our clients.</p>
-<!-- <p><a href="https://www.alfareedagroupintl.com/ar/company-profile" class="link">VIEW MORE INFO &nbsp; <i class="fas fa-caret-right"></i></a></p> -->
-</div>
-</div>
-<!--/tab1 -->
-<!--tab1 -->
-<div class="tb-bx cover fadeIn animated animset1">
-<div class="tab-sec" style="background-image: url('صور شركة مزون الخير/2.jpg');">
-
-<h2><span> Mozoon Al Khair  </span><br/>
-
-                                 Pest Control Services</h2>
-<p>Our specialized pest control team manages emergency interventions as well as preventive maintenance and inspections to minimize outbreaks across our clients’ facilities.</p>
-<!-- <p><a href="https://www.alfareedagroupintl.com/ar/company-profile" class="link">VIEW MORE INFO &nbsp; <i class="fas fa-caret-right"></i></a></p> -->
-</div>
-</div>
-<!--/tab1 -->
-<!--tab1 -->
-<div class="tb-bx cover fadeIn animated animset1">
-<div class="tab-sec" style="background-image: url('صور شركة مزون الخير/3.jpg');">
-
-<h2><span> Mozoon Al Khair  </span><br/>
-
-                                 Rope Access Services</h2>
-<p>We provide fast, cost-effective rope access solutions for mechanical, structural, and civil works, combining high efficiency with minimal risk and deep professional expertise.</p>
-<!-- <p><a href="https://www.alfareedagroupintl.com/ar/company-profile" class="link">VIEW MORE INFO &nbsp; <i class="fas fa-caret-right"></i></a></p> -->
-</div>
-</div>
-<!--/tab1 -->
-<!--tab1 -->
-<div class="tb-bx cover fadeIn animated animset1">
-<div class="tab-sec" style="background-image: url('صور شركة مزون الخير/4.jpg');">
-
-<h2><span> Mozoon Al Khair  </span><br/>
-<!-- Building Maintenance Services -->
-                                 Building Maintenance Services</h2>
-<p>We provide bespoke maintenance solutions for commercial, residential, industrial, healthcare, and educational facilities through our specialized offerings.
-</p>
-<!-- <p><a href="https://www.alfareedagroupintl.com/ar/company-profile" class="link">VIEW MORE INFO &nbsp; <i class="fas fa-caret-right"></i></a></p> -->
-</div>
-</div>
-<!--/tab1 -->
-</div>
-<!--/resp-tabs-container -->
-</div>
-<!--/verticaltab -->
-</div>
-<!--/row -->
-</div>
-<!-- end container -->
-</section>
-<!-- end property-customization -->
 <!-- Certificates -->
-<section class="logos">
-<div class="container">
-<div class="col-lg-12 col-md-12 wow fadeInUp">
-<h3 class="heading line-left">Our Happy Clients</h3>
-</div>
-<ul class="scroller">
-<li><img alt="Image" src="assets/img/Al Majed for Oud Company Logo SVG.svg"/></li>
-<li><img alt="Image" src="assets/img/image.png"/></li>
-<li><img alt="Image" src="assets/img/image copy.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 2.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 3.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 4.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 5.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 6.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 7.png"/></li>
-<li><img alt="Image" src="assets/img/Al Majed for Oud Company Logo SVG.svg"/></li>
-<li><img alt="Image" src="assets/img/image.png"/></li>
-<li><img alt="Image" src="assets/img/image copy.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 2.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 3.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 4.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 5.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 6.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 7.png"/></li>
-<li><img alt="Image" src="assets/img/Al Majed for Oud Company Logo SVG.svg"/></li>
-<li><img alt="Image" src="assets/img/image.png"/></li>
-<li><img alt="Image" src="assets/img/image copy.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 2.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 3.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 4.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 5.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 6.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 7.png"/></li>
-<li><img alt="Image" src="assets/img/Al Majed for Oud Company Logo SVG.svg"/></li>
-<li><img alt="Image" src="assets/img/image.png"/></li>
-<li><img alt="Image" src="assets/img/image copy.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 2.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 3.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 4.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 5.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 6.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 7.png"/></li>
-<li><img alt="Image" src="assets/img/Al Majed for Oud Company Logo SVG.svg"/></li>
-<li><img alt="Image" src="assets/img/image.png"/></li>
-<li><img alt="Image" src="assets/img/image copy.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 2.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 3.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 4.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 5.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 6.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 7.png"/></li>
-<li><img alt="Image" src="assets/img/Al Majed for Oud Company Logo SVG.svg"/></li>
-<li><img alt="Image" src="assets/img/image.png"/></li>
-<li><img alt="Image" src="assets/img/image copy.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 2.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 3.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 4.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 5.png"/></li>
-<li><img alt="Image" src="assets/img/image copy 7.png"/></li>
-</ul>
-</div>
-<!-- end container -->
+<section class="happy-clients-section">
+  <div style="width:100%;margin:auto;">
+    <div style="padding-right:1000px;">
+      <h3 style="font-family:'Cairo',sans-serif;font-size:2rem;border-bottom:3px solid #009999;display:inline-block;">
+        Our Happy Clients
+      </h3>
+    </div>
+    <div class="carousel-center" style="overflow:hidden;position:relative;width:100%;display:flex;justify-content:center;">
+      <div class="carousel-track" style="display:flex;justify-content:center;align-items:center;gap:40px;will-change:transform;">
+        <img src="edits/29.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/30.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/31.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/32.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/33.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/34.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/35.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/36.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/37.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/38.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/39.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <!-- Duplicate logos for infinite scroll -->
+        <img src="edits/29.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/30.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/31.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/32.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/33.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/34.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/35.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/36.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/37.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/38.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/39.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+                <img src="edits/29.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/30.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/31.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/32.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/33.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/34.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/35.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/36.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/37.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/38.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/39.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+                <img src="edits/29.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/30.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/31.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/32.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/33.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/34.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/35.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/36.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/37.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/38.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+        <img src="edits/39.png" class="carousel-logo" style="height:120px;width:auto;" alt="Client Logo"/>
+      </div>
+    </div>
+  </div>
 </section>
+
+<script>
+  // Simple infinite carousel JS
+  const track = document.querySelector('.carousel-track');
+  let position = 0;
+  const speed = 1;  // px per frame
+  function animateCarousel() {
+    position -= speed;
+    // When all logos have scrolled out, reset position
+    if (Math.abs(position) >= track.scrollWidth / 2) {
+      position = 0;
+    }
+    track.style.transform = `translateX(${position}px)`;
+    requestAnimationFrame(animateCarousel);
+  }
+  animateCarousel();
+</script>
+
+
 <!-- end property-customization -->
+<!-- Horizontal Image Slider Section -->
+
+<!-- content-area -->
 <!-- content-area -->
 <section class="content-area">
 <!-- container -->
@@ -1058,63 +1196,63 @@ Renewable Energy
 <!--col-lg-6 -->
 <div class="col-lg-4 wow fadeInUp">
 <h3 class="heading line-left">Corporate Social Responsibility</h3>
-<p class="justify">“Winning through social responsibility” is one of the key success factors for our company. To guide our Corporate Social Responsibility journey, we developed a social charter—an operating framework that helps us identify and achieve our primary CSR goals.</p>
+<p class="justify">"Winning through Social Responsibility" is one of the key success factors for our company. Regarding corporate social responsibility, we have developed a social charter; it is a framework that helps us identify and achieve our main goals in corporate social responsibility.</p>
 <p>
-<h2 class="subtitle">5 Core Pillars</h2>
+<h2 class="subtitle">5 Main Groups</h2>
 <ul class="list">
 <li> Environment </li>
-<li> Government &amp; Local Community </li>
+<li> Government and Local Community </li>
 <li> Suppliers</li>
-<li> Partners </li>
-<li>Health &amp; Safety</li>
+<li> Partners  </li>
+<li>Health & Safety</li>
 </ul>
-<a class="link" href="csr-en.html"> Learn More <i class="fas fa-caret-right"></i>
+<a class="link" href="csr.html"> More Information <i class="fas fa-caret-right"></i>
 </a>
 </p>
 </div>
 <div class="col-lg-4 wow fadeInUp">
-<img alt="Image" class="fullwidth" decoding="async" src="assets/img/csr.webp"/>
+<img alt="Image" class="fullwidth" decoding="async" src="edits/env.png"/>
 </div>
 <!--col-lg-6 -->
 <!--col-4 -->
 <div class="col-lg-4 wow fadeInUp">
 <div class="news-container" style="background-image: url('https://media.istockphoto.com/id/1237909943/vector/diagonal-lines-pattern-stripes-texture-background-vector-illustration.jpg?s=612x612&w=0&k=20&c=dLR3Pcj33UrmKkKWQYZHQcf_g7fFy5TYi3rC4eKF3zI='); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;">
-<h3> News &amp; Events</h3>
+
 <marquee class="marquee" direction="up" scrollamount="2" scrolldelay="1">
 <!--news -->
 <!--news -->
 <div class="news-row">
 <p><span class="date"> 2024    </span></p>
-<p>Cleaning the Facades of Hudeb Hotel </p>
-<a class="link" href="index-en.html">Read More <i class="fas fa-caret-right"></i></a>
+<p>Cleaning facades of Hudub Hotel </p>
+<a class="link" href="index.html">Read More <i class="fas fa-caret-right"></i></a>
 </div>
 <!--news -->
 <!--news -->
 <div class="news-row">
 <p><span class="date"> 2024    </span></p>
-<p>Managing the Novotel Riyadh / King Fahd Facility </p>
-<a class="link" href="index-en.html">Read More <i class="fas fa-caret-right"></i></a>
+<p>Novotel Riyadh / King Fahd Facility Management </p>
+<a class="link" href="index.html">Read More <i class="fas fa-caret-right"></i></a>
 </div>
 <!--news -->
 <!--news -->
 <div class="news-row">
 <p><span class="date"> 2024    </span></p>
-<p>Operations &amp; Maintenance at Princess Nourah University </p>
-<a class="link" href="index-en.html">Read More <i class="fas fa-caret-right"></i></a>
+<p>Operations and Maintenance at Princess Nourah University </p>
+<a class="link" href="index.html">Read More <i class="fas fa-caret-right"></i></a>
 </div>
 <!--news -->
 <!--news -->
 <div class="news-row">
 <p><span class="date"> 2024    </span></p>
-<p>Operations &amp; Maintenance for the National Guard Hospital in Riyadh </p>
-<a class="link" href="index-en.html">Read More <i class="fas fa-caret-right"></i></a>
+<p>Operations and Maintenance of National Guard Hospital in Riyadh </p>
+<a class="link" href="index.html">Read More <i class="fas fa-caret-right"></i></a>
 </div>
 <!--news -->
 <!--news -->
 <div class="news-row">
 <p><span class="date"> 2024    </span></p>
-<p>Facilities Management with Al Majalat Real Estate </p>
-<a class="link" href="index-en.html">Read More <i class="fas fa-caret-right"></i></a>
+<p>Facilities Management with Al Majal Real Estate Company </p>
+<a class="link" href="index.html">Read More <i class="fas fa-caret-right"></i></a>
 </div>
 <!--news -->
 <!--news -->
@@ -1142,14 +1280,43 @@ Renewable Energy
 </div>
 <!-- end col-5 -->
 <div class="col-lg-12 col-md-12 wow fadeInUp text-center" data-wow-delay="0.8s">
-<div class="testi-wrap">
-<!--<p class="justify">Mozoon Al Khair Company has provided cleaning services since 2020, and we strongly recommend the team for any cleaning needs.</p> -->
-<p class="justify">Mozoon Al Khair Company has provided cleaning services to our company since 2020, and we highly recommend Mozoon Al Khair LLC for any cleaning services.</p>
+<div id="testimonial-container" class="testimonial-slider">
+<div class="testi-wrap testimonial-item active">
+<p class="justify">We are proud of the trust of our clients and partners who described their experience with Mozoon Al Khair Company as an exceptional experience in terms of quality and commitment to deadlines. We are proud to be the first choice for many entities looking for professionalism and reliability in facilities management and operational services.</p>
 <div class="client-name text-white">
-
-                           Majid Al Futtaim Global Solutions<br/>
-<span class="text-white">Corporate Facilities Manager<br/></span>
+Al Jazeera Contracting Company<br/>
 </div>
+</div>
+
+<div class="testi-wrap testimonial-item">
+<p class="justify">Our clients' opinions are what inspire us to continue excelling. They found in Mozoon Al Khair Company a reliable partner in every detail, from quality of execution to speed of response, from transparency in dealing to our constant care for their complete satisfaction.</p>
+<div class="client-name text-white">
+Ministry of Education<br/>
+</div>
+</div>
+
+<div class="testi-wrap testimonial-item">
+<p class="justify">Our clients say about us that we make the equation between quality and commitment possible. We don't just promise, but we deliver on the ground.</p>
+<div class="client-name text-white">
+Roshn Destination<br/>
+</div>
+</div>
+
+<div class="testi-wrap testimonial-item">
+<p class="justify">What distinguishes Mozoon Al Khair Company is not only the services we provide, but the way we provide them. This is what our partners confirmed in their testimonials, which we consider a badge of honor and evidence of our success in building long-term relationships based on trust and tangible results.</p>
+<div class="client-name text-white">
+Zahran Facilities Management Company<br/>
+</div>
+</div>
+
+<div class="testi-wrap testimonial-item">
+<p class="justify">"High professionalism, speed of execution, and refined dealing" — these are the most repeated words in our clients' evaluations, and they are what we strive to remain the title of every project we carry under the name of Mozoon Al Khair.</p>
+<div class="client-name text-white">
+Hudub Investment and Real Estate Development Group<br/>
+</div>
+</div>
+
+
 </div>
 </div>
 <!--end col-lg-12 -->
@@ -1171,15 +1338,12 @@ Renewable Energy
 <!-- end col-6 -->
 <div class="col-lg-6 wow fadeInUp">
 <div class="inset">
-<h3 class="heading line-left"><span> Message from </span><br/> the General Manager </h3>
-<p class="justify">At Mozoon Al Khair Company, we believe that true success lies in delivering outstanding services that meet our clients’ needs and exceed their expectations. Since our founding, we have strived to be the trusted partner for facilities management and integrated services.</p>
-<p class="justify">Our vision revolves around innovation and continuous development. We invest in the latest technologies and smart solutions to guarantee outstanding service delivery, and we take pride in our highly trained specialists.</p>
-<p class="justify">Our commitment to quality and excellence is more than a slogan—it is the approach we apply to every project. We believe teamwork and genuine partnerships with our clients are the foundations of our ongoing success.</p>
-<p class="justify">With more than 25 years of market experience, we continue to evolve our offerings to cover every aspect of facilities management—from cleaning and maintenance to security services—while upholding the highest standards of quality and safety.</p>
-<p class="justify">To all our clients and partners who trust our expertise, we reaffirm our commitment to exceed expectations in serving you and the wider community.</p>
-<p><strong>Eng. Ihab</strong> <br/>
-General Manager - Mozoon Al Khair Company
-</p></div>
+<h3 class="heading line-left"><span> رسالة من </span><br/> رئيس مجلس الادارة </h3>
+<p class="justify">نحن في شركة مزون الخير لإدارة المرافق نؤمن بأن النجاح الحقيقي يكمن في تقديم خدمات متميزة تلبي احتياجات عملائنا وتتجاوز توقعاتهم. منذ تأسيسنا، نسعى لأن نكون الشريك الموثوق في إدارة المرافق والخدمات المتكاملة.</p>
+<p class="justify">إن رؤيتنا تتمحور حول الابتكار والتطوير المستمر، حيث نستثمر في أحدث التقنيات والحلول المبتكرة لضمان تقديم أفضل الخدمات. نحن نفخر بفريق عملنا المتخصص الذي يضم موظفينا المدربين على أعلى المستويات.</p>
+<p class="justify">التزامنا بالجودة والتميز ليس مجرد شعار، بل هو منهج عمل نطبقه في كل مشروع نتولاه. نحن نؤمن بأن العمل الجماعي والشراكة الحقيقية مع عملائنا هما أساس نجاحنا المستمر.</p>
+<p class="justify">مع خبرة تزيد عن 10 اعوام في السوق، نواصل تطوير خدماتنا لتشمل جميع جوانب إدارة المرافق من التنظيف والصيانة إلى الأمن والحراسة، مع ضمان أعلى معايير الجودة والسلامة.</p>
+<p class="justify">إلى جميع عملائنا وشركائنا الذين يثقون في خبراتنا وقدراتنا المهنية، نؤكد لكم أننا سنسعى جاهدين للتفوق وتجاوز التوقعات في خدمتنا لكم وللمجتمع بأسره.</p></div>
 </div>
 <!-- edn col-6 -->
 </div>
@@ -1189,52 +1353,103 @@ General Manager - Mozoon Al Khair Company
 </section>
 <!-- /content-area-->
 <!-- end intro -->
-<!-- Certificates -->
-<section class="logos">
+
+<!-- Happy Clients Certificates Carousel -->
+<section class="certificates-carousel-section" style="padding: 80px 0; background: #f8f9fa;">
 <div class="container">
-<div class="col-lg-12 col-md-12 wow fadeInUp">
-<h3 class="heading line-left"> Certifications &amp; Licenses </h3>
-</div>
-<!--row -->
 <div class="row">
-<div class="certificates-grid">
-<div class="certificate-item col-lg-4 col-md-6 col-sm-12">
-<img alt="ISO Certificate 1" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.19_3e770a2c.jpg"/>
+<div class="col-12 text-center">
+<h2 class="heading" style="margin-bottom: 50px; color: #2c3e50;">الشهادات و التراخيص</h2>
+<div class="certificates-row">
+  <div class="certificate-item">
+    <a href="certificates/1.jpg" data-fancybox="certificates" data-caption="Certificate 1">
+      <img src="certificates/1.jpg" alt="Certificate 1" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item">
+    <a href="certificates/2.jpg" data-fancybox="certificates" data-caption="Certificate 2">
+      <img src="certificates/2.jpg" alt="Certificate 2" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item">
+    <a href="certificates/3.jpg" data-fancybox="certificates" data-caption="Certificate 3">
+      <img src="certificates/3.jpg" alt="Certificate 3" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item">
+    <a href="certificates/4.png" data-fancybox="certificates" data-caption="Certificate 4">
+      <img src="certificates/4.png" alt="Certificate 4" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item">
+    <a href="certificates/5.png" data-fancybox="certificates" data-caption="Certificate 5">
+      <img src="certificates/5.png" alt="Certificate 5" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item">
+    <a href="certificates/6.png" data-fancybox="certificates" data-caption="Certificate 6">
+      <img src="certificates/6.png" alt="Certificate 6" class="certificate-img">
+    </a>
+  </div>
+  <!-- Duplicates for seamless looping -->
+  <div class="certificate-item" aria-hidden="true">
+    <a href="certificates/1.jpg" data-fancybox="certificates" data-caption="Certificate 1 (clone)">
+      <img src="certificates/1.jpg" alt="Certificate 1" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item" aria-hidden="true">
+    <a href="certificates/2.jpg" data-fancybox="certificates" data-caption="Certificate 2 (clone)">
+      <img src="certificates/2.jpg" alt="Certificate 2" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item" aria-hidden="true">
+    <a href="certificates/3.jpg" data-fancybox="certificates" data-caption="Certificate 3 (clone)">
+      <img src="certificates/3.jpg" alt="Certificate 3" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item" aria-hidden="true">
+    <a href="certificates/4.png" data-fancybox="certificates" data-caption="Certificate 4 (clone)">
+      <img src="certificates/4.png" alt="Certificate 4" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item" aria-hidden="true">
+    <a href="certificates/5.png" data-fancybox="certificates" data-caption="Certificate 5 (clone)">
+      <img src="certificates/5.png" alt="Certificate 5" class="certificate-img">
+    </a>
+  </div>
+  <div class="certificate-item" aria-hidden="true">
+    <a href="certificates/6.png" data-fancybox="certificates" data-caption="Certificate 6 (clone)">
+      <img src="certificates/6.png" alt="Certificate 6" class="certificate-img">
+    </a>
+  </div>
 </div>
-<div class="certificate-item col-lg-4 col-md-6 col-sm-12">
-<img alt="ISO Certificate 2" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.22_cd920cba.jpg"/>
-</div>
-<div class="certificate-item col-lg-4 col-md-6 col-sm-12">
-<img alt="ISO Certificate 3" src="شهادات ISO 2/صورة واتساب بتاريخ 1447-04-02 في 16.12.33_7261c8af.jpg"/>
 </div>
 </div>
 </div>
-<!--/row -->
-</div>
-<!-- end container -->
 </section>
-<!-- /Certificates -->
+<!-- End Happy Clients Certificates Carousel -->
+
 <section class="footer-bar">
 <div class="container">
 <div class="inner wow fadeIn">
 <div class="row">
 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.05s">
 <div class="textwidget custom-html-widget"> <figure><img alt="Image" src="assets/img/footer-icon01.webp"/></figure>
-<h3> Address</h3>
-<p>Kingdom of Saudi Arabia - Riyadh - Olaya - King Fahd Road</p></div>
+<h3> العنوان</h3>
+<p>الرياض العليا طريق الملك فهد</p></div>
 </div>
 <!-- end col-4 -->
 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.10s">
 <div class="textwidget custom-html-widget"><figure><img alt="Image" src="assets/img/footer-icon02.webp"/></figure>
-<h3>Working Hours</h3>
-<p>Sunday to Thursday from 8:00 a.m. to 4:00 p.m., Saturday from 1:00 p.m. to 4:00 p.m.</p></div>
+<h3>ساعات العمل</h3>
+<p>ايام العمل من الاحد الي الخميس من ٨ الي ٤ م ماعدا السبت من ١ ظهرا الي ٤ م</p></div>
 </div>
 <!-- end col-4 -->
 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.15s">
 <div class="textwidget custom-html-widget"> <figure><img alt="Image" src="assets/img/footer-icon03.webp"/></figure>
-<h3>Contact Us</h3>
+<h3>اتصل بنا</h3>
 <p><a href="https://wa.me/966543337990">0543337990</a> / <a href="tel:966547700922">0547700922</a><br/>
-<a href="mailto:info@mozoon.sa">info@mozoon.sa</a></p></div>
+/ <a href="mailto:info@mozoon.sa">info@mozoon.sa</a></p></div>
 </div>
 <!-- end col-4 -->
 </div>
@@ -1250,37 +1465,36 @@ General Manager - Mozoon Al Khair Company
 <div class="row">
 <!-- col-lg-4-->
 <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
-<div class="textwidget custom-html-widget"><h5>Overview</h5>
-<!--<p class="justify">Welcome to the world of a sustainable future... we deliver bespoke facility solutions that add value for every client.</p> -->
-<p class="justify">Welcome to the world of a sustainable future. At Mozoon Al Khair Company, we do more than build and maintain facilities—we fulfill our promise through them. We specialize in delivering bespoke solutions for commercial, residential, industrial, healthcare, and educational facilities, providing world-class facilities management and staffing services that add value for our clients while investing in our people, assets, technologies, and market awareness.</p>
-<p> <a class="text-white" href="company-profile-en.html"> Learn More </a></p></div>
+<div class="textwidget custom-html-widget"><h5>نظرة عامة</h5>
+<!--<p class="justify">مرحبًا بكم في عالم المستقبل المستدام .. في شركة الفريدة، نحن لا نبني ونحافظ فقط على المرافق ولكننا نفي بوعدنا من خلالها، نحن متخصصون في تقديم حلول مخصصة وفريدة للمرافق التجارية والسكنية والصناعية والمستشفيات والتعليمية. نحن نقدم خدمات إدارة المرافق والتوظيف على مستوى عالمي وهي قيمة مضافة لعملائنا، نحن نستثمر في موظفينا وفي المرافق وفي التقنيات وفي الوعي بالسوق. ... </p> -->
+<p class="justify">مرحبًا بكم في عالم المستقبل المستدام .. في شركة مزون الخير، نحن لا نبني ونحافظ فقط على المرافق ولكننا نفي بوعدنا من خلالها، نحن متخصصون في تقديم حلول مخصصة وفريدة للمرافق التجارية والسكنية والصناعية والمستشفيات والمنشآت التعليمية، نحن نقدم خدمات إدارة المرافق والتوظيف على مستوى عالمي ونحرص على أن تكون قيمة مضافة لعملائنا، كذلك نحن نستثمر في موظفينا وفي المرافق وفي التقنيات وفي الوعي بالسوق. </p>
+<p> <a class="text-white" href="company-profile.html"> المزيد من المعلومات </a></p></div>
 <!-- end select-box -->
 </div>
 <!-- end col-4 -->
 <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.10s">
-<ul class="footer-menu"><h5>About Us </h5></ul><ul class="footer-menu"><div class="menu-about-us-container"><ul class="menu" id="menu-about-us"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130" id="menu-item-130"><a href="company-profile-en.html">Company Profile</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128" id="menu-item-128"><a href="leaders-message-en.html">General Manager's Message</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129" id="menu-item-129"><a href="mission-vision-values-en.html">Mission, Vision &amp; Values</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127" id="menu-item-127"><a href="operational-excellence-en.html">Operational Excellence</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125" id="menu-item-125"><a href="infrastructure-en.html">Infrastructure</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126" id="menu-item-126"><a href="csr-en.html">Corporate Social Responsibility</a></li>
+<ul class="footer-menu"><h5>حولنا </h5></ul><ul class="footer-menu"><div class="menu-about-us-container"><ul class="menu" id="menu-about-us"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130" id="menu-item-130"><a href="company-profile.html">بروفايل الشركة</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128" id="menu-item-128"><a href="leaders-message.html">رسالة المدير العام</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129" id="menu-item-129"><a href="mission-vision-values.html">الرسالة والرؤية والقيم</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127" id="menu-item-127"><a href="operational-excellence.html">الكفاءة العملية</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125" id="menu-item-125"><a href="infrastructure.html">البنية التحتية</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126" id="menu-item-126"><a href="csr.html">المسؤولية الاجتماعية للشركة</a></li>
 </ul></div></ul>
 </div>
 <!-- end col-2 -->
 <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.12s">
-<ul class="footer-menu"><h5> Quick Links </h5></ul><ul class="footer-menu"><div class="menu-quick-links-container"><ul class="menu" id="menu-quick-links"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135" id="menu-item-135"><a href="sectors-en.html">Sectors</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134" id="menu-item-134"><a href="testimonials-en.html">Testimonials</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133" id="menu-item-133"><a href="careers-en.html">Careers</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-787" id="menu-item-787"><a href="news-events-en.html">News &amp; Events</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131" id="menu-item-131"><a href="get-in-touch-en.html">Contact Us</a></li>
+<ul class="footer-menu"><h5> روابط سريعة </h5></ul><ul class="footer-menu"><div class="menu-quick-links-container"><ul class="menu" id="menu-quick-links"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135" id="menu-item-135"><a href="sectors.html">القطاعات</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134" id="menu-item-134"><a href="testimonials.html">آراء العملاء</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133" id="menu-item-133"><a href="careers.html">وظائف</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131" id="menu-item-131"><a href="get-in-touch.html">تواصل معنا</a></li>
 </ul></div></ul>
 </div>
 <!-- end col-2 -->
 <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.12s">
-<div class="textwidget custom-html-widget"><h5> Contact Information </h5>
+<div class="textwidget custom-html-widget"><h5> معلومات التواصل </h5>
 <div class="add">
 <i aria-hidden="true" class="fa fa-map-marker circle"></i>
-                  Kingdom of Saudi Arabia - Riyadh - Olaya - King Fahd Road
+                  الرياض العليا طريق الملك فهد
                   </div>
 <div class="add">
 <i aria-hidden="true" class="fa fa-phone circle"></i> <span class="ext"><a href="https://wa.me/966543337990">0543337990</a> / <a href="tel:966547700922">0547700922</a></span>
@@ -1296,8 +1510,8 @@ General Manager - Mozoon Al Khair Company
 <!-- end container -->
 <!-- end col-4 -->
 <div class="col-12">
-<div class="container"><span class="copyright"> Copyright © 2025 All Rights Reserved, Mozoon Al Khair Company </span>
-<span class="creation"> <img alt="" class="image wp-image-790 attachment-full size-full" decoding="async" height="582" loading="lazy" sizes="auto, (max-width: 2048px) 100vw, 2048px" src="assets/img/new-logo.png" style="max-width: 100%; height: auto;" width="2048"/></span>
+<div class="container"><span class="copyright"> حقوق الطبع والنشر © 2025 جميع الحقوق محفوظة ،  شركة مزون الخير </span>
+<span class="creation"> <img alt="" class="image wp-image-790 attachment-full size-full" decoding="async" height="582" loading="lazy" sizes="auto, (max-width: 2048px) 100vw, 2048px" src="new-logo.png" style="max-width: 100%; height: auto;" width="2048"/></span>
 </div>
 </div>
 <!-- end col-12 -->
@@ -1341,6 +1555,184 @@ General Manager - Mozoon Al Khair Company
 <!--<script src="https://www.alfareedagroupintl.com/ar/wp-content/themes/al-najma-fareeda/js/carousel/jquery-1.9.1.min.js"></script>  -->
 <script src="assets/js/owl.carousel.js"></script>
 <script src="assets/js/owl.js"></script>
+
+<script>
+// Horizontal Image Slider JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    const sliderTrack = document.getElementById('sliderTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const slides = document.querySelectorAll('.slide');
+    
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    const slideWidth = 100 / totalSlides;
+    
+    // Auto-slide functionality
+    let autoSlideInterval;
+    
+    function updateSliderPosition() {
+        const translateX = -currentIndex * slideWidth;
+        sliderTrack.style.transform = `translateX(${translateX}%)`;
+    }
+    
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSliderPosition();
+    }
+    
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSliderPosition();
+    }
+    
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, 4000);
+    }
+    
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', function() {
+        stopAutoSlide();
+        nextSlide();
+        startAutoSlide();
+    });
+    
+    prevBtn.addEventListener('click', function() {
+        stopAutoSlide();
+        prevSlide();
+        startAutoSlide();
+    });
+    
+    // Touch/swipe support for mobile
+    let startX = 0;
+    let endX = 0;
+    
+    sliderTrack.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+        stopAutoSlide();
+    });
+    
+    sliderTrack.addEventListener('touchend', function(e) {
+        endX = e.changedTouches[0].clientX;
+        handleSwipe();
+        startAutoSlide();
+    });
+    
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = startX - endX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+        }
+    }
+    
+    // Pause auto-slide on hover
+    const sliderContainer = document.querySelector('.horizontal-slider-container');
+    sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+    sliderContainer.addEventListener('mouseleave', startAutoSlide);
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+            stopAutoSlide();
+            prevSlide();
+            startAutoSlide();
+        } else if (e.key === 'ArrowRight') {
+            stopAutoSlide();
+            nextSlide();
+            startAutoSlide();
+        }
+    });
+    
+    // Initialize auto-slide
+    startAutoSlide();
+});
+
+// Mobile Navigation Toggle Function
+function toggleMobileMenu() {
+    const mobileNavbar = document.querySelector('.mobile-navbar');
+    const hamburger = document.querySelector('.fixed-mobile-navbar .mobile-hamburger');
+    
+    if (mobileNavbar) {
+        if (mobileNavbar.style.display === 'none' || mobileNavbar.style.display === '') {
+            mobileNavbar.style.display = 'block';
+            hamburger.classList.add('active');
+        } else {
+            mobileNavbar.style.display = 'none';
+            hamburger.classList.remove('active');
+        }
+    }
+}
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(event) {
+    const mobileNavbar = document.querySelector('.mobile-navbar');
+    const fixedNavbar = document.querySelector('.fixed-mobile-navbar');
+    
+    if (mobileNavbar && fixedNavbar && 
+        !fixedNavbar.contains(event.target) && 
+        !mobileNavbar.contains(event.target)) {
+        mobileNavbar.style.display = 'none';
+        document.querySelector('.fixed-mobile-navbar .mobile-hamburger').classList.remove('active');
+    }
+});
+
+</script>
+<script>
+// Certificates popup: click opens modal (via Fancybox); hover opens after a short pause
+document.addEventListener('DOMContentLoaded', function() {
+  const certItems = document.querySelectorAll('.certificates-row .certificate-item');
+
+  certItems.forEach(function(item) {
+    let hoverTimer;
+    const img = item.querySelector('img');
+    const src = img ? img.getAttribute('src') : '';
+    const caption = img ? (img.getAttribute('alt') || '') : '';
+    const anchor = item.querySelector('a');
+
+    function openModal() {
+      if (anchor) {
+        // Trigger anchor click to let Fancybox handle it
+        anchor.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }));
+        return;
+      }
+      // Fallback: Try Fancybox APIs or show a simple modal overlay
+      if (window.Fancybox && typeof window.Fancybox.show === 'function') {
+        window.Fancybox.show([{ src: src, type: 'image', caption: caption }], { Thumbs: false, Toolbar: true });
+      } else if (window.jQuery && jQuery.fancybox) {
+        jQuery.fancybox.open([{ src: src, type: 'image', opts: { caption: caption } }]);
+      } else {
+        const overlay = document.createElement('div');
+        overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.85);display:flex;align-items:center;justify-content:center;z-index:9999;';
+        const fullImg = document.createElement('img');
+        fullImg.src = src;
+        fullImg.alt = caption;
+        fullImg.style.cssText = 'max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.4);';
+        overlay.appendChild(fullImg);
+        overlay.addEventListener('click', function() { document.body.removeChild(overlay); });
+        document.body.appendChild(overlay);
+      }
+    }
+
+    // Hover-to-open after 500ms dwell
+    item.addEventListener('mouseenter', function() {
+      hoverTimer = setTimeout(openModal, 500);
+    });
+    item.addEventListener('mouseleave', function() {
+      if (hoverTimer) clearTimeout(hoverTimer);
+    });
+  });
+});
+</script>
 <!-- sticky js -->
 <script src="assets/js/classie.js"></script>
 <!-- tabs js-->
@@ -1356,6 +1748,8 @@ General Manager - Mozoon Al Khair Company
 <!-- particles -->
 <script src="assets/js/particles.min.js"></script>
 <script src="assets/js/init-particles.js"></script>
+<!-- testimonial slider -->
+<script src="assets/js/testimonial-slider.js"></script>
 <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/ar\/*"},{"not":{"href_matches":["\/ar\/wp-*.php","\/ar\/wp-admin\/*","\/ar\/wp-content\/uploads\/*","\/ar\/wp-content\/*","\/ar\/wp-content\/plugins\/*","\/ar\/wp-content\/themes\/al-najma-fareeda\/*","\/ar\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
