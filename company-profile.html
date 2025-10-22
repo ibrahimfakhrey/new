@@ -219,18 +219,114 @@
 </nav>
 <!--/navigation -->
 
-<!-- Main Content: Embedded Company Profile PDF -->
-<section class="content-section" style="padding: 40px 0;">
+<!-- Main Content: Company Profile rendered via PDF.js (no controls) -->
+<section class="content-section" style="padding: 120px 0 40px;">
   <div class="container">
     <h2 class="text-center mb-4" style="color: #FF8C42; font-weight: bold;">بروفايل الشركة</h2>
-    <div style="height: 80vh; border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
-      <iframe src="profile.pdf" title="Company Profile PDF" style="width: 100%; height: 100%; border: 0;" loading="lazy"></iframe>
+    <div id="pdf-container" style="position: relative; height: 80vh; border: 1px solid #eee; border-radius: 8px; overflow: hidden; background: #f7f7f7;">
+      <div class="pdf-controls" style="position: absolute; top: 50%; right: 16px; transform: translateY(-50%); display: flex; flex-direction: column; gap: 8px; z-index: 10;">
+        <button id="prevPage" aria-label="الصفحة السابقة" title="الصفحة السابقة" style="background:#FF8C42;color:#fff;border:none;border-radius:6px;width:36px;height:36px;font-size:18px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,0.2);">↑</button>
+        <button id="nextPage" aria-label="الصفحة التالية" title="الصفحة التالية" style="background:#FF8C42;color:#fff;border:none;border-radius:6px;width:36px;height:36px;font-size:18px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,0.2);">↓</button>
+      </div>
+      <div id="pdf-view" style="height: 100%; width: 100%; overflow: auto; padding-right: 56px;"></div>
     </div>
     <p class="text-center mt-3" style="color: #666;">
       في حال لم يتم تحميل الملف، يمكنك <a href="profile.pdf" target="_blank" rel="noopener" style="color: #FF8C42;">تنزيله من هنا</a>.
     </p>
   </div>
 </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.min.js"></script>
+<script>
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.worker.min.js';
+  const url = 'profile.pdf';
+  const container = document.getElementById('pdf-container');
+  const viewEl = document.getElementById('pdf-view');
+  const prevBtn = document.getElementById('prevPage');
+  const nextBtn = document.getElementById('nextPage');
+
+  let pdfDoc = null;
+  let currentPage = 1;
+
+  function updateButtons() {
+    if (!pdfDoc) return;
+    prevBtn.disabled = currentPage <= 1;
+    nextBtn.disabled = currentPage >= pdfDoc.numPages;
+    prevBtn.style.opacity = prevBtn.disabled ? '0.5' : '1';
+    nextBtn.style.opacity = nextBtn.disabled ? '0.5' : '1';
+    prevBtn.style.cursor = prevBtn.disabled ? 'not-allowed' : 'pointer';
+    nextBtn.style.cursor = nextBtn.disabled ? 'not-allowed' : 'pointer';
+  }
+
+  function renderCurrentPage() {
+    if (!pdfDoc) return;
+    viewEl.innerHTML = '';
+    pdfDoc.getPage(currentPage).then(page => {
+      const unscaledViewport = page.getViewport({ scale: 1 });
+      const scaleMultiplier = 0.95;
+      const scale = (container.clientWidth / unscaledViewport.width) * scaleMultiplier;
+      const viewport = page.getViewport({ scale });
+      const canvas = document.createElement('canvas');
+      const context = canvas.getContext('2d');
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+      canvas.style.display = 'block';
+      canvas.style.margin = '0 auto';
+      viewEl.appendChild(canvas);
+      page.render({ canvasContext: context, viewport }).promise.then(() => {
+        updateButtons();
+      });
+    }).catch(err => {
+      const msg = document.createElement('div');
+      msg.style.padding = '12px';
+      msg.style.color = '#c00';
+      msg.textContent = 'حدث خطأ أثناء عرض الصفحة.';
+      viewEl.appendChild(msg);
+      console.error('PDF.js render error:', err);
+    });
+  }
+
+  function init() {
+    pdfjsLib.getDocument(url).promise.then(pdf => {
+      pdfDoc = pdf;
+      currentPage = 1;
+      renderCurrentPage();
+    }).catch(err => {
+      const msg = document.createElement('div');
+      msg.style.padding = '12px';
+      msg.style.color = '#c00';
+      msg.textContent = 'حدث خطأ أثناء تحميل ملف PDF.';
+      viewEl.appendChild(msg);
+      console.error('PDF.js load error:', err);
+    });
+  }
+
+  prevBtn.addEventListener('click', () => {
+    if (pdfDoc && currentPage > 1) {
+      currentPage -= 1;
+      renderCurrentPage();
+    }
+  });
+  nextBtn.addEventListener('click', () => {
+    if (pdfDoc && currentPage < pdfDoc.numPages) {
+      currentPage += 1;
+      renderCurrentPage();
+    }
+  });
+
+  // Keyboard arrows support
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowUp') {
+      prevBtn.click();
+    } else if (e.key === 'ArrowDown') {
+      nextBtn.click();
+    }
+  });
+
+  window.addEventListener('load', init);
+  window.addEventListener('resize', () => {
+    renderCurrentPage();
+  });
+</script>
 
 <!--start foorer -->
 <section class="footer-bar">
