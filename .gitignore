@@ -18,6 +18,62 @@ updated_mobile_navbar_styles.css
 # macOS
 .DS_Store
 
+# Large files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tar.bz2
+
+# Large images (over 5MB)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# Allow specific optimized images
+!assets/images/*.jpg
+!assets/images/*.jpeg
+!assets/images/*.png
+!assets/images/*.gif
+!assets/images/*.webp
+!images/*.jpg
+!images/*.jpeg
+!images/*.png
+!images/*.gif
+!images/*.webp
+
+# Large files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tar.bz2
+
+# Large images (over 5MB)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# Allow specific small images
+!assets/images/*.jpg
+!assets/images/*.jpeg
+!assets/images/*.png
+!assets/images/*.gif
+!assets/images/*.webp
+!images/*.jpg
+!images/*.jpeg
+!images/*.png
+!images/*.gif
+!images/*.webp
+
 # Node modules (if any)
 node_modules/
 
