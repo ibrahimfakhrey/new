@@ -869,10 +869,28 @@
   
   .owl-demo3 .item {
     margin-bottom: 15px !important;
+    width: 100% !important;
+    display: block !important;
+  }
+  
+  .owl-demo3 {
+    display: block !important;
+  }
+  
+  .owl-demo3 .owl-wrapper {
+    display: block !important;
+  }
+  
+  .owl-demo3 .owl-wrapper-outer {
+    display: block !important;
   }
   
   .shadow-styles-small {
     margin-bottom: 15px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    float: none !important;
   }
   
   .title-tint {
@@ -912,11 +930,14 @@
   /* Fix card width issues on mobile */
   .shadow-styles-small {
     width: 100% !important;
-    max-width: 280px !important;
+    max-width: 100% !important;
     height: auto !important;
     min-height: 270px !important;
     margin: 0 auto 20px auto !important;
     padding: 5px 5px 10px 5px !important;
+    display: block !important;
+    float: none !important;
+    clear: both !important;
   }
   
   .shadow-styles-small img {
@@ -926,7 +947,7 @@
   }
   
   .shadow-styles-small .title-tint {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     padding: 15px 20px 25px 20px !important;
     text-align: center !important;
     height: auto !important;
@@ -935,12 +956,17 @@
     align-items: center !important;
     justify-content: center !important;
     line-height: 1.3 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
   }
   
   /* Fix owl carousel items on mobile */
   .owl-demo3 .item {
     width: 100% !important;
-    padding: 0 10px !important;
+    padding: 0 !important;
+    margin: 0 0 20px 0 !important;
+    display: block !important;
+    float: none !important;
   }
   
   /* Mobile-specific styles for Revolution Slider captions */
@@ -950,21 +976,28 @@
   }
   
   /* Mobile-specific font sizes for slider sub-headings */
-  .tp-caption[style*="font-size: 2.5rem"] {
-    font-size: 1.0rem !important;
+  .tp-caption[style*="font-size: 4.0rem"] {
+    font-size: 1.2rem !important;
     line-height: 1.2 !important;
     padding: 8px 12px !important;
     max-width: 95% !important;
   }
   
-  .tp-caption[style*="font-size: 2.2rem"] {
-    font-size: 0.9rem !important;
+  .tp-caption[style*="font-size: 3.2rem"] {
+    font-size: 1.1rem !important;
+    line-height: 1.2 !important;
+    padding: 8px 12px !important;
+    max-width: 95% !important;
+  }
+  
+  .tp-caption[style*="font-size: 2.8rem"] {
+    font-size: 1.0rem !important;
     line-height: 1.2 !important;
   }
   
   /* Specific targeting for slider subtitle elements */
   .tp-caption[data-voffset="20"] {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
     line-height: 1.1 !important;
     padding: 6px 10px !important;
     max-width: 98% !important;
@@ -974,20 +1007,20 @@
   
   /* Extra small font for very long Arabic subtitles */
   .tp-caption[data-voffset="20"][style*="line-height: 1.3"] {
-    font-size: 0.7rem !important;
+    font-size: 0.8rem !important;
     line-height: 1.0 !important;
     padding: 4px 8px !important;
   }
   
   /* Target the third slide's three-word layout */
   .tp-caption[style*="flex-direction: column"] span {
-    font-size: 1.3rem !important;
+    font-size: 1.4rem !important;
     margin: 2px 0 !important;
   }
   
   /* Mobile-specific font sizes for main titles */
-  .tp-caption[style*="font-size: 5rem"] {
-    font-size: 2.0rem !important;
+  .tp-caption[style*="font-size: 6.5rem"] {
+    font-size: 2.2rem !important;
     line-height: 1.1 !important;
     letter-spacing: 1px !important;
   }
@@ -1263,11 +1296,11 @@
 <img alt="Mozoon Al Khair Company" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazyload="wall.jpg" src="assets/img/dummy.png"/>
 <!-- LAYERS -->
 <!-- MAIN COMPANY TITLE -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-80" data-x="center" data-y="center" style="z-index: 10; font-size: 5rem; font-weight: 1000; color: #FFFFFF !important; text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; line-height: 1.1; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-80" data-x="center" data-y="center" style="z-index: 10; font-size: 6.5rem; font-weight: 1000; color: #FFFFFF !important; text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; line-height: 1.1; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
 شركه مزون الخير
 </div>
 <!-- SUBTITLE -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="600" data-voffset="20" data-x="center" data-y="center" style="z-index: 9; font-size: 2.5rem; font-weight: 900; color: #FFFFFF !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 1px 1px 2px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; opacity: 1; max-width: 900px; line-height: 1.8 !important; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto; padding: 10px 20px;">
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="600" data-voffset="20" data-x="center" data-y="center" style="z-index: 9; font-size: 2.8rem; font-weight: 900; color: #FFFFFF !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 1px 1px 2px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; opacity: 1; max-width: 900px; line-height: 1.8 !important; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto; padding: 10px 20px;">
 (إدارة مرافق - الإنشاءات العامه - إدارة وتطوير الاعمال)
 </div>
 </li>
@@ -1278,14 +1311,14 @@
 <!-- LAYERS -->
 <!-- MAIN COMPANY TITLE -->
 
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-80" data-x="center" data-y="center" style="z-index: 10; font-size: 5rem; font-weight: 1000; color: #FFFFFF !important; text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; line-height: 1.1; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-80" data-x="center" data-y="center" style="z-index: 10; font-size: 6.5rem; font-weight: 1000; color: #FFFFFF !important; text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; line-height: 1.1; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
 شركة مزون الخير
 </div>
 
 
 
 <!-- SUBTITLE -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="600" data-voffset="20" data-x="center" data-y="center" style="z-index: 9; font-size: 2.5rem; font-weight: 900; color: #FFFFFF !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 1px 1px 2px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; opacity: 1; max-width: 900px; line-height: 1.3; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="600" data-voffset="20" data-x="center" data-y="center" style="z-index: 9; font-size: 3.2rem; font-weight: 900; color: #FFFFFF !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 1px 1px 2px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; opacity: 1; max-width: 900px; line-height: 1.3; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
 الرائدة في تقديم حلول متكاملة في قطاع الإنشاءات العامة، قطاع الأعمال، والتشغيل والصيانة
 </div>
 </li>
@@ -1295,16 +1328,16 @@
 <img alt="Mozoon Al Khair Services" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazyload="edits/3.png" src="assets/img/dummy.png"/>
 <!-- LAYERS -->
 <!-- MAIN COMPANY TITLE -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-80" data-x="center" data-y="center" style="z-index: 10; font-size: 5rem; font-weight: 1000; color: #FFFFFF !important; text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; line-height: 1.1; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="300" data-voffset="-80" data-x="center" data-y="center" style="z-index: 10; font-size: 6.5rem; font-weight: 1000; color: #FFFFFF !important; text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; line-height: 1.1; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
 شركة مزون الخير
 </div>
 <!-- DESCRIPTION -->
-<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="600" data-voffset="20" data-x="center" data-y="center" style="z-index: 8; font-size: 1.8rem; font-weight: 800; color: #FFFFFF !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 1px 1px 2px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; max-width: 900px; line-height: 1.6; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
+<div class="tp-caption customin tp-resizeme" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" data-hoffset="0" data-speed="600" data-splitin="none" data-splitout="none" data-start="600" data-voffset="20" data-x="center" data-y="center" style="z-index: 8; font-size: 2.3rem; font-weight: 800; color: #FFFFFF !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 1px 1px 2px rgba(0,0,0,0.5); font-family: 'Cairo', 'Tajawal', sans-serif; text-align: center !important; max-width: 900px; line-height: 1.6; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; margin: 0 auto;">
 
 <div style="text-align: center; display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap;">
-<span style="font-size: 2.2rem; font-weight: 900; letter-spacing: 2px;">الجودة</span>
-<span style="font-size: 2.2rem; font-weight: 900; letter-spacing: 2px;">الاحترافية</span>
-<span style="font-size: 2.2rem; font-weight: 900; letter-spacing: 2px;">الثقة</span>
+<span style="font-size: 2.4rem; font-weight: 900; letter-spacing: 2px;">الجودة</span>
+<span style="font-size: 2.4rem; font-weight: 900; letter-spacing: 2px;">الاحترافية</span>
+<span style="font-size: 2.4rem; font-weight: 900; letter-spacing: 2px;">الثقة</span>
 </div>
 </div>
 </li>
@@ -1561,7 +1594,7 @@
 <!--col-lg-6 -->
 <!--col-4 -->
 <div class="col-lg-4 wow fadeInUp">
-<div class="news-container" style="background-image: url('https://media.istockphoto.com/id/1237909943/vector/diagonal-lines-pattern-stripes-texture-background-vector-illustration.jpg?s=612x612&w=0&k=20&c=dLR3Pcj33UrmKkKWQYZHQcf_g7fFy5TYi3rC4eKF3zI='); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;">
+<div class="news-container" style="background-image: url(''); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;">
 
 <marquee class="marquee" direction="up" scrollamount="2" scrolldelay="1">
 <!--news -->
