@@ -1,0 +1,29 @@
+# Logs
+*.log
+server.log
+
+# Development tools
+server.py
+simple_server.py
+add_mobile_navbar.py
+
+# Temporary files
+.tmp/
+*.tmp
+
+# Development notes
+mobile_navbar_components.txt
+updated_mobile_navbar_styles.css
+
+# macOS
+.DS_Store
+
+# Node modules (if any)
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+
+# Backup files
+*.backup

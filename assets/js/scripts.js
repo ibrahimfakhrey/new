@@ -50,19 +50,19 @@
 	
 	
 		
-	// HAMBURGER
-		$('.hamburger').on('click', function(e) {
-			$(this).toggleClass('open');
-			$('body').toggleClass('overflow');
-			$('.side-navigation').toggleClass('active');
-		});
-		
-		// NEW NAVBAR HAMBURGER
-		$('.navbar-hamburger').on('click', function(e) {
-			$(this).toggleClass('open');
-			$('body').toggleClass('overflow');
-			$('.side-navigation').toggleClass('active');
-		});
+	// LEGACY HAMBURGER — fully disabled
+		function configureLegacyHamburger() {
+			// Remove any previous handlers to avoid duplicates
+			$('.hamburger, .navbar-hamburger').off('click');
+
+			// Ensure legacy elements are closed and inert across all viewports
+			$('.hamburger, .navbar-hamburger').removeClass('open');
+			$('.side-navigation').removeClass('active');
+			$('body').removeClass('overflow');
+		}
+
+		configureLegacyHamburger();
+		$(window).on('resize', configureLegacyHamburger);
 	
 	
 	

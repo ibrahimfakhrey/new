@@ -220,64 +220,7 @@
     transform: rotate(-45deg) translate(5px, -5px) !important;
   }
 
-  /* Mobile Navigation Bar Styles */
-  .mobile-navbar {
-    display: block !important;
-    position: fixed !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    background: #ffffff !important;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1) !important;
-    z-index: 9997 !important;
-    border-top: 1px solid #e0e0e0 !important;
-  }
-
-  .mobile-nav-container {
-    display: flex !important;
-    flex-direction: column !important;
-    padding: 10px 15px !important;
-  }
-
-  .mobile-nav-logo {
-    text-align: center !important;
-    margin-bottom: 10px !important;
-  }
-
-  .mobile-nav-logo img {
-    height: 40px !important;
-    width: auto !important;
-  }
-
-  .mobile-nav-menu {
-    display: flex !important;
-    justify-content: space-around !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
-    gap: 5px !important;
-  }
-
-  .mobile-nav-item {
-    color: #333 !important;
-    text-decoration: none !important;
-    font-size: 12px !important;
-    font-weight: 500 !important;
-    padding: 8px 6px !important;
-    border-radius: 6px !important;
-    text-align: center !important;
-    transition: all 0.3s ease !important;
-    flex: 1 !important;
-    min-width: 0 !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-  }
-
-  .mobile-nav-item:hover,
-  .mobile-nav-item.active {
-    background: #FF8C42 !important;
-    color: white !important;
-  }
+  /* Mobile Navigation Bar Styles - REMOVED */
 
   /* Side navigation styling with proper text visibility */
   .side-navigation {
@@ -712,7 +655,7 @@
 .mobile-navbar-container {
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: space-between !important; /* Changed to space-between for logo and hamburger */
   padding: 0 15px !important;
   max-width: 100% !important;
   height: 100% !important;
@@ -722,7 +665,7 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center;
-  width: 100%;
+  flex: 1; /* Allow logo to take available space */
 }
 
 .mobile-logo a {
@@ -739,6 +682,115 @@
   object-fit: contain;
   -webkit-user-select: none;
   user-select: none;
+}
+
+/* Hamburger Menu Styles */
+.mobile-hamburger {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
+  width: 30px !important;
+  height: 25px !important;
+  cursor: pointer !important;
+  padding: 5px !important;
+  z-index: 10000 !important;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.mobile-hamburger span {
+  display: block !important;
+  height: 3px !important;
+  width: 100% !important;
+  background-color: #333 !important;
+  border-radius: 2px !important;
+  transition: all 0.3s ease !important;
+  transform-origin: center !important;
+}
+
+/* Hamburger Animation */
+.mobile-hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px) !important;
+}
+
+.mobile-hamburger.active span:nth-child(2) {
+  opacity: 0 !important;
+}
+
+.mobile-hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px) !important;
+}
+
+/* Mobile Menu Sidebar */
+.mobile-menu-dropdown {
+  position: fixed !important;
+  top: 0 !important;
+  right: -100% !important; /* Start off-screen to the right */
+  width: 280px !important;
+  height: 100vh !important;
+  background: rgba(255, 140, 0, 0.85) !important; /* Much more vibrant orange background */
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-left: 4px solid rgba(255, 100, 0, 0.9) !important; /* Stronger orange border */
+  box-shadow: -5px 0 30px rgba(255, 140, 0, 0.6) !important; /* More prominent orange shadow */
+  z-index: 9999 !important;
+  overflow-y: auto !important;
+  transition: right 0.3s ease-in-out !important;
+  padding-top: 80px !important; /* Space for the navbar */
+}
+
+.mobile-menu-dropdown.active {
+  right: 0 !important; /* Slide in from the right */
+}
+
+/* Overlay background when sidebar is open */
+.mobile-menu-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.4) !important; /* Slightly darker overlay */
+  z-index: 9998 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out !important;
+}
+
+.mobile-menu-overlay.active {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.mobile-menu-item {
+  display: block !important;
+  padding: 18px 25px !important;
+  color: #ffffff !important; /* White text for maximum contrast */
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(255, 100, 0, 0.6) !important; /* Stronger orange border */
+  transition: all 0.3s ease !important;
+  font-size: 16px !important;
+  font-weight: 700 !important; /* Even bolder text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important; /* Dark shadow for better readability */
+  position: relative !important;
+}
+
+.mobile-menu-item:hover {
+  background-color: rgba(255, 100, 0, 0.4) !important; /* Stronger orange hover effect */
+  color: #ffffff !important; /* Keep white text on hover */
+  transform: translateX(-5px) !important; /* Slight slide effect */
+  padding-left: 30px !important;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8) !important; /* Stronger shadow on hover */
+}
+
+.mobile-menu-item:active {
+  background-color: rgba(255, 80, 0, 0.6) !important; /* Even stronger orange when pressed */
+  color: #ffffff !important;
+}
+
+.mobile-menu-item:last-child {
+  border-bottom: none !important;
 }
 
 /* Show mobile navbar only on phone devices */
@@ -952,6 +1004,32 @@
         <img alt="Mozoon Logo" src="image-removebg-preview.png" style="width: 230px; height: 50px; object-fit: contain;" />
       </a>
     </div>
+    <!-- Hamburger Menu Button -->
+    <button class="mobile-hamburger" onclick="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <!-- Mobile Menu Sidebar -->
+  <div class="mobile-menu-dropdown" id="mobileMenuDropdown">
+    <a href="index.html" class="mobile-menu-item">الصفحة الرئيسية</a>
+    <a href="company-profile.html" class="mobile-menu-item">بروفايل الشركة</a>
+    <a href="history.html" class="mobile-menu-item">تاريخنا</a>
+    <a href="mission-vision-values.html" class="mobile-menu-item">الرسالة والرؤية والقيم</a>
+    <a href="strategy.html" class="mobile-menu-item">إستراتيجيتنا</a>
+    <a href="operational-excellence.html" class="mobile-menu-item">الكفاءة العملية</a>
+    <a href="infrastructure.html" class="mobile-menu-item">البنية التحتية</a>
+    <a href="csr.html" class="mobile-menu-item">المسؤولية الاجتماعية للشركة</a>
+    <a href="sectors.html" class="mobile-menu-item">القطاعات</a>
+    <a href="hard-services.html" class="mobile-menu-item">الخدمات الصلبة</a>
+    <a href="soft-services.html" class="mobile-menu-item">الخدمات الناعمة</a>
+    <a href="careers.html" class="mobile-menu-item">الوظائف</a>
+    <a href="news-events.html" class="mobile-menu-item">الأخبار والفعاليات</a>
+    <a href="testimonials.html" class="mobile-menu-item">آراء العملاء</a>
+    <a href="get-in-touch.html" class="mobile-menu-item">تواصل معنا</a>
   </div>
 </nav>
 
@@ -1019,25 +1097,7 @@
 </div>
 <!-- end side-navigation -->
 
-<!-- Mobile Navigation Bar (visible only on mobile) -->
-<nav class="mobile-navbar">
-  <div class="mobile-nav-container">
-    <div class="mobile-nav-logo">
-      <a href="index.html">
-        <img alt="Mozoon Logo" src="assets/img/new-logo.png" />
-      </a>
-    </div>
-    <div class="mobile-nav-menu">
-      <a href="index.html" class="mobile-nav-item active">الرئيسية</a>
-      <a href="company-profile.html" class="mobile-nav-item">نبذة عن الشركة</a>
-      <a href="sectors.html" class="mobile-nav-item">القطاعات</a>
-      <a href="facilities-management.html" class="mobile-nav-item">إدارة المرافق</a>
-      <a href="general-construction.html" class="mobile-nav-item">الانشاءات العامة</a>
-      <a href="business-management.html" class="mobile-nav-item">إدارة وتطوير الاعمال</a>
-      <a href="get-in-touch.html" class="mobile-nav-item">تواصل معنا</a>
-    </div>
-  </div>
-</nav>
+<!-- Mobile Navigation Bar - REMOVED -->
 
 <nav class="navbar navi">
 <div class="container">
@@ -1054,25 +1114,18 @@
 
 <!-- Contact Information -->
 <div class="navbar-contact-info" style="flex: 0 0 auto !important; display: flex !important; flex-direction: column !important; gap: 8px !important; padding: 15px 20px !important; background: rgba(255, 255, 255, 0.1) !important; border-radius: 8px !important; backdrop-filter: blur(10px) !important; margin: 0 !important; max-width: 350px !important;">
-<div style="display: flex !important; align-items: center !important; gap: 8px !important; font-size: 14px !important; color: #333 !important;">
-<i class="fas fa-phone" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #FF8C00 !important; font-size: 14px !important;"></i>
-<a href="tel:+9660549979933" style="color: #333 !important; text-decoration: none !important; font-weight: 500 !important;">0549979933</a>
-</div>
-<div style="display: flex !important; align-items: center !important; gap: 8px !important; font-size: 14px !important; color: #333 !important;">
-<i class="fas fa-envelope" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #FF8C00 !important; font-size: 14px !important;"></i>
-<a href="mailto:info@mozoon.sa" style="color: #333 !important; text-decoration: none !important; font-weight: 500 !important;">info@mozoon.sa</a>
-</div>
-<div style="display: flex !important; align-items: center !important; gap: 8px !important; font-size: 14px !important; color: #333 !important;">
-<i class="fas fa-map-marker-alt" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #FF8C00 !important; font-size: 14px !important;"></i>
-<span style="color: #333 !important; text-decoration: none !important; font-weight: 500 !important;">الرياض العليا طريق الملك فهد</span>
-</div>
-</div>
-
-<!-- Hamburger Menu -->
-<div class="navbar-hamburger" style="flex: 0 0 auto !important; display: flex !important; flex-direction: column !important; gap: 4px !important; cursor: pointer !important; padding: 10px !important;">
-<span style="width: 25px !important; height: 3px !important; background-color: #333 !important; display: block !important; border-radius: 2px !important;"></span>
-<span style="width: 25px !important; height: 3px !important; background-color: #333 !important; display: block !important; border-radius: 2px !important;"></span>
-<span style="width: 25px !important; height: 3px !important; background-color: #333 !important; display: block !important; border-radius: 2px !important;"></span>
+  <div style="display: flex !important; align-items: center !important; gap: 8px !important; font-size: 14px !important; color: #333 !important;">
+    <i class="fas fa-phone" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #FF8C00 !important; font-size: 14px !important;"></i>
+    <a href="tel:+9660549979933" style="color: #333 !important; text-decoration: none !important; font-weight: 500 !important;">0549979933</a>
+  </div>
+  <div style="display: flex !important; align-items: center !important; gap: 8px !important; font-size: 14px !important; color: #333 !important;">
+    <i class="fas fa-envelope" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #FF8C00 !important; font-size: 14px !important;"></i>
+    <a href="mailto:info@mozoon.sa" style="color: #333 !important; text-decoration: none !important; font-weight: 500 !important;">info@mozoon.sa</a>
+  </div>
+  <div style="display: flex !important; align-items: center !important; gap: 8px !important; font-size: 14px !important; color: #333 !important;">
+    <i class="fas fa-map-marker-alt" style="width: 16px !important; height: 16px !important; display: flex !important; align-items: center !important; justify-content: center !important; color: #FF8C00 !important; font-size: 14px !important;"></i>
+    <span style="color: #333 !important; text-decoration: none !important; font-weight: 500 !important;">الرياض العليا طريق الملك فهد</span>
+  </div>
 </div>
 </div>
 <!-- end upper-side -->
@@ -1892,35 +1945,59 @@ document.addEventListener('DOMContentLoaded', function() {
     startAutoSlide();
 });
 
-// Mobile Navigation Toggle Function
+// Mobile Hamburger Menu Toggle Function
 function toggleMobileMenu() {
-    const mobileNavbar = document.querySelector('.mobile-navbar');
-    const hamburger = document.querySelector('.fixed-mobile-navbar .mobile-hamburger');
-
-    if (mobileNavbar) {
-        const shouldShow = mobileNavbar.style.display === 'none' || mobileNavbar.style.display === '';
-        mobileNavbar.style.display = shouldShow ? 'block' : 'none';
-
-        if (hamburger) {
-            hamburger.classList.toggle('active', shouldShow);
+    const hamburger = document.querySelector('.mobile-hamburger');
+    const dropdown = document.getElementById('mobileMenuDropdown');
+    const overlay = document.getElementById('mobileMenuOverlay');
+    
+    if (hamburger && dropdown && overlay) {
+        hamburger.classList.toggle('active');
+        dropdown.classList.toggle('active');
+        overlay.classList.toggle('active');
+        
+        // Prevent body scroll when sidebar is open
+        if (dropdown.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
         }
     }
 }
 
-// Close mobile menu when clicking outside
+// Close mobile menu when clicking outside (on overlay)
 document.addEventListener('click', function(event) {
-    const mobileNavbar = document.querySelector('.mobile-navbar');
-    const fixedNavbar = document.querySelector('.fixed-mobile-navbar');
+    const hamburger = document.querySelector('.mobile-hamburger');
+    const dropdown = document.getElementById('mobileMenuDropdown');
+    const overlay = document.getElementById('mobileMenuOverlay');
+    const navbar = document.querySelector('.mobile-only-navbar');
     
-    if (mobileNavbar && fixedNavbar && 
-        !fixedNavbar.contains(event.target) && 
-        !mobileNavbar.contains(event.target)) {
-        mobileNavbar.style.display = 'none';
-        const hamburger = document.querySelector('.fixed-mobile-navbar .mobile-hamburger');
-        if (hamburger) {
-            hamburger.classList.remove('active');
-        }
+    if (hamburger && dropdown && overlay && navbar && 
+        (event.target === overlay || !navbar.contains(event.target) && !dropdown.contains(event.target))) {
+        hamburger.classList.remove('active');
+        dropdown.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
     }
+});
+
+// Close mobile menu when clicking on a menu item
+document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.mobile-menu-item');
+    const hamburger = document.querySelector('.mobile-hamburger');
+    const dropdown = document.getElementById('mobileMenuDropdown');
+    const overlay = document.getElementById('mobileMenuOverlay');
+    
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            if (hamburger && dropdown && overlay) {
+                hamburger.classList.remove('active');
+                dropdown.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    });
 });
 
 </script>

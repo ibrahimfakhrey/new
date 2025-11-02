@@ -87,7 +87,67 @@
   </script>
 
 </head>
+<style>
+.fixed-mobile-navbar { display: none !important; }
+@media (max-width: 767px) { nav.navbar.navi { display: none !important; } }
+.mobile-only-navbar { display: none !important; position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 9999 !important; background: transparent !important; backdrop-filter: blur(10px) !important; -webkit-backdrop-filter: blur(10px) !important; box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important; padding: 10px 0 !important; -webkit-transform: translateZ(0) !important; transform: translateZ(0) !important; height: 60px !important; min-height: 60px !important; }
+.mobile-navbar-container { display: flex !important; align-items: center !important; justify-content: space-between !important; padding: 0 15px !important; max-width: 100% !important; height: 100% !important; }
+.mobile-logo { display: flex !important; align-items: center !important; justify-content: center; flex: 1; }
+.mobile-logo a { display: block; text-decoration: none; width: 100%; text-align: center; }
+.mobile-logo img { height: 70px; max-width: 200px; object-fit: contain; -webkit-user-select: none; user-select: none; }
+.mobile-hamburger { display: flex !important; flex-direction: column !important; justify-content: space-around !important; width: 30px !important; height: 25px !important; cursor: pointer !important; padding: 5px !important; z-index: 10000 !important; background: transparent !important; border: none !important; outline: none !important; }
+.mobile-hamburger span { display: block !important; height: 3px !important; width: 100% !important; background-color: #333 !important; border-radius: 2px !important; transition: all 0.3s ease !important; transform-origin: center !important; }
+.mobile-hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px) !important; }
+.mobile-hamburger.active span:nth-child(2) { opacity: 0 !important; }
+.mobile-hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px) !important; }
+.mobile-menu-dropdown { position: fixed !important; top: 0 !important; right: -100% !important; width: 280px !important; height: 100vh !important; background: rgba(255,140,0,0.85) !important; backdrop-filter: blur(10px) !important; -webkit-backdrop-filter: blur(10px) !important; border-left: 4px solid rgba(255,100,0,0.9) !important; box-shadow: -5px 0 30px rgba(255,140,0,0.6) !important; z-index: 9999 !important; overflow-y: auto !important; transition: right 0.3s ease-in-out !important; padding-top: 80px !important; }
+.mobile-menu-dropdown.active { right: 0 !important; }
+.mobile-menu-overlay { position: fixed !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; background: rgba(0,0,0,0.4) !important; z-index: 9998 !important; opacity: 0 !important; visibility: hidden !important; transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out !important; }
+.mobile-menu-overlay.active { opacity: 1 !important; visibility: visible !important; }
+.mobile-menu-item { display: block !important; padding: 18px 25px !important; color: #ffffff !important; text-decoration: none !important; border-bottom: 1px solid rgba(255,100,0,0.6) !important; transition: all 0.3s ease !important; font-size: 16px !important; font-weight: 700 !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.7) !important; position: relative !important; }
+.mobile-menu-item:hover { background-color: rgba(255,100,0,0.4) !important; color: #ffffff !important; transform: translateX(-5px) !important; padding-left: 30px !important; text-shadow: 2px 2px 6px rgba(0,0,0,0.8) !important; }
+.mobile-menu-item:active { background-color: rgba(255,80,0,0.6) !important; color: #ffffff !important; }
+.mobile-menu-item:last-child { border-bottom: none !important; }
+@media (max-width: 767px) {
+  .mobile-only-navbar { display: block !important; }
+  body { padding-top: 60px !important; -webkit-text-size-adjust: 100% !important; -webkit-tap-highlight-color: transparent !important; overflow-x: hidden !important; }
+  html { -webkit-text-size-adjust: 100% !important; -ms-text-size-adjust: 100% !important; overflow-x: hidden !important; }
+  a, button, .btn { min-height: 44px !important; min-width: 44px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; -webkit-tap-highlight-color: transparent !important; }
+  .container { max-width: 100% !important; padding-left: 15px !important; padding-right: 15px !important; }
+  * { max-width: 100% !important; box-sizing: border-box !important; }
+  img { max-width: 100% !important; height: auto !important; }
+}
+</style>
 <body>
+<!-- Mobile-Only Navbar with Logo (English) -->
+<nav class="mobile-only-navbar">
+  <div class="mobile-navbar-container">
+    <div class="mobile-logo">
+      <a href="index-en.html"><img alt="Mozoon Logo" src="image-removebg-preview.png" style="width: 230px; height: 50px; object-fit: contain;" /></a>
+    </div>
+    <button class="mobile-hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-menu-dropdown" id="mobileMenuDropdown">
+    <a href="index-en.html" class="mobile-menu-item">Home</a>
+    <a href="company-profile-en.html" class="mobile-menu-item">Company Profile</a>
+    <a href="history-en.html" class="mobile-menu-item">Our History</a>
+    <a href="mission-vision-values-en.html" class="mobile-menu-item">Mission, Vision & Values</a>
+    <a href="strategy-en.html" class="mobile-menu-item">Our Strategy</a>
+    <a href="operational-excellence-en.html" class="mobile-menu-item">Operational Excellence</a>
+    <a href="infrastructure-en.html" class="mobile-menu-item">Infrastructure</a>
+    <a href="csr-en.html" class="mobile-menu-item">Corporate Social Responsibility</a>
+    <a href="sectors-en.html" class="mobile-menu-item">Sectors</a>
+    <a href="hard-services-en.html" class="mobile-menu-item">Hard Services</a>
+    <a href="soft-services-en.html" class="mobile-menu-item">Soft Services</a>
+    <a href="specialist-services-en.html" class="mobile-menu-item">Specialist Services</a>
+    <a href="careers-en.html" class="mobile-menu-item">Careers</a>
+    <a href="news-events-en.html" class="mobile-menu-item">News & Events</a>
+    <a href="testimonials-en.html" class="mobile-menu-item">Testimonials</a>
+    <a href="get-in-touch-en.html" class="mobile-menu-item">Get In Touch</a>
+    <a href="request-a-quote-en.html" class="mobile-menu-item">Request a Quote</a>
+  </div>
+</nav>
 <!--preloader -->
 <div id="preloader">
 <div id="status"> </div>
@@ -561,5 +621,46 @@ Contact Us Now
 <script id="contact-form-7-js" src="assets/js/index.js" type="text/javascript"></script>
 <script id="walcf7-datepicker-js-js" src="assets/js/jquery.datetimepicker.full.min.js" type="text/javascript"></script>
 <script id="walcf7-datepicker-js" src="assets/js/datetimepicker.js" type="text/javascript"></script>
+<script>
+function toggleMobileMenu() {
+  const hamburger = document.querySelector('.mobile-hamburger');
+  const dropdown = document.getElementById('mobileMenuDropdown');
+  const overlay = document.getElementById('mobileMenuOverlay');
+  if (hamburger && dropdown && overlay) {
+    hamburger.classList.toggle('active');
+    dropdown.classList.toggle('active');
+    overlay.classList.toggle('active');
+    document.body.style.overflow = dropdown.classList.contains('active') ? 'hidden' : '';
+  }
+}
+document.addEventListener('click', function(event) {
+  const hamburger = document.querySelector('.mobile-hamburger');
+  const dropdown = document.getElementById('mobileMenuDropdown');
+  const overlay = document.getElementById('mobileMenuOverlay');
+  const navbar = document.querySelector('.mobile-only-navbar');
+  if (hamburger && dropdown && overlay && navbar && (event.target === overlay || (!navbar.contains(event.target) && !dropdown.contains(event.target)))) {
+    hamburger.classList.remove('active');
+    dropdown.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+document.addEventListener('DOMContentLoaded', function() {
+  const items = document.querySelectorAll('.mobile-menu-item');
+  const hamburger = document.querySelector('.mobile-hamburger');
+  const dropdown = document.getElementById('mobileMenuDropdown');
+  const overlay = document.getElementById('mobileMenuOverlay');
+  items.forEach(function(item) {
+    item.addEventListener('click', function() {
+      if (hamburger && dropdown && overlay) {
+        hamburger.classList.remove('active');
+        dropdown.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>
